@@ -1,0 +1,128 @@
+footer
+    background-color: $basecolor2
+    .container
+        position: relative
+    .scrollup
+        position: absolute
+        width: 82px
+        height: 82px
+        top: -41px
+        right: 0
+        border-radius: 20px
+        background: transparent linear-gradient(226deg, #01D7ED 0%, #004C90 100%) 0% 0%
+        display: flex
+        justify-content: center
+        align-items: center
+        transition: 0.4s all
+        svg
+            width: 21px
+            height: 21px
+        &:hover
+            background: transparent linear-gradient(226deg, #004C90 0%, #01D7ED 100%) 0% 0%
+
+    .topFooter
+        padding: 143px 0 101px
+        border-bottom: 1px solid #335C7F
+        .LogoSec
+            width: 280px
+            display: flex
+            margin: -28px 0 25px 0
+            img
+                @include imgFit
+        a.location
+            align-items: start
+            max-width: 340px
+            @include display
+            svg
+                width: 19px
+                fill: $white
+                margin-top: 4px
+                transition: 0.4s all
+            span
+                width: calc( 100% - 19px )
+                padding-left: 22px
+                font-size: 16px
+                line-height: 26px
+                color: $white
+                transition: 0.4s all
+            &:hover
+                svg
+                    fill: $basecolor
+                span
+                    color: $basecolor
+        .footHead
+            font-size: 20px
+            line-height: 1
+            margin-bottom: 28px
+            text-transform: uppercase
+            color: $white
+            width: 100%
+            &.mbextra
+                margin-bottom: 32px
+        .connectSec
+            &>*
+                &:not(:last-of-type)
+                    margin-bottom: 22px
+            li
+                align-items: center
+                @include display
+                svg
+                    fill: $white
+                    margin-right: 15px
+                    max-width: 22px
+                span
+                    color: $basecolor
+                    margin: 0 12px
+                a
+                    font-size: 16px
+                    line-height: 26px
+                    color: $white
+                    transition: 0.4s all
+                    &.fz-extra
+                        font-size: 20px
+                        line-height: 26px
+                    &:hover
+                        color: $basecolor
+        .linkSec
+            li
+                a
+                    font-size: 16px
+                    line-height: 30px
+                    color: $white
+                    &:hover
+                        color: $basecolor
+            &.column
+                column-count: 2
+        .cntRitSec
+            justify-content: space-between
+            align-items: center
+            @include display
+
+    .bottomFooter
+        padding: 51px 0 64px
+        .lftSec
+            p
+                font-size: 16px
+                line-height: 22px
+                color: $white
+        .ritSec
+            justify-content: space-between
+            align-items: center
+            @include display
+            .social
+                ul
+                    gap: 32px
+                    @include display
+                    li
+                        a
+                            svg
+                                fill: $white
+                                transition: 0.4s all
+                            &:hover
+                                svg
+                                    fill: $basecolor
+            p
+                font-size: 14px
+                line-height: 22px
+                color: $white
+                text-transform: uppercase

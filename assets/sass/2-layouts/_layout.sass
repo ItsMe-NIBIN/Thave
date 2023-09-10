@@ -1,0 +1,71 @@
+// layout
+#pageWrapper
+    overflow: hidden
+
+#inner_banner
+    position: relative
+    &::after
+        position: absolute
+        content: ""
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: rgba(0, 0, 0, 0.25)
+        z-index: 1
+    .carousel_img_top
+        height: 300px
+        img
+            @include imgFit
+        @media only screen and ( min-width: 468px)
+            height: 350px
+        @media only screen and ( min-width: 575px)
+            height: 450px
+        @media only screen and ( min-width: 767px)
+            height: 500px
+        @media only screen and ( min-width: 992px)
+            height: 650px
+
+::selection
+    color: #fff
+    background: $basecolor
+::-moz-selection
+    color: #fff
+    background: $basecolor
+
+.CommonFormbox
+    background-color: $white
+    border-radius: 10px
+    width: 100%
+    height: auto
+    max-width: 513px
+    padding: 45px 46px 56px
+    backdrop-filter: blur(30px)
+    -webkit-backdrop-filter: blur(30px)
+    .titleSec
+        margin-bottom: 22px
+        .title
+            font-size: 38px
+            line-height: 40px
+            margin-bottom: 12px
+            font-weight: 600
+            color: $basecolor2
+        p
+            font-size: 16px
+            line-height: 20px
+            color: #403E3E
+    .form-group
+        margin-bottom: 15px
+        .form-control
+            width: 100%
+            height: 50px
+            font-size: 16px
+            font-weight: 500
+            color: $black
+            border: 0
+            border-bottom: 2px solid rgba(0, 76, 144, 0.2)
+            padding-left: 0
+            &::placeholder
+                color: $black
+            &:focus
+                border-color: $basecolor !important

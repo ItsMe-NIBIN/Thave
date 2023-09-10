@@ -1,0 +1,52 @@
+//PLUGIN
+
+// SELECT2
+.select2
+    border: none
+    border-bottom: 1px solid rgba(0, 0, 0, .22)
+    border-radius: 0
+    width: 100% !important
+.select2-selection
+    outline: none !important
+    box-shadow: none !important
+    background: url(../images/select2-down-arrow.svg) no-repeat
+    background-size: 8px
+    padding: 0 !important
+    display: flex !important
+    align-items: center
+    text-align: left
+    background-position: right 5px center !important
+    height: 50px !important
+    @media only screen and (min-width: 468px)
+        background-size: 11px
+        background-position: right 3px center !important
+    .select2-selection__rendered
+        width: 100%
+        padding: 0 !important
+        color: rgba(0, 0, 0, 1)
+        font-weight: 500
+        font-size: 16px
+.select2-dropdown
+    border: 0 !important 
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16)
+    border-radius: 0 !important
+    background-color: $basecolor !important
+    @media only screen and ( min-width: 768px )
+        background-color: transparent !important
+.select2-results__option:not(:last-of-type)
+    border-bottom: 1px solid rgba(131, 131, 131, 0.267) !important
+.select2-results__option
+    padding: 10px 10px !important
+    color: rgba(0, 0, 0, 1) !important
+    font-size: 16px
+    font-weight: 500
+    &:hover
+        background-color: $basecolor
+        color: $white !important
+
+.select2-results
+    background: #fff
+
+
+[aria-disabled=true]
+    display: none

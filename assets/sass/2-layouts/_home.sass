@@ -1,0 +1,393 @@
+#keyValues
+    margin-top: -86px
+    .keyvalueBox
+        width: 202px
+        height: 202px
+        border-radius: 50%
+        position: relative
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        align-content: center
+        &::before
+            position: absolute
+            content: ""
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+            background-image: url("../images/keyvalue-shape-blue.svg")
+            background-repeat: no-repeat
+            background-size: contain
+        .icon
+            max-width: 64px
+            margin: auto
+            margin-bottom: 15px
+        .title
+            width: 100%
+            font-size: 20px
+            line-height: 24px
+            font-weight: 600
+            color: $black
+            text-align: center
+    .owl-stage-outer
+        overflow: visible
+        .owl-item   
+            opacity: 0
+            transition: 0.4s all
+            &.active    
+                opacity: 1
+    .owl-stage  
+        &>*
+            &:nth-child(even)
+                margin-top: -60px
+                .keyvalueBox       
+                    &::before
+                        position: absolute
+                        content: ""
+                        width: 100%
+                        height: 100%
+                        top: 0
+                        left: 0
+                        background-image: url("../images/keyvalue-shape-green.svg")
+                        background-repeat: no-repeat
+                        background-size: contain      
+
+
+    
+    
+    
+#serviceSec
+    padding: 140px 0 117px
+    .HeadSec
+        margin-bottom: 45px
+        align-items: center
+        justify-content: space-between
+        @include display
+        .viewBtn
+            font-size: 16px
+            line-height: 20px
+            color: $basecolor
+            &:hover
+                letter-spacing: 1px
+    .serviceBox
+        .imgBox
+            width: 100%
+            height: 427px
+            border-radius: 17px
+            margin-bottom: 28px
+            overflow: hidden
+            position: relative
+            &::before
+                position: absolute
+                content: ""
+                width: 100%
+                height: 100%
+                top: 0
+                left: 0
+                background-color: rgba(0, 0, 0, 0.18)
+                transition: 0.4s all
+            img
+                @include imgFit
+        .cntBox
+            .title
+                font-size: 24px
+                line-height: 29px
+                margin-bottom: 10px
+                color: $basecolor2
+            p
+                font-size: 16px
+                line-height: 20px
+                margin-bottom: 28px
+                overflow: hidden
+                display: -webkit-box
+                -webkit-line-clamp: 2
+                line-clamp: 2
+                -webkit-box-orient: vertical
+        &:hover
+            .imgBox
+                &::before
+                    background-color: rgba(142, 238, 248, 0.18)
+            .baseBtn
+                border-color: $basecolor
+                span
+                    color: $white
+                    z-index: 2
+                &::before
+                    -webkit-transform-origin: left
+                    -ms-transform-origin: left
+                    transform-origin: left
+                    -webkit-transform: scaleX(1)
+                    -ms-transform: scaleX(1)
+                    transform: scaleX(1)
+
+    .custom_container
+        margin-left: auto
+        padding-right: 15px
+        padding-left: 15px
+        @media only screen and ( min-width: 992px )
+            width: calc(100% - ((100% - 1050px)/ 2))
+            padding-right: 0
+        @media only screen and ( min-width: 1200px )
+            width: calc(100% - ((100% - 1180px)/ 2))
+        @media only screen and ( min-width: 1441px )
+            width: calc(100% - ((100% - 1290px)/ 2))
+        @media only screen and ( min-width: 1551px )
+            width: calc(100% - ((100% - 1447px)/ 2))
+        @media only screen and ( min-width: 1681px )
+            width: calc(100% - ((100% - 1524px)/ 2))
+
+#aboutSec
+    padding: 130px 0 146px
+    .row
+        margin: 0
+        &>*
+            padding: 0
+    .imgSec
+        width: 100%
+        height: 100%
+        border-radius: 18px
+        overflow: hidden
+        img
+            @include imgFit
+    .contentSec
+        padding-left: 68px
+        .abtContents
+            max-width: 530px
+            margin-bottom: 63px
+            .SubHeading
+                margin-bottom: 2px
+            .MainHeading
+                margin-bottom: 22px
+            p
+                font-size: 20px
+                line-height: 30px
+                margin-bottom: 26px
+            .learnBtn
+                font-size: 16px
+                line-height: 20px
+                color: $basecolor
+                &:hover
+                    letter-spacing: 1px
+    .counterList
+        gap: 13px
+        max-width: 610px
+        display: flex
+        flex-direction: row
+        &>*
+            width: calc( 100% / 3 )
+            &:last-child
+                &::after
+                    opacity: 0 !important
+        .countBox
+            width: 100%
+            height: 100%
+            border-radius: 18px
+            padding: 14px 22px 17px 20px
+            position: relative
+            &::after
+                position: absolute
+                content: ""
+                width: 1px
+                height: 80%
+                top: 10%
+                right: 0
+                background-color: #ECECEC
+                opacity: 1
+            .count
+                font-size: 40px
+                line-height: 49px
+                font-weight: 300
+                color: $basecolor
+                margin-bottom: 11px
+                .counter
+                    font-weight: 500
+                    color: $basecolor2
+            .text
+                font-size: 20px
+                line-height: 30px
+                color: $basecolor3
+                font-weight: 600
+            &.active
+                background-color: $white
+                &::after
+                    opacity: 0
+
+    .getintouchBox
+        background-color: $basecolor
+        padding: 20px 31px
+        border-radius: 15px
+        width: 100%
+        height: 100%
+        display: flex
+        flex-wrap: wrap
+        align-content: center
+        position: relative
+        &::before
+            position: absolute
+            content: ""
+            width: 90%
+            height: 22px
+            left: 5%
+            bottom: -6px
+            background: #2781D1 0% 0%
+            opacity: 1
+            filter: blur(18px)
+        .icon
+            max-width: 60px
+            margin-bottom: 21px
+        .title
+            font-size: 30px
+            line-height: 35px
+            margin-bottom: 17px
+            color: $white
+            width: 100%
+        p
+            font-size: 16px
+            line-height: 25px
+            margin-bottom: 27px
+            font-weight: 300
+            color: $white
+            width: 100%
+        .baseBtn
+            background-color: $white
+            border-color: $white
+            margin: auto
+            &::before
+                background-color: $basecolor2
+            &:hover
+                border-color: $basecolor2
+
+#whyChooseSec
+    padding: 128px 0 168px
+    .HeadingSec
+        margin-bottom: 55px
+    .whyChooseSlide
+        .owl-stage-outer
+            overflow: visible
+            .owl-item
+                opacity: 0
+                transition: 0.4s all
+                &.active
+                    opacity: 1
+        .owl-stage
+            display: flex
+    .whyChooseBox
+        width: 100%
+        height: 100%
+        background: rgba(255, 255, 255, 0.5)
+        box-shadow: 0px 0px 30px #0AB1F526
+        border: 1px solid #FFFFFF
+        border-radius: 10px
+        transition: 0.4s all
+        padding: 52px 24px 55px 34px
+        transition: 0.4s all
+        .icon
+            max-width: 78px
+            margin-bottom: 20px
+            img
+                transition: 0.4s all
+                @include imgFit
+                object-fit: contain
+                max-height: 75px !important
+                &.normal
+                    opacity: 1
+                    visibility: visible
+                    height: auto
+                &.hover
+                    opacity: 0
+                    visibility: hidden
+                    height: 0
+        .title
+            font-size: 20px
+            line-height: 24px
+            margin-bottom: 20px
+            font-weight: 600
+            color: $basecolor2
+            transition: 0.4s all
+        p
+            font-size: 14px
+            line-height: 22px
+            transition: 0.4s all
+        &:hover
+            background-color: $basecolor
+            transform: translate( 0 , 20px )
+            .icon
+                img
+                    &.normal
+                        opacity: 0
+                        visibility: hidden
+                        height: 0
+                    &.hover
+                        opacity: 1
+                        visibility: visible
+                        height: auto
+            .title, p
+                color: $white
+
+#partnerSec
+    padding: 84px 0 115px
+    .HeadingSec
+        margin-bottom: 45px
+    .partnerBox
+        width: 100%
+        height: auto
+        border-radius: 10px
+        overflow: hidden
+        img
+            @include imgFit
+
+#testimonialSec
+    padding: 131px 0 121px
+    .HeadingSec
+        margin-bottom: 67px
+    .owl-stage-outer
+        overflow: visible
+        .owl-item
+            opacity: 0
+            transition: 0.4s all
+            &.active
+                opacity: 1
+    .testimonialBox
+        width: 100%
+        height: auto
+        background: #FFFFFF80 0% 0%
+        box-shadow: 0px 0px 30px #0AB1F526
+        border: 1px solid #FFFFFF
+        border-radius: 10px
+        padding: 48px 40px 45px 55px
+        p
+            font-size: 16px
+            line-height: 30px
+            margin-bottom: 25px
+        .author
+            display: flex
+            align-items: center
+            gap: 28px
+            .authorLft
+                width: 78px
+                height: 78px
+                border-radius: 50%
+                overflow: hidden
+            .authorRit
+                .name
+                    font-size: 18px
+                    line-height: 25px
+                    font-weight: 600
+                    color: $basecolor2
+                .place
+                    font-size: 16px
+                    line-height: 25px
+                    font-weight: 300
+                .rateIcons
+                    display: flex
+                    align-items: center
+                    margin-bottom: 0
+                    margin-top: 4px
+                    svg
+                        width: 10px
+                        margin: 0 1.5px
+                        .cls-1
+                            fill: #F7AA11
+                        .cls-2
+                            fill: #e1d7c4
