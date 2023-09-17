@@ -1,0 +1,150 @@
+.servicePage
+    #servicelistingSec
+        padding: 196px 0 160px
+        &.spacing
+            padding: 184px 0 114px
+        .serviceLists
+            margin: -19px
+            @include display    
+            &>*
+                width: calc( 100% / 4 )
+                padding: 19px
+
+    #rateCardSec
+        padding: 139px 0 146px
+        .HeadingSec
+            margin-bottom: 39px
+        .dFlxSec
+            display: flex
+            justify-content: space-between
+            gap: 55px
+            .specializeBox
+                border-radius: 18px
+                width: calc( 100% - 667px )
+                background-color: $basecolor
+                padding: 50px 72px 58px
+                .topSec
+                    margin-bottom: 27px
+                    padding-bottom: 29px
+                    border-bottom: 1px solid $white
+                    ul
+                        justify-content: space-between
+                        @include display    
+                        li
+                            font-size: 25px
+                            line-height: 35px
+                            color: $white
+                            font-weight: 700
+                .btmSec
+                    ul
+                        &>*
+                            &:not(:last-of-type)
+                                margin-bottom: 18px                                
+                        li
+                            justify-content: space-between
+                            @include display    
+                            p
+                                font-size: 20px
+                                line-height: 35px
+                                color: $white
+            .imageBox
+                width: 667px
+                border-radius: 18px
+                overflow: hidden
+                img
+                    @include imgFit
+
+    #benefitSec
+        padding: 137px 0 142px
+        .imgbx
+            width: 100%
+            height: 100%
+            border-radius: 18px
+            overflow: hidden
+            max-width: 658px
+            img
+                @include imgFit
+        .cntbx
+            .MainHeading
+                margin-bottom: 26px
+            p
+                font-size: 20px
+                line-height: 30px
+                margin-bottom: 18px
+                color: #50596E
+            ul
+                &>*
+                    &:not(:last-of-type)
+                        margin-bottom: 18px                        
+                li
+                    font-size: 20px
+                    line-height: 30px
+                    padding-left: 25px
+                    color: #50596E
+                    position: relative
+                    &::before
+                        position: absolute
+                        content: ""
+                        width: 10px
+                        height: 10px
+                        top: 10px
+                        left: 0
+                        background-color: #004C90
+                        border-radius: 50%
+
+    #serviceDetailSec
+        padding: 148px 0 50px
+        .row    
+            align-items: center
+        .imgSec
+            width: 100%
+            height: 519px
+            border-radius: 18px
+            max-width: 710px
+            overflow: hidden
+            img
+                @include imgFit
+        .cntSec
+            padding-left: 42px
+            .MainHeading
+                color: $black
+                margin-bottom: 22px
+            .subHeading
+                font-size: 25px
+                line-height: 35px
+                margin-bottom: 35px
+                color: $basecolor3
+            p
+                font-size: 20px
+                line-height: 35px
+        .cntSecFull
+            margin-top: 80px
+            .MainHead
+                font-size: 28px
+                line-height: 42px
+                margin-bottom: 29px
+                font-weight: 600
+                color: $black
+            p   
+                font-size: 20px
+                line-height: 32px
+                margin-bottom: 42px
+                &:last-of-type
+                    margin-bottom: 0
+
+
+
+    #relatedServiceSec
+        padding: 50px 0 112px
+        .MainHeading
+            margin-bottom: 40px
+        .relatedServSlide
+            .owl-stage-outer
+                overflow: visible
+                .owl-item
+                    opacity: 0
+                    transition: 0.4s all
+                    &.active
+                        opacity: 1
+                .owl-stage
+                    display: flex

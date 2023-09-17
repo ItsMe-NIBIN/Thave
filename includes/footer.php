@@ -14,7 +14,7 @@
         <div class="topFooter">
             <div class="row">
                 <div class="col-md-4">
-                    <a href="index.php" class="LogoSec">
+                    <a href="index1.php" class="LogoSec">
                         <img src="assets/images/logo-white.svg" alt="Logo" width="179" height="111" class="lazy"
                             loading="lazy" data-src="assets/images/logo-white.svg">
                     </a>
@@ -81,22 +81,31 @@
                             <div class="footHead">quicklinks</div>
                             <ul class="linkSec column">
                                 <li>
-                                    <a href="javascript:void(0);">Home</a>
+                                    <a href="index1.php"
+                                        class="<?= basename($_SERVER["SCRIPT_FILENAME"], '.php') == 'index1' ? 'active' : '' ?>">Home</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);">About us</a>
+                                    <a href="about.php"
+                                        class="<?= basename($_SERVER["SCRIPT_FILENAME"], '.php') == 'about' ? 'active' : '' ?>">About
+                                        us</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);">Services</a>
+                                    <a href="services.php"
+                                        class="<?= basename($_SERVER["SCRIPT_FILENAME"], '.php') == 'services' ? 'active' : '' ?>">Services</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);">Testimonials</a>
+                                    <a href="testimonial.php"
+                                        class="<?= basename($_SERVER["SCRIPT_FILENAME"], '.php') == 'testimonial' ? 'active' : '' ?>">Testimonials</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);">Our Partners</a>
+                                    <a href="partners.php"
+                                        class="<?= basename($_SERVER["SCRIPT_FILENAME"], '.php') == 'partners' ? 'active' : '' ?>">Our
+                                        Partners</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);">Contact Us</a>
+                                    <a href="contact.php"
+                                        class="<?= basename($_SERVER["SCRIPT_FILENAME"], '.php') == 'contact' ? 'active' : '' ?>">Contact
+                                        Us</a>
                                 </li>
                             </ul>
                         </div>
@@ -200,6 +209,63 @@
     </div>
 </footer>
 
+
+
+<!-- Modal -->
+<div class="modal fade quotePopup" id="quoteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="CommonFormbox">
+                    <div class="titleSec">
+                        <div class="title">Request A Quote</div>
+                        <p>Short Term Nursing Now Available at Home</p>
+                    </div>
+                    <form action="javascript:void(0);">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Name">
+                            <div class="help-block d-none">Invalid Input</div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Mobile">
+                            <div class="help-block d-none">Invalid Input</div>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-select select" data-select2-id="select2-ServicePop"
+                                aria-label="Default select example" id="select2ServicePop">
+                                <option selected disabled="disabled">Select Services</option>
+                                <option value="1">India</option>
+                                <option value="2">America</option>
+                                <option value="3">England</option>
+                            </select>
+                            <div class="help-block d-none">Invalid Input</div>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-select select" data-select2-id="select2-CityPop"
+                                aria-label="Default select example" id="select2CityPop">
+                                <option selected disabled="disabled">Select City</option>
+                                <option value="1">Kottayam</option>
+                                <option value="2">Ernakulam</option>
+                                <option value="3">Kollam</option>
+                            </select>
+                            <div class="help-block d-none">Invalid Input</div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    I authorize Thave to contact me
+                                </label>
+                            </div>
+                        </div>
+                        <button class="baseBtn fill"><span>Book Now</span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 

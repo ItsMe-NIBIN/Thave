@@ -1,5 +1,5 @@
 #keyValues
-    margin-top: -86px
+    margin-top: -70px
     .keyvalueBox
         width: 202px
         height: 202px
@@ -9,6 +9,7 @@
         flex-wrap: wrap
         justify-content: center
         align-content: center
+        margin: auto
         &::before
             position: absolute
             content: ""
@@ -53,12 +54,31 @@
                         background-repeat: no-repeat
                         background-size: contain      
 
-
-    
-    
     
 #serviceSec
     padding: 140px 0 117px
+    .FloatIcons
+        position: relative
+        .FloatIconWrpr
+            .floatIcon1
+                position: absolute
+                bottom: 15%
+                left: -1%
+                width: 81px
+                height: 81px
+                background: #0FB4F8
+                filter: blur(15px)
+                animation: gradientOpacity2 alternate-reverse infinite 2s
+                transition: 0.4s all
+                border-radius: 50%
+                @keyframes gradientOpacity2
+                    0%
+                        opacity: 0
+                    100%
+                        opacity: 0.26
+
+
+
     .HeadSec
         margin-bottom: 45px
         align-items: center
@@ -78,6 +98,7 @@
             margin-bottom: 28px
             overflow: hidden
             position: relative
+            display: block
             &::before
                 position: absolute
                 content: ""
@@ -90,6 +111,8 @@
             img
                 @include imgFit
         .cntBox
+            margin-bottom: 28px
+            display: block
             .title
                 font-size: 24px
                 line-height: 29px
@@ -98,7 +121,6 @@
             p
                 font-size: 16px
                 line-height: 20px
-                margin-bottom: 28px
                 overflow: hidden
                 display: -webkit-box
                 -webkit-line-clamp: 2
@@ -141,11 +163,12 @@
     padding: 130px 0 146px
     .row
         margin: 0
+        align-items: center
         &>*
             padding: 0
     .imgSec
         width: 100%
-        height: 100%
+        height: 460px
         border-radius: 18px
         overflow: hidden
         img
@@ -281,12 +304,10 @@
         border-radius: 10px
         transition: 0.4s all
         padding: 52px 24px 55px 34px
-        transition: 0.4s all
         .icon
             max-width: 78px
             margin-bottom: 20px
             img
-                transition: 0.4s all
                 @include imgFit
                 object-fit: contain
                 max-height: 75px !important
@@ -304,11 +325,9 @@
             margin-bottom: 20px
             font-weight: 600
             color: $basecolor2
-            transition: 0.4s all
         p
             font-size: 14px
             line-height: 22px
-            transition: 0.4s all
         &:hover
             background-color: $basecolor
             transform: translate( 0 , 20px )

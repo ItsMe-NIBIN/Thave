@@ -9,7 +9,6 @@
 
     <title>Thave Healthcare LLP</title>
     <link rel="icon" href="assets/images/favicon.ico" sizes="any"><!-- 32×32 -->
-    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml"><!-- 192×192 -->
     <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png"><!-- 180×180 -->
     <link rel="manifest" href="assets/images/manifest.webmanifest">
 
@@ -44,14 +43,16 @@
 
 </head>
 
-<body>
+<body class="<?= basename($_SERVER["SCRIPT_FILENAME"], '.php') == 'index1' ? 'homePage' : '' ?>">
     <header id="Header">
         <section class="HeaderMenu">
             <div class="container">
                 <div class="FlexRow">
-                    <a href="index.php" class="LogoSec">
-                        <img src="assets/images/logo.svg" alt="Logo" width="179" height="111" class="lazy"
+                    <a href="index1.php" class="LogoSec">
+                        <img src="assets/images/logo.svg" alt="Logo" width="179" height="111" class="lazy logoNormal"
                             loading="lazy" data-src="assets/images/logo.svg">
+                        <img src="assets/images/logo-white.svg" alt="Logo" width="179" height="111"
+                            class="lazy logoWhite" loading="lazy" data-src="assets/images/logo-white.svg">
                     </a>
                     <div class="menuBx">
                         <div class="modal fade" id="HeaderPOP" tabindex="-1" role="dialog"
@@ -83,7 +84,7 @@
                                             <div class="accordion-item">
                                                 <div class="accordion-header dropdown hasAccord">
                                                     <a href="services.php"
-                                                        class="accordion-button <?= basename($_SERVER["SCRIPT_FILENAME"], '.php') == 'about' ? 'active' : '' ?>">
+                                                        class="accordion-button <?= basename($_SERVER["SCRIPT_FILENAME"], '.php') == 'services' ? 'active' : '' ?>">
                                                         Services
                                                     </a>
                                                     <button class="accordion-button" type="button"
@@ -105,19 +106,17 @@
                                                     <div class="accordion-body">
                                                         <ul>
                                                             <li>
-                                                                <a href="javascript:void(0);">Private Limited Co</a>
+                                                                <a href="javascript:void(0);">Wound Care</a>
                                                             </li>
                                                             <li>
-                                                                <a href="javascript:void(0);">LLP</a>
+                                                                <a href="javascript:void(0);">IV Infusion / IV
+                                                                    Therapy</a>
                                                             </li>
                                                             <li>
-                                                                <a href="javascript:void(0);">Sole Proprietorship</a>
+                                                                <a href="javascript:void(0);">Catheterization</a>
                                                             </li>
                                                             <li>
-                                                                <a href="javascript:void(0);">OPC</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="javascript:void(0);">Partnership</a>
+                                                                <a href="javascript:void(0);">Injections</a>
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -147,8 +146,8 @@
                         <div class="contactSec">
                             <div class="Dflx">
                                 <div class="lftSec">
-                                    <svg id="emergency-call" xmlns="http://www.w3.org/2000/svg" width="27.999" height="27.999"
-                                        viewBox="0 0 27.999 27.999">
+                                    <svg id="emergency-call" xmlns="http://www.w3.org/2000/svg" width="27.999"
+                                        height="27.999" viewBox="0 0 27.999 27.999">
                                         <path id="Path_26" data-name="Path 26"
                                             d="M20.132,108.956a2.769,2.769,0,0,0-3.912,0l-1.014,1.014a1.83,1.83,0,0,1-1.167.342c-.908,0-2.454-.464-4.662-2.672-2.128-2.128-2.626-3.638-2.669-4.53a1.889,1.889,0,0,1,.349-1.31l1-1a2.766,2.766,0,0,0,0-3.912L6.153,94.978a2.769,2.769,0,0,0-3.912,0L1.227,95.992a.822.822,0,0,0-.056.062A6.68,6.68,0,0,0,0,100.267,11.4,11.4,0,0,0,1.274,105a23.879,23.879,0,0,0,4.613,6.13,23.877,23.877,0,0,0,6.13,4.613,11.4,11.4,0,0,0,4.733,1.272l.216,0a6.6,6.6,0,0,0,4-1.171.835.835,0,0,0,.062-.056l1.014-1.014a2.766,2.766,0,0,0,0-3.912Z"
                                             transform="translate(0.001 -89.019)" fill="#fff" />
@@ -179,50 +178,71 @@
         </section>
 
     </header>
-    <!-- <div class="fixedRit">
+
+
+    <div class="fixedRit">
         <ul>
             <li>
-                <a class="whatsapp" href="tel:+97124444650">
-                    <div class="align">
-                        <svg version="1.1" id="Capa_1" viewBox="0 0 513.6 513.6">
-                            <path d="M499.7,377L428,305.3c-25.6-25.6-69.1-15.4-79.4,17.9c-7.7,23-33.3,35.8-56.3,30.7c-51.2-12.8-120.3-79.4-133.1-133.1
-                                c-7.7-23,7.7-48.6,30.7-56.3c33.3-10.2,43.5-53.8,17.9-79.4l-71.7-71.7C115.7-4.5,84.9-4.5,67,13.4L18.4,62.1
-                                c-48.6,51.2,5.1,186.9,125.4,307.2s256,176.6,307.2,125.4l48.6-48.6C517.6,425.6,517.6,394.9,499.7,377z"/>
-                        </svg>
-                    </div>
+                <a href="tel:+08040504777">
+                    <svg id="Group_311" data-name="Group 311" xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                        viewBox="0 0 40 40">
+                        <path id="Path_847" data-name="Path 847" d="M20,0A20,20,0,1,1,0,20,20,20,0,0,1,20,0Z"
+                            fill="#004c90" />
+                        <g id="phone-call" transform="translate(31.674 19.964) rotate(135)">
+                            <g id="Group_11" data-name="Group 11">
+                                <path id="Path_23" data-name="Path 23"
+                                    d="M16.126,12.179,13.81,9.863a1.54,1.54,0,0,0-2.564.579,1.576,1.576,0,0,1-1.82.993,7.141,7.141,0,0,1-4.3-4.3,1.5,1.5,0,0,1,.993-1.82A1.54,1.54,0,0,0,6.7,2.75L4.381.434a1.652,1.652,0,0,0-2.233,0L.576,2.006C-1,3.66.742,8.044,4.629,11.931s8.271,5.707,9.925,4.053l1.571-1.571A1.652,1.652,0,0,0,16.126,12.179Z"
+                                    fill="#fff" />
+                            </g>
+                        </g>
+                    </svg>
                 </a>
             </li>
             <li>
-                <a class="whatsapp" href="mailto:info@powersprayuae.com" target="_blank">
-                    <div class="align">
-                        <svg version="1.1" id="Layer_1" viewBox="0 0 512 512">
-                            <path d="M10.7,95.2C81,154.7,204.3,259.4,240.5,292c4.9,4.4,10.1,6.6,15.5,6.6c5.4,0,10.6-2.2,15.5-6.6
-                                C307.7,259.4,431,154.7,501.3,95.2c4.4-3.7,5-10.2,1.5-14.7C494.6,70,482.4,64,469.3,64H42.7c-13.1,0-25.3,6-33.5,16.4
-                                C5.6,85,6.3,91.5,10.7,95.2z"/>
-                            <path d="M505.8,127.4c-3.8-1.8-8.2-1.1-11.4,1.5C416.5,195,317.1,279.7,285.8,307.9c-17.6,15.9-41.9,15.9-59.5,0
-                                c-33.4-30.1-145-125-208.7-178.9c-3.2-2.7-7.6-3.3-11.4-1.5c-3.8,1.8-6.2,5.5-6.2,9.7v268.2C0,428.9,19.1,448,42.7,448h426.7
-                                c23.5,0,42.7-19.1,42.7-42.7V137.1C512,132.9,509.6,129.1,505.8,127.4z"/>
-                        </svg>
-                    </div>
+                <a href="https://api.whatsapp.com/send?phone=97124444650" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35.764" height="35.759" viewBox="0 0 35.764 35.759">
+                        <g id="Group_309" data-name="Group 309" transform="translate(-8)">
+                            <g id="Group_216" data-name="Group 216" transform="translate(8)">
+                                <ellipse id="Ellipse_25" data-name="Ellipse 25" cx="13.481" cy="12.941" rx="13.481"
+                                    ry="12.941" transform="translate(4.314 4.938)" fill="#fff" />
+                                <g id="Layer_2" data-name="Layer 2">
+                                    <g id="Color">
+                                        <g id="_08.Whatsapp" data-name="08.Whatsapp">
+                                            <path id="Icon"
+                                                d="M53.888,36A17.879,17.879,0,0,0,39.41,64.361L38.492,70.1,44.054,68.8A17.879,17.879,0,1,0,53.888,36Zm9.5,25.286-1.9,1.9c-2,2-7.313-.2-12.019-4.917s-6.817-10.012-4.912-11.993l1.9-1.9a2,2,0,0,1,2.7,0l2.807,2.8a1.864,1.864,0,0,1-.7,3.1,1.819,1.819,0,0,0-1.2,2.208,8.648,8.648,0,0,0,5.212,5.207,1.909,1.909,0,0,0,2.186-1.216,1.868,1.868,0,0,1,3.129-.7l2.8,2.807a2,2,0,0,1,0,2.7Z"
+                                                transform="translate(-36.015 -36)" fill="#07d97e" />
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+
                 </a>
             </li>
             <li>
-                <a class="whatsapp" href="https://api.whatsapp.com/send?phone=97124444650" target="_blank">
-                    <div class="align">
-                        <svg version="1.1" id="Layer_1" viewBox="0 0 318.74 319.09">
-                            <path class="st0" d="M0,319.09l22.32-79.28C7.97,215.42,0.41,187.67,0.41,159.17C0.41,71.4,71.81,0,159.58,0
-                                s159.17,71.4,159.17,159.17s-71.4,159.17-159.17,159.17c-27.35,0-54.12-7-77.81-20.29L0,319.09z M85.94,269.09l4.87,2.97
-                                c20.65,12.61,44.43,19.27,68.76,19.27c72.88,0,132.17-59.29,132.17-132.17S232.45,27,159.58,27S27.41,86.29,27.41,159.17
-                                c0,25.39,7.22,50.05,20.87,71.31l3.28,5.11L38.7,281.24L85.94,269.09z"/>
-                            <path class="st0" d="M114.86,85.09l-10.33-0.56c-3.24-0.18-6.43,0.91-8.88,3.04c-5.01,4.35-13.01,12.75-15.47,23.71
-                                c-3.67,16.33,2,36.33,16.67,56.33c14.67,20,42,52,90.33,65.67c15.58,4.4,27.83,1.43,37.28-4.61c7.49-4.79,12.65-12.48,14.51-21.17
-                                l1.65-7.7c0.52-2.45-0.72-4.93-2.99-5.98l-34.9-16.09c-2.27-1.04-4.95-0.38-6.48,1.59l-13.7,17.76c-1.04,1.34-2.81,1.87-4.41,1.31
-                                c-9.38-3.3-40.82-16.46-58.07-49.69c-0.75-1.44-0.56-3.19,0.5-4.42l13.1-15.15c1.34-1.55,1.68-3.72,0.87-5.6l-15.05-35.2
-                                C118.69,86.45,116.9,85.2,114.86,85.09z"/>
-                        </svg>
-                    </div>
+                <a href="mailto:thavenursing@gmail.com">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+                        <g id="Group_312" data-name="Group 312" transform="translate(-4)">
+                            <g id="Group_311" data-name="Group 311" transform="translate(4)">
+                                <path id="Path_149" data-name="Path 149" d="M20,0A20,20,0,1,1,0,20,20,20,0,0,1,20,0Z"
+                                    fill="#48bfdb" />
+                                <g id="email" transform="translate(10.059 12.555)">
+                                    <path id="Path_24" data-name="Path 24"
+                                        d="M11.6,176.927a2.99,2.99,0,0,1-3.323,0L.132,171.5Q.065,171.451,0,171.4v8.9a1.83,1.83,0,0,0,1.83,1.83H18.052a1.83,1.83,0,0,0,1.83-1.83v-8.9c-.043.032-.087.064-.133.094Z"
+                                        transform="translate(0 -167.242)" fill="#fff" />
+                                    <path id="Path_25" data-name="Path 25"
+                                        d="M.779,67.551l8.147,5.432a1.826,1.826,0,0,0,2.031,0L19.1,67.551a1.744,1.744,0,0,0,.779-1.455,1.832,1.832,0,0,0-1.83-1.83H1.83A1.832,1.832,0,0,0,0,66.1a1.744,1.744,0,0,0,.779,1.454Z"
+                                        transform="translate(0 -64.266)" fill="#fff" />
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+
                 </a>
             </li>
         </ul>
-    </div> -->
+    </div>
+
+
     <div id="viewport">

@@ -1,0 +1,67 @@
+.galleryPage
+    #gallerySec
+        padding: 122px 0 136px
+
+        .galleryListing
+            margin: -12px
+            @include display
+            &>*
+                padding: 12px
+                &:nth-child(1)
+                    width: 33.33333333%
+                    height: 517px
+                &:nth-child(2)
+                    width: 41.66666667%
+                    height: 517px
+                &:nth-child(3)
+                    width: 25%
+                    height: 517px
+                &:nth-child(4)
+                    width: 47%
+                    height: 462px
+                &:nth-child(5)
+                    width: 28%
+                    height: 462px
+                &:nth-child(6)
+                    width: 25%
+                    height: 462px
+            .galBox
+                width: 100%
+                height: 100%
+                overflow: hidden
+                border-radius: 20px
+                position: relative
+                display: block
+                img
+                    transition: 0.4s all
+                    @include imgFit
+                &::before
+                    position: absolute
+                    content: ""
+                    width: 78px
+                    height: 78px
+                    top: 50%
+                    left: 50%
+                    transform: translate( -50% , -50% )
+                    background-image: url("../images/gallery-button.svg")
+                    background-repeat: no-repeat
+                    background-size: contain
+                    z-index: 1
+                    opacity: 0
+                    transition: 0.4s all
+                &::after
+                    position: absolute
+                    content: ""
+                    width: 100%
+                    height: 100%
+                    top: 0
+                    left: 0
+                    background-color: rgba(0, 0, 0, 0.24)
+                    z-index: 0
+                    opacity: 0
+                    transition: 0.4s all
+                &:hover
+                    img
+                        transform: scale(1.05)
+                    &::before, &::after
+                        opacity: 1

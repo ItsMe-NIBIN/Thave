@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="67.667" height="67.715" viewBox="0 0 67.667 67.715">
+  <g id="Quote_request" transform="translate(1 1.049)">
+    <g id="Quote_Request-2" data-name="Quote_Request" transform="translate(0 -0.001)">
+      <path id="Path_13368" data-name="Path 13368" d="M213.864,249.866a2.565,2.565,0,0,1-2.515-3.068l1.2-6.023a12.784,12.784,0,0,1,3.507-6.554l22.17-22.17a2.565,2.565,0,0,1,3.628,0l7.255,7.255a2.565,2.565,0,0,1,0,3.628l-22.17,22.17a12.785,12.785,0,0,1-6.554,3.507l-6.023,1.2A2.566,2.566,0,0,1,213.864,249.866Zm26.181-32.374-20.357,20.357a7.67,7.67,0,0,0-2.1,3.932l-.45,2.25,2.25-.45a7.671,7.671,0,0,0,3.932-2.1l20.357-20.357Z" transform="translate(-184.199 -184.2)" fill="#01d7ed" stroke="#18abe7" stroke-linecap="round" stroke-width="2"/>
+      <path id="Line_3" data-name="Line 3" d="M-17.435-10.56A2.565,2.565,0,0,1-20-13.125v-4.31A2.565,2.565,0,0,1-17.435-20a2.565,2.565,0,0,1,2.565,2.565v4.31A2.565,2.565,0,0,1-17.435-10.56Z" transform="translate(66.172 35.391)" fill="#fff" stroke="#18abe7" stroke-linecap="round" stroke-width="2"/>
+      <path id="Path_13369" data-name="Path 13369" d="M19.2,65.666H7.7a7.7,7.7,0,0,1-7.7-7.7V7.7A7.7,7.7,0,0,1,7.7,0H33.346a2.565,2.565,0,1,1,0,5.13H7.7A2.568,2.568,0,0,0,5.13,7.7V57.971A2.568,2.568,0,0,0,7.7,60.536H19.2a2.565,2.565,0,0,1,0,5.13Z" transform="translate(0 0)" fill="#fff" stroke="#18abe7" stroke-linecap="round" stroke-width="2"/>
+      <path id="Path_13370" data-name="Path 13370" d="M257.956,20.52H247.7a7.7,7.7,0,0,1-7.7-7.7V2.565A2.565,2.565,0,0,1,244.379.751l15.391,15.391a2.565,2.565,0,0,1-1.814,4.379ZM245.13,8.757v4.068A2.568,2.568,0,0,0,247.7,15.39h4.068Z" transform="translate(-209.219 0.001)" fill="#fff" stroke="#18abe7" stroke-linecap="round" stroke-width="2"/>
+    </g>
+    <path id="Line_4" data-name="Line 4" d="M8.216-14.87H-17.435A2.565,2.565,0,0,1-20-17.435,2.565,2.565,0,0,1-17.435-20H8.216a2.565,2.565,0,0,1,2.565,2.565A2.565,2.565,0,0,1,8.216-14.87Z" transform="translate(30.26 44.624)" fill="#fff" stroke="#18abe7" stroke-linecap="round" stroke-width="2"/>
+    <path id="Line_5" data-name="Line 5" d="M3.291-14.87H-17.435A2.565,2.565,0,0,1-20-17.435,2.565,2.565,0,0,1-17.435-20H3.291a2.565,2.565,0,0,1,2.565,2.565A2.565,2.565,0,0,1,3.291-14.87Z" transform="translate(30.26 54.885)" fill="#fff" stroke="#18abe7" stroke-linecap="round" stroke-width="2"/>
+    <path id="Line_6" data-name="Line 6" d="M-6.409-14.87H-17.435A2.565,2.565,0,0,1-20-17.435,2.565,2.565,0,0,1-17.435-20H-6.409a2.565,2.565,0,0,1,2.565,2.565A2.565,2.565,0,0,1-6.409-14.87Z" transform="translate(30.26 65.145)" fill="#fff" stroke="#18abe7" stroke-linecap="round" stroke-width="2"/>
+  </g>
+</svg>

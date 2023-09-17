@@ -1,9 +1,6 @@
 //Header
 .modal-backdrop
-    background: rgba(54, 54, 54, 0.8)
-    z-index: 3
-    &.show
-        opacity: 1
+    display: none
 #Header
     position: absolute
     width: 100%
@@ -12,6 +9,15 @@
     left: 0px
     animation-duration: 0.8s
     transition: .5s all
+    &::before
+        position: absolute
+        content: ""
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), transparent)
+        z-index: 0
     .HeaderMenu
         background: transparent
         position: relative
@@ -42,6 +48,10 @@
                 width: 100%
                 height: 100%
                 object-fit: contain
+                &.logoNormal
+                    display: none
+                &.logoWhite
+                    display: block
         .menuBx
             display: flex
             align-items: center
@@ -190,7 +200,7 @@
                     .accordion-header
                         a, button
                             font-size: 14px
-                            color: #000
+                            color: #fff
                             border: none
                             background: none
                             outline: none
@@ -261,8 +271,7 @@
                             display: block !important
                             transition: .5s all
                             transform: translate(0, 30px)
-                            background: $basecolor
-                            // overflow: hidden
+                            background: $white
                             box-shadow: 0px 0px 30px 0px rgba(5, 54, 96, 0.06)
                             width: 100%
                             left: 10px
@@ -270,92 +279,40 @@
                             height: -moz-fit-content !important
                             top: 100%
                             min-width: 205px
-                            border-radius: 8px
+                            border-radius: 0
                         @media only screen and ( min-width: 1441px )
                             min-width: 227px
-                        &::after
-                            position: absolute
-                            content: ""
-                            top: -9px
-                            left: 20px
-                            width: 18px
-                            height: 18px
-                            background-image: url("../images/rnds.svg")
-                            background-repeat: no-repeat
-                            background-size: contain
-                            @media only screen and ( max-width: 991px )
-                                display: none
+                        // &::after
+                        //     position: absolute
+                        //     content: ""
+                        //     top: -9px
+                        //     left: 20px
+                        //     width: 18px
+                        //     height: 18px
+                        //     background-image: url("../images/select2-down-arrow.svg")
+                        //     background-repeat: no-repeat
+                        //     background-size: contain
+                        //     @media only screen and ( max-width: 991px )
+                        //         display: none
                         .accordion-body
                             padding: 0 32px
                             text-align: start
                             @media only screen and ( min-width: 992px )
                                 text-align: start
-                                padding: 24px 16px 18px
+                                padding: 6px 0
                             ul
                                 li
                                     a
                                         color: #000
                                         display: block
                                         padding: 0
-                                        font-size: 13px
+                                        font-size: 16px
                                         position: relative
-                                        @media only screen and ( min-width: 992px )
-                                            color: #fff
-                                            font-size: 14px
-                                        @media only screen and ( min-width: 1441px )
-                                            font-size: 16px
-                                        &::before
-                                            position: absolute
-                                            content: ""
-                                            bottom: -6px
-                                            left: 0
-                                            width: 100%
-                                            height: 1px 
-                                            background: $white 
-                                            transition: 0.4s all
-                                            opacity: 0 
-                                            @media only screen and ( min-width: 1200px )
-                                                bottom: -8px
-                                            @media only screen and ( min-width: 1441px )
-                                                bottom: -10px
-                                            @media only screen and ( max-width: 991px )
-                                                display: none
-                                        &::after
-                                            position: absolute
-                                            content: ""
-                                            bottom: 6px
-                                            right: 0
-                                            width: 10px
-                                            height: 10px 
-                                            background-image: url("../images/arrow-whites.svg")
-                                            background-repeat: no-repeat
-                                            background-size: contain
-                                            transition: 0.4s all
-                                            opacity: 0 
-                                            @media only screen and ( min-width: 1200px )
-                                                width: 12px
-                                                height: 12px 
-                                            @media only screen and ( min-width: 1441px )
-                                                width: 14px
-                                                height: 14px 
-                                            @media only screen and ( max-width: 991px )
-                                                display: none
+                                        padding: 12px 24px
+                                        transition: none
                                         &:hover
-                                            @media only screen and ( min-width: 992px )
-                                                &::before
-                                                    opacity: 1
-                                                &::after
-                                                    opacity: 1
-                                &>*
-                                    &:not(:last-of-type)
-                                        margin-bottom: 8px
-                                        @media only screen and ( min-width: 576px )
-                                            margin-bottom: 10px
-                                        @media only screen and ( min-width: 992px )
-                                            margin-bottom: 15px
-                                        @media only screen and ( min-width: 1441px )
-                                            margin-bottom: 22px
-                                            
+                                            background-color: $basecolor
+                                            color: $white
                             #accordian
                                 ul
                                     &.Pdiv
@@ -449,7 +406,7 @@
                         display: flex
                         font-size: 18px
                         line-height: 21px
-                        color: #4A4A4A
+                        color: #fff
                         &.bold
                             font-weight: 600
                             color: $basecolor
@@ -457,7 +414,6 @@
                                 color: $basecolor2
                         &:hover
                             color: $basecolor
-
 
         .MenuIcon
             display: flex
@@ -549,6 +505,11 @@
         @media only screen and ( min-width: 768px )
             padding: 0
         .HeaderMenu
+            padding: 15px 0
+            .LogoSec
+                width: 190px
+            .menuBx
+                width: calc( 100% - 190px )
             #HeaderPOP
                 #AccordMenu
                     .accordion-item

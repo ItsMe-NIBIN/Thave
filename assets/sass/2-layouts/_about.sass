@@ -1,0 +1,137 @@
+.aboutPage
+    #aboutSec
+        .counterList
+            flex-direction: column
+            padding-left: 45px
+            .countBox
+                background-color: $white
+                &::after
+                    display: none
+        .contentSec
+            .abtContents
+                max-width: 630px
+                margin-bottom: 0
+            p
+                &:last-of-type
+                    margin-bottom: 0
+
+    #visionMissionSec
+        padding: 173px 0 167px
+        position: relative
+        .ContentBox
+            background-color: rgba(255, 255, 255, 0.5)
+            border-radius: 18px
+            padding: 38px 31px 52px
+            height: 100%
+            .MainHeading
+                margin-bottom: 21px
+            p
+                font-size: 20px
+                line-height: 30px
+        .bgImg
+            position: absolute
+            width: 368px
+            height: 602px
+            top: 50%
+            right: 0
+            transform: translate( 0 , -50% ) 
+            img
+                border-radius: 100px 0 0 20px
+                @include imgFit
+
+
+    #howitworkSec
+        padding: 126px 0 140px
+        .HeadingSec
+            margin-bottom: 71px
+            .MainHeading
+                margin-bottom: 14px
+        .howWrkBox
+            width: 100%
+            border-radius: 18px
+            border: 1px solid #D8D8D8
+            position: relative
+            padding: 62px 50px 52px
+            height: 100%
+            .num
+                position: absolute
+                top: 12px
+                right: 20px
+                font-size: 43px
+                line-height: 52px
+                color: #D7DBE4
+                font-weight: 600
+            .icon
+                width: 65px
+                height: 65px
+                margin-bottom: 20px
+                img
+                    @include imgFit
+                    object-fit: contain
+                    &.normal
+                        display: block
+                    &.hover
+                        display: none
+            .title
+                font-size: 20px
+                line-height: 24px
+                margin-bottom: 20px
+                font-weight: 600
+                color: $basecolor2
+            p
+                font-size: 14px
+                line-height: 22px
+                a
+                    font-size: 14px
+                    line-height: 22px
+                    color: $basecolor3
+                    transition: none
+                    &:hover
+                        color: $basecolor2
+            &:hover
+                background-color: $basecolor
+                border-color: $basecolor
+                .num, .title, p, a
+                    color: $white
+                .icon
+                    img
+                        &.normal
+                            display: none
+                        &.hover
+                            display: block
+
+    #aboutContentSec
+        padding: 165px 0 100px
+        .cntSec
+            .MainHeading
+                margin-bottom: 15px
+            .infoSec
+                max-height: 420px
+                overflow: auto
+                padding-right: 80px
+                p
+                    font-size: 20px
+                    line-height: 30px
+                    margin-bottom: 34px
+                    &:last-of-type
+                        margin-bottom: 0
+        .imgSec
+            width: 580px
+            height: 520px
+            position: relative
+            margin-left: 48px
+            img
+                position: relative
+                z-index: 1
+                border-radius: 18px
+                @include imgFit
+            &::before
+                position: absolute
+                content: ""
+                width: 465px
+                height: 420px
+                background-color: #D9F3F5
+                border-radius: 20px 0 0 20px
+                top: -82px
+                right: -96px
+                z-index: 0

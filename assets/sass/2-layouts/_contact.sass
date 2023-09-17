@@ -1,0 +1,160 @@
+.contactPage
+    #getintouchSec
+        padding: 107px 0 170px
+        .HeadingSec
+            margin-bottom: 62px
+            .MainHeading
+                margin-bottom: 5px
+            p
+                font-size: 18px
+                line-height: 32px
+                color: rgba(0, 0, 0, 0.6)
+        .getListing
+            margin: -32px
+            @include display
+            &>*
+                width: calc( 100% / 3 )
+                padding: 32px
+            .getBx
+                background-color: $white
+                border-radius: 20px
+                padding: 63px 55px 54px
+                width: 100%
+                height: 100%
+                box-shadow: 60px 30px 60px #A8BBCA29
+                .icon
+                    width: 111px
+                    height: 111px
+                    margin-bottom: 41px
+                    border-radius: 50%
+                    background-color: #EEFBFB
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                .title
+                    font-size: 28px
+                    line-height: 1
+                    margin-bottom: 20px
+                    font-weight: 700
+                    color: $black
+            ul
+                li
+                    a, p
+                        font-size: 18px
+                        line-height: 32px
+                        color: $black
+                    p
+                        display: flex
+                        align-items: center
+                        gap: 5px
+                    a
+                        &:hover
+                            color: $basecolor
+        .getTouchForm
+            margin-top: 158px
+            padding: 90px 0 102px
+            position: relative
+            &::before
+                position: absolute
+                content: ""
+                width: 90%
+                height: 100%
+                top: 0
+                left: 0
+                background-color: #EEFBFB
+                z-index: 0
+                border-radius: 20px
+            .row    
+                align-items: center
+            .cntSec
+                position: relative
+                z-index: 1
+                padding-left: 90px
+                max-width: 706px
+                .HeadingSec
+                    margin-bottom: 53px
+                    .MainHeading
+                        margin-bottom: 31px
+                    p
+                        font-size: 18px
+                        line-height: 32px
+                        color: rgba(0, 0, 0, 0.6)
+                .formSec
+                    .form-group
+                        .form-control
+                            width: 100%
+                            height: 65px
+                            background-color: $white
+                            border-radius: 10px
+                            border: 1px solid #D6D6D6
+                            transition: 0.4s all
+                            font-size: 13px
+                            color: $black
+                            padding: 10px 27px
+                            &::placeholder
+                                font-size: 13px
+                                color: $black
+                            &:focus
+                                border-color: $basecolor !important
+                        textarea.form-control
+                            min-height: 182px
+                            padding: 25px 27px
+                    .baseBtn
+                        width: 100%
+                        max-width: 100%
+                        min-width: 100%
+                        height: 60px
+                    .row
+                        margin: -7px -8px
+                        &>*
+                            padding: 7px 8px
+            .ritSec
+                position: relative
+                .imgSec
+                    position: relative
+                    z-index: 1
+                    width: 544px
+                    height: 660px
+                    display: block
+                    margin-left: auto
+                    img
+                        border-radius: 100px 0 0 20px
+                        @include imgFit
+                .achieveSec
+                    position: absolute
+                    bottom: 28px
+                    left: 0
+                    width: 435px
+                    height: auto
+                    padding: 23px 42px 27px 70px
+                    border-radius: 20px
+                    z-index: 1
+                    background-color: $white
+                    .dFlx
+                        margin-bottom: 17px
+                        align-items: center
+                        @include display
+                        .lFlx
+                            width: 25px
+                        .rFlx
+                            width: calc( 100% - 25px )
+                            padding-left: 19px
+                            .title  
+                                font-size: 19px
+                                color: $black
+                                font-weight: 900
+                                span
+                                    color: $basecolor
+                    p   
+                        font-size: 17px
+                        font-weight: 500
+                        color: #C6C6C6
+
+
+    #mapSec
+        width: 100%
+        height: 590px
+        filter: grayscale(100%)
+        iframe
+            width: 100%
+            height: 100%

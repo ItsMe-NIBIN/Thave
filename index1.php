@@ -8,6 +8,10 @@
         <div class="container FloatIcons">
             <div class="FloatIconWrpr">
                 <div class="floatIcon floatIcon1"></div>
+                <div class="floatIcon floatIcon2"></div>
+                <div class="floatIcon floatIcon3"></div>
+                <div class="floatIcon floatIcon4"></div>
+                <div class="floatIcon floatIcon5"></div>
                 <div class="floatIcon floatIconPlusFill floatIconPlusBlue">
                     <svg viewBox="0 0 30.716 30.716">
                         <path id="Path_220" data-name="Path 220"
@@ -23,10 +27,10 @@
                     </svg>
                 </div>
                 <div class="floatIcon floatIconPlusOutline floatIconPlusBlue">
-                    <svg viewBox="0 0 98.716 98.716">
-                        <path id="Path_218" data-name="Path 218"
-                            d="M244.538,147.462v21.226a9.227,9.227,0,0,1-9.223,9.228h-18.3v18.279a9.229,9.229,0,0,1-9.227,9.236H186.565a9.227,9.227,0,0,1-9.219-9.236V177.916h-18.3a9.226,9.226,0,0,1-9.219-9.228V147.462a9.216,9.216,0,0,1,9.219-9.219h18.3v-18.3a9.224,9.224,0,0,1,9.219-9.223h21.226a9.226,9.226,0,0,1,9.227,9.223v18.3h18.3a9.217,9.217,0,0,1,9.223,9.219"
-                            transform="translate(-147.822 -108.715)" />
+                    <svg xmlns="http://www.w3.org/2000/svg" width="42.358" height="42.358" viewBox="0 0 42.358 42.358">
+                        <path id="Path_219" data-name="Path 219"
+                            d="M188.18,125.6v8.6a3.737,3.737,0,0,1-3.735,3.737h-7.41v7.4a3.738,3.738,0,0,1-3.737,3.741h-8.6a3.737,3.737,0,0,1-3.734-3.741v-7.4h-7.413a3.736,3.736,0,0,1-3.734-3.737v-8.6a3.732,3.732,0,0,1,3.734-3.734h7.413V114.45a3.736,3.736,0,0,1,3.734-3.735h8.6a3.736,3.736,0,0,1,3.737,3.735v7.413h7.41a3.732,3.732,0,0,1,3.735,3.734"
+                            transform="translate(-147.822 -108.715)" fill="none" stroke="#01d7ed" stroke-width="4" />
                     </svg>
                 </div>
                 <div class="floatIcon floatIconPlusOutline floatIconPlusGreen">
@@ -90,15 +94,7 @@
                     <div class="sliderBox">
                         <div class="slider">
                             <div id="carouselMainSlider" class="carousel slide carousel-fade" data-bs-ride="carousel"
-                                data-bs-interval="10000">
-                                <div class="carousel-indicators">
-                                    <button type="button" data-bs-target="#carouselMainSlider" data-bs-slide-to="0"
-                                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                                    <button type="button" data-bs-target="#carouselMainSlider" data-bs-slide-to="1"
-                                        aria-label="Slide 2"></button>
-                                    <button type="button" data-bs-target="#carouselMainSlider" data-bs-slide-to="2"
-                                        aria-label="Slide 3"></button>
-                                </div>
+                                data-bs-interval="4000">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
                                         <img src="assets/images/slider1.png" alt="">
@@ -115,6 +111,14 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselMainSlider" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselMainSlider" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselMainSlider" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
         </div>
     </section>
     <!-- banner Section -->
@@ -171,62 +175,73 @@
 
     <!-- Service Section  -->
     <section id="serviceSec">
-        <div class="container">
+        <div class="container FloatIcons">
+            <div class="FloatIconWrpr">
+                <div class="floatIcon floatIcon1"></div>
+                <div class="floatIcon floatIcon2"></div>
+                <div class="floatIcon floatIcon3"></div>
+                <div class="floatIcon floatIcon4"></div>
+                <div class="floatIcon floatIcon5"></div>
+            </div>
             <div class="HeadSec">
                 <div class="MainHeading">Our Services</div>
-                <a href="javascript:void(0);" class="viewBtn">View all +</a>
+                <a href="serviceListing.php" class="viewBtn">View all +</a>
             </div>
         </div>
         <div class="custom_container">
             <div class="owl-carousel owl-theme serviceSlide">
-                <a href="javascript:void(0);" class="serviceBox">
-                    <div class="imgBox">
+                <div class="serviceBox">
+                    <a href="services.php" class="imgBox">
                         <img src="assets/images/service1.png" alt="Service" width="440" height="427" class="lazy"
                             loading="lazy" data-src="assets/images/service1.png">
-                    </div>
-                    <div class="cntBox">
+                    </a>
+                    <a href="services.php" class="cntBox">
                         <div class="title">Wound Care</div>
                         <p>Thave Healthcare provides well-trained nurses to manage
                             your wound treatment in coordination with your doctor’s...</p>
-                        <div class="baseBtn"><span>Book Now</span></div>
-                    </div>
-                </a>
-                <a href="javascript:void(0);" class="serviceBox">
-                    <div class="imgBox">
+                    </a>
+                    <button class="baseBtn" data-bs-toggle="modal" data-bs-target="#quoteModal"><span>Book
+                            Now</span></button>
+                </div>
+                <div class="serviceBox">
+                    <a href="services.php" class="imgBox">
                         <img src="assets/images/service2.png" alt="Service" width="440" height="427" class="lazy"
                             loading="lazy" data-src="assets/images/service2.png">
-                    </div>
-                    <div class="cntBox">
+                    </a>
+                    <a href="services.php" class="cntBox">
                         <div class="title">IV Infusion / IV Therapy</div>
                         <p>Medications taken at home are usually oral medicines.
                             However, some patients are prescribed for IV...</p>
-                        <div class="baseBtn"><span>Book Now</span></div>
-                    </div>
-                </a>
-                <a href="javascript:void(0);" class="serviceBox">
-                    <div class="imgBox">
+                    </a>
+                    <button class="baseBtn" data-bs-toggle="modal" data-bs-target="#quoteModal"><span>Book
+                            Now</span></button>
+                </div>
+                <div class="serviceBox">
+                    <a href="services.php" class="imgBox">
                         <img src="assets/images/service3.png" alt="Service" width="440" height="427" class="lazy"
                             loading="lazy" data-src="assets/images/service3.png">
-                    </div>
-                    <div class="cntBox">
+                    </a>
+                    <a href="services.php" class="cntBox">
                         <div class="title">Catheterization</div>
                         <p>Catheterization is the procedure of inserting a catheter
                             into the body to allow the fluids to flow out. In urinary...</p>
-                        <div class="baseBtn"><span>Book Now</span></div>
-                    </div>
-                </a>
-                <a href="javascript:void(0);" class="serviceBox">
-                    <div class="imgBox">
+                    </a>
+                    <button class="baseBtn" data-bs-toggle="modal" data-bs-target="#quoteModal"><span>Book
+                            Now</span></button>
+                </div>
+                <div class="serviceBox">
+                    <a href="services.php" class="imgBox">
                         <img src="assets/images/service4.png" alt="Service" width="440" height="427" class="lazy"
                             loading="lazy" data-src="assets/images/service4.png">
-                    </div>
-                    <div class="cntBox">
+                    </a>
+                    <a href="services.php" class="cntBox">
                         <div class="title">Injections</div>
                         <p>Injections are part of common healthcare procedure.
                             Injections are normally used to inject drugs, vaccines...</p>
-                        <div class="baseBtn"><span>Book Now</span></div>
-                    </div>
-                </a>
+                    </a>
+                    <button class="baseBtn" data-bs-toggle="modal" data-bs-target="#quoteModal"><span>Book
+                            Now</span></button>
+                </div>
             </div>
         </div>
     </section>

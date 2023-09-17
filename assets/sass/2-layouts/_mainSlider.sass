@@ -21,17 +21,30 @@
             width: 100%
     .sliderBox
         position: relative
+        margin-left: 106px
         width: 579px
         height: 579px
         border-radius: 50%
         position: relative
-        animation: gradientTransition alternate infinite 2s
         transition: 0.4s all
-        @keyframes gradientTransition
-            0%
-                background: transparent linear-gradient(180deg, #5BE0FF 0%, #04AED5 100%) 0% 0%
-            100%
-                background: transparent linear-gradient(180deg, #04AED5 0%, #5BE0FF 100%) 0% 0%
+        overflow: hidden
+        background: transparent linear-gradient(180deg, #5BE0FF 0%, #04AED5 100%) 0% 0%
+        &::after
+            position: absolute
+            content: ""
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+            background: transparent linear-gradient(180deg, #04AED5 0%, #5BE0FF 100%) 0% 0%
+            opacity: 0
+            transition: 0.4s all
+            animation: gradientTransition alternate infinite 2s
+            @keyframes gradientTransition
+                0%
+                    opacity: 0
+                100%
+                    opacity: 1
 
         .slider
             position: absolute
@@ -62,49 +75,123 @@
                 left: 31%
                 width: 123px
                 height: 123px
-                background: #01D7ED 0% 0% no-repeat padding-box
-                // opacity: 0.34
+                background: #01D7ED
                 filter: blur(30px)
-                animation: gradientOpacity alternate infinite 2s
+                animation: gradientOpacity1 alternate-reverse infinite 2s
                 transition: 0.4s all
-                @keyframes gradientOpacity
+                border-radius: 50%
+                @keyframes gradientOpacity1
                     0%
                         opacity: 0
                     100%
                         opacity: 0.34
-                
+            .floatIcon2
+                position: absolute
+                bottom: 15%
+                left: -1%
+                width: 81px
+                height: 81px
+                background: #0FB4F8
+                filter: blur(15px)
+                animation: gradientOpacity2 alternate-reverse infinite 2s
+                transition: 0.4s all
+                border-radius: 50%
+                @keyframes gradientOpacity2
+                    0%
+                        opacity: 0
+                    100%
+                        opacity: 0.26
+            .floatIcon3
+                position: absolute
+                bottom: 2%
+                left: -4%
+                width: 211px
+                height: 211px
+                border-radius: 50%
+                background: #004C90 
+                filter: blur(49px)
+                opacity: 0.01
+                transition: 0.4s all
+            .floatIcon4
+                position: absolute
+                top: 24%
+                right: 4%
+                width: 42px
+                height: 42px
+                background: #0FB4F8 
+                border-radius: 50%
+                filter: blur(10px)
+                animation: gradientOpacity3 alternate-reverse infinite 2s
+                transition: 0.4s all
+                @keyframes gradientOpacity3
+                    0%
+                        opacity: 0
+                    100%
+                        opacity: 0.5
+            .floatIcon5
+                position: absolute
+                top: 11%
+                right: -4%
+                width: 288px
+                height: 288px
+                border-radius: 50%
+                background: #0BB3F9 
+                filter: blur(49px)
+                opacity: 0.08
+                transition: 0.4s all
+
             .floatIconPlusFill
                 position: absolute
                 width: 30px
                 height: 30px
                 &.floatIconPlusBlue
-                    top: 10%
-                    right: 30%
+                    top: 22%
+                    right: 44%
                     svg
                         fill: #48bfdb
                 &.floatIconPlusGreen
-                    bottom: 10%
-                    right: 20%
+                    bottom: 22%
+                    right: -9%
                     svg
                         fill: #ADC71F
 
             .floatIconPlusOutline
                 position: absolute
                 &.floatIconPlusBlue
-                    top: 25%
-                    right: 5%
-                    width: 42px
-                    height: 42px
+                    top: 30%
+                    right: -3%
+                    width: 38px
+                    height: 38px
                     svg
                         stroke: #48bfdb
                         fill: none
                         stroke-width: 4px
                 &.floatIconPlusGreen
-                    bottom: 15%
-                    right: 45%
+                    bottom: 22%
+                    right: 42%
                     width: 98px
                     height: 98px
                     svg
                         stroke: #adc71f
                         fill: none
                         stroke-width: 2px
+    .carousel-indicators
+        position: absolute
+        top: 0
+        left: 93px
+        margin: 0 !important
+        width: 8px
+        height: auto
+        display: flex
+        flex-direction: column
+        align-items: center
+        button
+            width: 8px
+            height: 8px
+            background: #DDE7EF
+            border: 0
+            margin: 20px 0
+            border-radius: 50%
+            &.active
+                background: $basecolor
+                border: 0
