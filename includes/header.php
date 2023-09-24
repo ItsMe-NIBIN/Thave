@@ -82,10 +82,18 @@
                                                 </div>
                                             </div>
                                             <div class="accordion-item">
-                                                <div class="accordion-header dropdown hasAccord">
+                                                <div class="accordion-header">
                                                     <a href="services.php"
-                                                        class="accordion-button <?= basename($_SERVER["SCRIPT_FILENAME"], '.php') == 'services' ? 'active' : '' ?>">
+                                                        class="accordion-button <?= basename($_SERVER["SCRIPT_FILENAME"], '.php') == 'services' ? 'active' : '' ?> <?= basename($_SERVER["SCRIPT_FILENAME"], '.php') == 'serviceListing' ? 'active' : '' ?> <?= basename($_SERVER["SCRIPT_FILENAME"], '.php') == 'serviceDetail' ? 'active' : '' ?>">
                                                         Services
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <div class="accordion-header dropdown hasAccord">
+                                                    <a href="javascript:void(0);"
+                                                        class="accordion-button">
+                                                        Resourses
                                                     </a>
                                                     <button class="accordion-button" type="button"
                                                         data-bs-toggle="collapse" data-bs-target="#collapseTwo"
@@ -106,17 +114,16 @@
                                                     <div class="accordion-body">
                                                         <ul>
                                                             <li>
-                                                                <a href="javascript:void(0);">Wound Care</a>
+                                                                <a href="blogs.php">Blog</a>
                                                             </li>
                                                             <li>
-                                                                <a href="javascript:void(0);">IV Infusion / IV
-                                                                    Therapy</a>
+                                                                <a href="career.php">Careers</a>
                                                             </li>
                                                             <li>
-                                                                <a href="javascript:void(0);">Catheterization</a>
+                                                                <a href="gallery.php">Gallery</a>
                                                             </li>
                                                             <li>
-                                                                <a href="javascript:void(0);">Injections</a>
+                                                                <a href="faq.php">Faq</a>
                                                             </li>
                                                         </ul>
                                                     </div>

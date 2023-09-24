@@ -13,7 +13,7 @@
         </a>
         <div class="topFooter">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-xl-4 col-md-12">
                     <a href="index1.php" class="LogoSec">
                         <img src="assets/images/logo-white.svg" alt="Logo" width="179" height="111" class="lazy"
                             loading="lazy" data-src="assets/images/logo-white.svg">
@@ -41,7 +41,7 @@
                             Sec HSR Layout, Bangalore 560101</span>
                     </a>
                 </div>
-                <div class="col-md-4">
+                <div class="col-xl-4 col-md-6">
                     <div class="footHead mbextra">Contact US</div>
                     <ul class="connectSec">
                         <li>
@@ -75,7 +75,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-4">
+                <div class="col-xl-4 col-sm-8">
                     <div class="cntRitSec">
                         <div class="itm">
                             <div class="footHead">quicklinks</div>
@@ -91,7 +91,7 @@
                                 </li>
                                 <li>
                                     <a href="services.php"
-                                        class="<?= basename($_SERVER["SCRIPT_FILENAME"], '.php') == 'services' ? 'active' : '' ?>">Services</a>
+                                        class="<?= basename($_SERVER["SCRIPT_FILENAME"], '.php') == 'services' ? 'active' : '' ?> <?= basename($_SERVER["SCRIPT_FILENAME"], '.php') == 'serviceListing' ? 'active' : '' ?> <?= basename($_SERVER["SCRIPT_FILENAME"], '.php') == 'serviceDetail' ? 'active' : '' ?>">Services</a>
                                 </li>
                                 <li>
                                     <a href="testimonial.php"
@@ -119,7 +119,7 @@
                                     <a href="javascript:void(0);">Terms of Service</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);">Privacy Policy</a>
+                                    <a href="privacyPolicy.php" class="<?= basename($_SERVER["SCRIPT_FILENAME"], '.php') == 'privacyPolicy' ? 'active' : '' ?>">Privacy Policy</a>
                                 </li>
                             </ul>
                         </div>
@@ -129,14 +129,14 @@
         </div>
         <div class="bottomFooter">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-xl-8 col-lg-6">
                     <div class="lftSec">
                         <p>Copyright ©
                             <?= date('Y') ?> Thave Healthcare LLP. All Rights Reserved.
                         </p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-xl-4 col-lg-6">
                     <div class="ritSec">
                         <div class="social">
                             <ul>
@@ -212,7 +212,52 @@
 
 
 <!-- Modal -->
-<div class="modal fade quotePopup" id="quoteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade quotePopup FloatIcons" id="quoteModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="FloatIconWrpr">
+        <div class="floatIcon floatIcon1"></div>
+        <div class="floatIcon floatIcon2"></div>
+        <div class="floatIcon floatIcon3"></div>
+        <div class="floatIcon floatIconRound1"></div>
+        <div class="floatIcon floatIconRound2"></div>
+        <div class="floatIcon floatIconPlus floatIconPlusLeft">
+            <svg viewBox="0 0 36.812 36.812">
+                <defs>
+                    <clipPath id="clip-path">
+                        <path id="Path_47" data-name="Path 47"
+                            d="M1.058,13.463h12.4V1.059h9.887v12.4h12.4V23.35h-12.4v12.4H13.462V23.35H1.058ZM12.4,0V12.4H0v12H12.4v12.4h12v-12.4h12.4v-12h-12.4V0Z"
+                            fill="#01d7ed" />
+                    </clipPath>
+                </defs>
+                <g id="Group_20" data-name="Group 20" clip-path="url(#clip-path)">
+                    <rect id="Rectangle_13" data-name="Rectangle 13" width="36.812" height="36.812"
+                        transform="translate(0 0)" fill="#01d7ed" />
+                </g>
+            </svg>
+        </div>
+        <div class="floatIcon floatIconPlus floatIconPlusRight">
+            <svg viewBox="0 0 36.812 36.812">
+                <defs>
+                    <clipPath id="clip-path">
+                        <path id="Path_47" data-name="Path 47"
+                            d="M1.058,13.463h12.4V1.059h9.887v12.4h12.4V23.35h-12.4v12.4H13.462V23.35H1.058ZM12.4,0V12.4H0v12H12.4v12.4h12v-12.4h12.4v-12h-12.4V0Z"
+                            fill="#01d7ed" />
+                    </clipPath>
+                </defs>
+                <g id="Group_20" data-name="Group 20" clip-path="url(#clip-path)">
+                    <rect id="Rectangle_13" data-name="Rectangle 13" width="36.812" height="36.812"
+                        transform="translate(0 0)" fill="#01d7ed" />
+                </g>
+            </svg>
+        </div>
+        <div class="floatIcon floatIconPlus floatIconPlusGreen">
+            <svg viewBox="0 0 76.95 76.95">
+                <path id="Path_218" data-name="Path 218"
+                    d="M222.772,139.017v16.348a7.106,7.106,0,0,1-7.1,7.107H201.577v14.078a7.108,7.108,0,0,1-7.107,7.114H178.122a7.107,7.107,0,0,1-7.1-7.114V162.473h-14.1a7.105,7.105,0,0,1-7.1-7.107V139.017a7.1,7.1,0,0,1,7.1-7.1h14.1v-14.1a7.1,7.1,0,0,1,7.1-7.1H194.47a7.106,7.106,0,0,1,7.107,7.1v14.1h14.092a7.1,7.1,0,0,1,7.1,7.1"
+                    transform="translate(-147.822 -108.715)" fill="none" stroke="#adc71f" stroke-width="4" />
+            </svg>
+        </div>
+    </div>
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-body">
@@ -253,8 +298,8 @@
                         </div>
                         <div class="form-group">
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault12">
+                                <label class="form-check-label" for="flexCheckDefault12">
                                     I authorize Thave to contact me
                                 </label>
                             </div>

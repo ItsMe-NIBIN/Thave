@@ -1,9 +1,28 @@
 .testimonialPage
     #testimonialSec
-        padding: 152px 0 124px
+        padding: 62px 0 64px
+        @media only screen and (min-width: 576px)
+            padding: 98px 0 84px
+        @media only screen and (min-width: 1200px)
+            padding: 116px 0 94px
+        @media only screen and (min-width: 1441px)
+            padding: 152px 0 124px
         .testimonialListing
-            margin: -18px -24px
+            margin: -8px
             @include display    
+            @media only screen and (min-width: 992px)
+                margin: -10px
+            @media only screen and (min-width: 1200px)
+                margin: -14px
+            @media only screen and (min-width: 1441px)
+                margin: -18px -24px
             &>*
-                width: calc( 100% / 2 )
-                padding: 18px 24px
+                width: 100%
+                padding: 8px
+                @media only screen and (min-width: 992px)
+                    width: calc( 100% / 2 )
+                    padding: 10px
+                @media only screen and (min-width: 1200px)
+                    padding: 14px
+                @media only screen and (min-width: 1441px)
+                    padding: 18px 24px

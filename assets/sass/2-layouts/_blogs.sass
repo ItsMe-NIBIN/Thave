@@ -1,0 +1,48 @@
+.blogPage
+    #blogsListingSec
+        padding: 70px 0 76px
+        @media only screen and ( min-width: 576px )
+            padding: 96px 0 102px
+        @media only screen and ( min-width: 1441px )
+            padding: 114px 0 116px
+        @media only screen and ( min-width: 1551px )
+            padding: 125px 0 127px
+        .blogLists
+            margin: -22px -12px
+            @include display    
+            @media only screen and ( min-width: 768px )
+                margin: -36px -15px
+            &>*
+                width: 100%
+                padding: 22px 12px
+                @media only screen and ( min-width: 768px )
+                    width: calc( 100% / 2 )
+                    padding: 36px 15px
+                @media only screen and ( min-width: 1200px )
+                    width: calc( 100% / 3 )
+
+    #blogDetailSec
+        padding: 125px 0 128px
+        .cntSec
+            padding-right: 96px
+            .blogBx
+                .imgSec
+                    height: 508px
+                &:hover
+                    img
+                        transform: none
+
+
+        .recentBlogs
+            .title
+                font-size: 28px
+                line-height: 42px
+                margin-bottom: 35px
+                font-weight: 600
+                color: $black
+            .recentList
+                display: flex
+                flex-wrap: wrap
+                gap: 45px
+                &>*
+                    width: 100%

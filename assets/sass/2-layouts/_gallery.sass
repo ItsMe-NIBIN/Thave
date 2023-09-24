@@ -1,30 +1,112 @@
 .galleryPage
     #gallerySec
-        padding: 122px 0 136px
-
+        padding: 66px 0 70px
+        @media only screen and ( min-width: 576px )
+            padding: 86px 0 88px
+        @media only screen and ( min-width: 1200px )
+            padding: 107px 0 96px
+        @media only screen and ( min-width: 1441px )
+            padding: 122px 0 136px
         .galleryListing
-            margin: -12px
+            margin: -6px
             @include display
+            @media only screen and ( min-width: 1200px )
+                margin: -9px
+            @media only screen and ( min-width: 1441px )
+                margin: -12px
             &>*
-                padding: 12px
+                padding: 6px
+                @media only screen and ( min-width: 1200px )
+                    padding: 9px
+                @media only screen and ( min-width: 1441px )
+                    padding: 12px
                 &:nth-child(1)
-                    width: 33.33333333%
-                    height: 517px
+                    width: 100%
+                    height: 300px
+                    @media only screen and ( min-width: 576px )
+                        width: 50%
+                        height: 330px
+                    @media only screen and ( min-width: 768px )
+                        height: 370px
+                    @media only screen and ( min-width: 992px )
+                        width: 33.33333333%
+                        height: 400px
+                    @media only screen and ( min-width: 1200px )
+                        height: 460px
+                    @media only screen and ( min-width: 1441px )
+                        height: 517px
                 &:nth-child(2)
-                    width: 41.66666667%
-                    height: 517px
+                    width: 100%
+                    height: 300px
+                    @media only screen and ( min-width: 576px )
+                        width: 50%
+                        height: 330px
+                    @media only screen and ( min-width: 768px )
+                        height: 370px
+                    @media only screen and ( min-width: 992px )
+                        width: 41.66666667%
+                        height: 400px
+                    @media only screen and ( min-width: 1200px )
+                        height: 460px
+                    @media only screen and ( min-width: 1441px )
+                        height: 517px
                 &:nth-child(3)
-                    width: 25%
-                    height: 517px
+                    width: 100%
+                    height: 300px
+                    @media only screen and ( min-width: 576px )
+                        width: 50%
+                        height: 330px
+                    @media only screen and ( min-width: 768px )
+                        height: 370px
+                    @media only screen and ( min-width: 992px )
+                        width: 25%
+                        height: 400px
+                    @media only screen and ( min-width: 1200px )
+                        height: 460px
+                    @media only screen and ( min-width: 1441px )
+                        height: 517px
                 &:nth-child(4)
-                    width: 47%
-                    height: 462px
+                    width: 100%
+                    height: 300px
+                    @media only screen and ( min-width: 576px )
+                        width: 50%
+                        height: 330px
+                    @media only screen and ( min-width: 768px )
+                        height: 370px
+                    @media only screen and ( min-width: 992px )
+                        width: 47%
+                    @media only screen and ( min-width: 1200px )
+                        height: 426px
+                    @media only screen and ( min-width: 1441px )
+                        height: 462px
                 &:nth-child(5)
-                    width: 28%
-                    height: 462px
+                    width: 100%
+                    height: 300px
+                    @media only screen and ( min-width: 576px )
+                        width: 50%
+                        height: 330px
+                    @media only screen and ( min-width: 768px )
+                        height: 370px
+                    @media only screen and ( min-width: 992px )
+                        width: 28%
+                    @media only screen and ( min-width: 1200px )
+                        height: 426px
+                    @media only screen and ( min-width: 1441px )
+                        height: 462px
                 &:nth-child(6)
-                    width: 25%
-                    height: 462px
+                    width: 100%
+                    height: 300px
+                    @media only screen and ( min-width: 576px )
+                        width: 50%
+                        height: 330px
+                    @media only screen and ( min-width: 768px )
+                        height: 370px
+                    @media only screen and ( min-width: 992px )
+                        width: 25%
+                    @media only screen and ( min-width: 1200px )
+                        height: 426px
+                    @media only screen and ( min-width: 1441px )
+                        height: 462px
             .galBox
                 width: 100%
                 height: 100%
@@ -38,8 +120,8 @@
                 &::before
                     position: absolute
                     content: ""
-                    width: 78px
-                    height: 78px
+                    width: 50px
+                    height: 50px
                     top: 50%
                     left: 50%
                     transform: translate( -50% , -50% )
@@ -49,6 +131,12 @@
                     z-index: 1
                     opacity: 0
                     transition: 0.4s all
+                    @media only screen and ( min-width: 992px )
+                        width: 64px
+                        height: 64px
+                    @media only screen and ( min-width: 1441px )
+                        width: 78px
+                        height: 78px
                 &::after
                     position: absolute
                     content: ""

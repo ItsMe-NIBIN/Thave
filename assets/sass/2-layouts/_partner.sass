@@ -1,17 +1,40 @@
 .partnerPage
     #partnerListing
-        padding: 147px 0 142px
+        padding: 70px 0 66px
+        @media only screen and (min-width: 576px)
+            padding: 98px 0 104px
+        @media only screen and (min-width: 1441px)
+            padding: 147px 0 142px
         .partnerList
-            margin: -13px -12px
+            margin: -6px
             @include display
+            @media only screen and (min-width: 576px)
+                margin: -10px
+            @media only screen and (min-width: 1441px)
+                margin: -13px -12px
             &>*
-                width: calc( 100% / 5 )
-                padding: 13px 12px
+                width: calc( 100% / 2 )
+                padding: 6px
+                @media only screen and (min-width: 576px)
+                    width: calc( 100% / 3 )
+                    padding: 10px
+                @media only screen and (min-width: 768px)
+                    width: calc( 100% / 4 )
+                @media only screen and (min-width: 992px)
+                    width: calc( 100% / 5 )
+                @media only screen and (min-width: 1441px)
+                    padding: 13px 12px
             .partnerBox
                 border-radius: 10px
                 overflow: hidden
+                img
+                    @include imgFit
         .quoteBox
-            margin-top: 101px
+            margin-top: 42px
             width: 100%
+            @media only screen and (min-width: 576px)
+                margin-top: 76px
+            @media only screen and (min-width: 1441px)
+                margin-top: 101px
             .CommonFormbox
                 max-width: 100%

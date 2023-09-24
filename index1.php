@@ -42,7 +42,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-lg-6">
                     <div class="CommonFormbox">
                         <div class="titleSec">
                             <div class="title">Experience, Expertise
@@ -90,7 +90,7 @@
                         </form>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6">
                     <div class="sliderBox">
                         <div class="slider">
                             <div id="carouselMainSlider" class="carousel slide carousel-fade" data-bs-ride="carousel"
@@ -174,15 +174,45 @@
 
 
     <!-- Service Section  -->
-    <section id="serviceSec">
-        <div class="container FloatIcons">
-            <div class="FloatIconWrpr">
-                <div class="floatIcon floatIcon1"></div>
-                <div class="floatIcon floatIcon2"></div>
-                <div class="floatIcon floatIcon3"></div>
-                <div class="floatIcon floatIcon4"></div>
-                <div class="floatIcon floatIcon5"></div>
+    <section id="serviceSec" class="FloatIcons">
+        <div class="FloatIconWrpr">
+            <div class="floatIcon floatIcon1"></div>
+            <div class="floatIcon floatIcon2"></div>
+            <div class="floatIcon floatIcon3"></div>
+            <div class="floatIcon floatIcon4"></div>
+            <div class="floatIcon floatIcon5"></div>
+            <div class="floatIcon floatIconPlus floatIconPlusLeft">
+                <svg viewBox="0 0 36.812 36.812">
+                    <defs>
+                        <clipPath id="clip-path">
+                            <path id="Path_47" data-name="Path 47"
+                                d="M1.058,13.463h12.4V1.059h9.887v12.4h12.4V23.35h-12.4v12.4H13.462V23.35H1.058ZM12.4,0V12.4H0v12H12.4v12.4h12v-12.4h12.4v-12h-12.4V0Z"
+                                fill="#01d7ed" />
+                        </clipPath>
+                    </defs>
+                    <g id="Group_20" data-name="Group 20" clip-path="url(#clip-path)">
+                        <rect id="Rectangle_13" data-name="Rectangle 13" width="36.812" height="36.812"
+                            transform="translate(0 0)" fill="#01d7ed" />
+                    </g>
+                </svg>
             </div>
+            <div class="floatIcon floatIconPlus floatIconPlusRight">
+                <svg viewBox="0 0 36.812 36.812">
+                    <defs>
+                        <clipPath id="clip-path">
+                            <path id="Path_47" data-name="Path 47"
+                                d="M1.058,13.463h12.4V1.059h9.887v12.4h12.4V23.35h-12.4v12.4H13.462V23.35H1.058ZM12.4,0V12.4H0v12H12.4v12.4h12v-12.4h12.4v-12h-12.4V0Z"
+                                fill="#01d7ed" />
+                        </clipPath>
+                    </defs>
+                    <g id="Group_20" data-name="Group 20" clip-path="url(#clip-path)">
+                        <rect id="Rectangle_13" data-name="Rectangle 13" width="36.812" height="36.812"
+                            transform="translate(0 0)" fill="#01d7ed" />
+                    </g>
+                </svg>
+            </div>
+        </div>
+        <div class="container">
             <div class="HeadSec">
                 <div class="MainHeading">Our Services</div>
                 <a href="serviceListing.php" class="viewBtn">View all +</a>
@@ -250,15 +280,35 @@
 
     <!-- About Section -->
     <section id="aboutSec" class="BG-light">
-        <div class="container">
+        <div class="container FloatIcons">
+            <div class="FloatIconWrpr">
+                <div class="floatIcon floatIcon1"></div>
+                <div class="floatIcon floatIcon2"></div>
+                <div class="floatIcon floatIcon3"></div>
+                <div class="floatIcon floatIconPlus floatIconPlus">
+                    <svg viewBox="0 0 36.812 36.812">
+                        <defs>
+                            <clipPath id="clip-path">
+                                <path id="Path_47" data-name="Path 47"
+                                    d="M1.058,13.463h12.4V1.059h9.887v12.4h12.4V23.35h-12.4v12.4H13.462V23.35H1.058ZM12.4,0V12.4H0v12H12.4v12.4h12v-12.4h12.4v-12h-12.4V0Z"
+                                    fill="#01d7ed" />
+                            </clipPath>
+                        </defs>
+                        <g id="Group_20" data-name="Group 20" clip-path="url(#clip-path)">
+                            <rect id="Rectangle_13" data-name="Rectangle 13" width="36.812" height="36.812"
+                                transform="translate(0 0)" fill="#01d7ed" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-5">
                     <div class="imgSec">
                         <img src="assets/images/about.png" alt="About" width="505" height="460" class="lazy"
                             loading="lazy" data-src="assets/images/about.png">
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6 col-md-7">
                     <div class="contentSec">
                         <div class="abtContents">
                             <div class="SubHeading">About</div>
@@ -285,7 +335,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2">
+                <div class="col-lg-2 col-md-12">
                     <div class="getintouchBox">
                         <div class="icon">
                             <svg width="60.907" height="75" viewBox="0 0 60.907 75">
@@ -331,7 +381,63 @@
 
     <!-- Why Choose Section -->
     <section id="whyChooseSec">
-        <div class="container">
+        <div class="container FloatIcons">
+            <div class="FloatIconWrpr">
+                <div class="floatIcon floatIcon1"></div>
+                <div class="floatIcon floatIcon2"></div>
+                <div class="floatIcon floatIcon3"></div>
+                <div class="floatIcon floatIcon4"></div>
+                <div class="floatIcon floatIcon5"></div>
+                <div class="floatIcon floatIconRound1"></div>
+                <div class="floatIcon floatIconRound2"></div>
+                <div class="floatIcon floatIconRound3"></div>
+                <div class="floatIcon floatIconRound4"></div>
+                <div class="floatIcon floatIconPlus floatIconPlusLeft">
+                    <svg viewBox="0 0 36.812 36.812">
+                        <defs>
+                            <clipPath id="clip-path">
+                                <path id="Path_47" data-name="Path 47"
+                                    d="M1.058,13.463h12.4V1.059h9.887v12.4h12.4V23.35h-12.4v12.4H13.462V23.35H1.058ZM12.4,0V12.4H0v12H12.4v12.4h12v-12.4h12.4v-12h-12.4V0Z"
+                                    fill="#01d7ed" />
+                            </clipPath>
+                        </defs>
+                        <g id="Group_20" data-name="Group 20" clip-path="url(#clip-path)">
+                            <rect id="Rectangle_13" data-name="Rectangle 13" width="36.812" height="36.812"
+                                transform="translate(0 0)" fill="#01d7ed" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="floatIcon floatIconPlus floatIconPlusLeftBtm">
+                    <svg viewBox="0 0 36.812 36.812">
+                        <defs>
+                            <clipPath id="clip-path">
+                                <path id="Path_47" data-name="Path 47"
+                                    d="M1.058,13.463h12.4V1.059h9.887v12.4h12.4V23.35h-12.4v12.4H13.462V23.35H1.058ZM12.4,0V12.4H0v12H12.4v12.4h12v-12.4h12.4v-12h-12.4V0Z"
+                                    fill="#01d7ed" />
+                            </clipPath>
+                        </defs>
+                        <g id="Group_20" data-name="Group 20" clip-path="url(#clip-path)">
+                            <rect id="Rectangle_13" data-name="Rectangle 13" width="36.812" height="36.812"
+                                transform="translate(0 0)" fill="#01d7ed" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="floatIcon floatIconPlus floatIconPlus floatIconPlusRight">
+                    <svg viewBox="0 0 36.812 36.812">
+                        <defs>
+                            <clipPath id="clip-path">
+                                <path id="Path_47" data-name="Path 47"
+                                    d="M1.058,13.463h12.4V1.059h9.887v12.4h12.4V23.35h-12.4v12.4H13.462V23.35H1.058ZM12.4,0V12.4H0v12H12.4v12.4h12v-12.4h12.4v-12h-12.4V0Z"
+                                    fill="#01d7ed" />
+                            </clipPath>
+                        </defs>
+                        <g id="Group_20" data-name="Group 20" clip-path="url(#clip-path)">
+                            <rect id="Rectangle_13" data-name="Rectangle 13" width="36.812" height="36.812"
+                                transform="translate(0 0)" fill="#01d7ed" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
             <div class="HeadingSec center">
                 <div class="MainHeading">Why Choose Us</div>
                 <p>We will save your time, nerves and health and we protect your main value - health.</p>
@@ -439,7 +545,54 @@
 
     <!-- Testimonial Section -->
     <section id="testimonialSec">
-        <div class="container">
+        <div class="container FloatIcons">
+            <div class="FloatIconWrpr">
+                <div class="floatIcon floatIcon1"></div>
+                <div class="floatIcon floatIcon2"></div>
+                <div class="floatIcon floatIcon3"></div>
+                <div class="floatIcon floatIcon4"></div>
+                <div class="floatIcon floatIcon5"></div>
+                <div class="floatIcon floatIconRound1"></div>
+                <div class="floatIcon floatIconRound2"></div>
+                <div class="floatIcon floatIconRound3"></div>
+                <div class="floatIcon floatIconRound4"></div>
+                <div class="floatIcon floatIconQuote floatIconQuoteLeft">
+                    <svg viewBox="0 0 44.165 31.176">
+                        <g id="Quotemarks-left" transform="translate(-0.001 -9.412)">
+                            <path id="Path_48" data-name="Path 48"
+                                d="M45.946,21.015c-.089-.962-.021-3.576,2.483-7.211a.69.69,0,0,0-.08-.879c-1.021-1.021-1.653-1.665-2.1-2.116-.583-.594-.849-.865-1.239-1.218a.692.692,0,0,0-.917-.009,26.449,26.449,0,0,0-8.512,21.262c.411,5.646,4.529,9.744,9.792,9.744a9.795,9.795,0,0,0,.568-19.573Zm-.568,18.192c-4.519,0-8.058-3.56-8.416-8.464h0a25.222,25.222,0,0,1,7.582-19.7c.189.187.406.406.724.731.384.391.91.926,1.705,1.724-3.04,4.684-2.467,8.021-2.215,8.5a.715.715,0,0,0,.62.38,8.414,8.414,0,1,1,0,16.828Z"
+                                transform="translate(-11.007 0)" fill="#48bfdb" />
+                            <path id="Path_49" data-name="Path 49"
+                                d="M10.43,21.015c-.09-.959-.024-3.571,2.483-7.211a.69.69,0,0,0-.08-.879c-1.019-1.019-1.65-1.663-2.093-2.113-.585-.6-.852-.867-1.241-1.221a.693.693,0,0,0-.917-.009A26.452,26.452,0,0,0,.069,30.844h0C.481,36.49,4.6,40.588,9.863,40.588a9.795,9.795,0,0,0,.567-19.573ZM9.863,39.208c-4.519,0-8.059-3.56-8.418-8.464h0a25.224,25.224,0,0,1,7.584-19.7c.19.187.407.408.727.733.383.391.908.925,1.7,1.722-3.04,4.684-2.467,8.021-2.215,8.5a.716.716,0,0,0,.621.381,8.414,8.414,0,1,1,0,16.828Z"
+                                transform="translate(0 0)" fill="#48bfdb" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="floatIcon floatIconQuote floatIconQuoteLeftBtm">
+                    <svg viewBox="0 0 71.553 50.509">
+                        <g id="Quotemarks-left" transform="translate(-0.001 -9.412)">
+                            <path id="Path_48" data-name="Path 48"
+                                d="M52.413,28.21c-.144-1.558-.034-5.793,4.023-11.683a1.117,1.117,0,0,0-.13-1.425c-1.654-1.654-2.678-2.7-3.4-3.428-.945-.963-1.376-1.4-2.007-1.974a1.121,1.121,0,0,0-1.485-.014,42.85,42.85,0,0,0-13.79,34.447c.666,9.147,7.338,15.787,15.864,15.787a15.868,15.868,0,0,0,.92-31.71Zm-.92,29.474c-7.322,0-13.055-5.767-13.635-13.712h0c-1.279-17.521,9.136-28.9,12.283-31.914.307.3.657.658,1.174,1.185.622.633,1.474,1.5,2.762,2.793-4.925,7.588-4,13-3.589,13.77a1.158,1.158,0,0,0,1,.616,13.632,13.632,0,1,1,0,27.264Z"
+                                transform="translate(4.193)" fill="#48bfdb" />
+                            <path id="Path_49" data-name="Path 49"
+                                d="M16.9,28.21c-.145-1.554-.038-5.786,4.023-11.683a1.119,1.119,0,0,0-.13-1.425c-1.651-1.651-2.674-2.694-3.391-3.424-.948-.965-1.38-1.405-2.011-1.978A1.123,1.123,0,0,0,13.9,9.685,42.856,42.856,0,0,0,.111,44.134h0c.668,9.146,7.342,15.786,15.868,15.786A15.868,15.868,0,0,0,16.9,28.21Zm-.919,29.474c-7.321,0-13.057-5.767-13.638-13.713h0c-1.275-17.525,9.14-28.9,12.286-31.916.308.3.66.661,1.177,1.188.621.633,1.472,1.5,2.758,2.79-4.925,7.589-4,13-3.589,13.769a1.161,1.161,0,0,0,1.006.617,13.632,13.632,0,1,1,0,27.264Z"
+                                transform="translate(0 0)" fill="#48bfdb" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="floatIcon floatIconQuote floatIconQuoteRight">
+                    <svg viewBox="0 0 69.665 49.176">
+                        <g id="Quotemarks-left" transform="translate(-0.001 -9.412)">
+                            <path id="Path_48" data-name="Path 48"
+                                d="M51.967,27.714c-.14-1.517-.033-5.64,3.917-11.374a1.088,1.088,0,0,0-.126-1.387c-1.61-1.61-2.608-2.627-3.307-3.338-.92-.938-1.339-1.365-1.954-1.922a1.091,1.091,0,0,0-1.446-.014A41.719,41.719,0,0,0,35.625,43.217c.648,8.906,7.145,15.37,15.446,15.37a15.45,15.45,0,0,0,.9-30.873Zm-.9,28.7c-7.129,0-12.711-5.615-13.275-13.35h0C36.551,26,46.691,14.921,49.755,11.987c.3.294.64.641,1.143,1.153.606.617,1.435,1.461,2.689,2.719-4.8,7.388-3.891,12.652-3.494,13.407a1.127,1.127,0,0,0,.978.6,13.272,13.272,0,1,1,0,26.545Z"
+                                transform="translate(3.145 0)" fill="#48bfdb" />
+                            <path id="Path_49" data-name="Path 49"
+                                d="M16.452,27.714c-.141-1.513-.037-5.633,3.917-11.374a1.089,1.089,0,0,0-.126-1.387c-1.607-1.607-2.6-2.622-3.3-3.334-.923-.94-1.344-1.368-1.958-1.926a1.093,1.093,0,0,0-1.446-.015A41.725,41.725,0,0,0,.108,43.217h0c.651,8.9,7.148,15.369,15.449,15.369a15.45,15.45,0,0,0,.9-30.873Zm-.9,28.7c-7.128,0-12.713-5.615-13.278-13.352h0C1.037,26,11.177,14.92,14.241,11.987c.3.294.642.643,1.146,1.157.6.617,1.433,1.46,2.685,2.716-4.8,7.389-3.891,12.652-3.494,13.406a1.13,1.13,0,0,0,.979.6,13.272,13.272,0,1,1,0,26.545Z"
+                                transform="translate(0 0)" fill="#48bfdb" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
             <div class="HeadingSec center">
                 <div class="MainHeading">Our Testimonials</div>
                 <p>We will save your time, nerves and health and we protect your main value - health.</p>
@@ -576,6 +729,8 @@
                     </div>
                 </div>
             </div>
+            <button class="baseBtn fill" data-bs-toggle="modal" data-bs-target="#reviewModal"><span>Add
+                    Review</span></button>
         </div>
     </section>
     <!-- Testimonial Section -->
@@ -662,7 +817,7 @@
 
         // key value Slider 
         $('.keyvalueSlide').owlCarousel({
-            loop: false,
+            loop: true,
             lazyLoad: true,
             rewind: false,
             autoplay: false,
@@ -685,12 +840,15 @@
                 },
                 768: {
                     items: 3,
+                    loop: true,
                 },
                 992: {
                     items: 4,
+                    loop: true,
                 },
                 1200: {
                     items: 5,
+                    loop: false,
                 },
             }
         })
@@ -708,25 +866,32 @@
             responsiveClass: true,
             nav: false,
             dots: false,
-            margin: 10,
+            margin: 14,
             responsive: {
                 0: {
-                    items: 2,
-                },
-                468: {
-                    items: 2,
+                    items: 1.2,
                 },
                 576: {
-                    items: 3,
+                    items: 2.1,
+                    margin: 16,
                 },
                 768: {
-                    items: 3,
-                    margin: 20,
+                    items: 2.4,
+                    margin: 18,
                 },
                 992: {
-                    items: 4,
+                    items: 3.2,
+                    margin: 22,
                 },
                 1200: {
+                    items: 3.4,
+                    margin: 26,
+                },
+                1441: {
+                    items: 3.6,
+                    margin: 32,
+                },
+                1551: {
                     items: 3.6,
                     margin: 49,
                 },
@@ -750,22 +915,33 @@
             margin: 10,
             responsive: {
                 0: {
-                    items: 2,
+                    items: 1.4,
                 },
                 468: {
                     items: 2,
+                    margin: 12,
                 },
                 576: {
-                    items: 3,
+                    items: 2,
+                    margin: 14,
                 },
                 768: {
                     items: 3,
-                    margin: 20,
+                    margin: 16,
                 },
                 992: {
                     items: 4,
+                    margin: 18,
                 },
                 1200: {
+                    items: 4,
+                    margin: 20,
+                },
+                1441: {
+                    items: 5,
+                    margin: 22,
+                },
+                1551: {
                     items: 5,
                     margin: 23,
                 },
@@ -826,22 +1002,21 @@
             margin: 10,
             responsive: {
                 0: {
-                    items: 2,
-                },
-                468: {
-                    items: 2,
-                },
-                576: {
-                    items: 3,
+                    items: 1,
                 },
                 768: {
-                    items: 3,
+                    items: 1,
                     margin: 20,
                 },
                 992: {
-                    items: 4,
+                    items: 2,
+                    margin: 26,
                 },
                 1200: {
+                    margin: 32,
+                    items: 2,
+                },
+                1441: {
                     margin: 47,
                     items: 2,
                 },
@@ -850,6 +1025,116 @@
         // Testimonial Slider
 
     </script>
+
+
+    <!-- Review Modal -->
+    <div class="modal fade reviewPopup FloatIcons" id="reviewModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="FloatIconWrpr">
+            <div class="floatIcon floatIcon1"></div>
+            <div class="floatIcon floatIcon2"></div>
+            <div class="floatIcon floatIcon3"></div>
+            <div class="floatIcon floatIconRound1"></div>
+            <div class="floatIcon floatIconRound2"></div>
+            <div class="floatIcon floatIconPlus floatIconPlusLeft">
+                <svg viewBox="0 0 36.812 36.812">
+                    <defs>
+                        <clipPath id="clip-path">
+                            <path id="Path_47" data-name="Path 47"
+                                d="M1.058,13.463h12.4V1.059h9.887v12.4h12.4V23.35h-12.4v12.4H13.462V23.35H1.058ZM12.4,0V12.4H0v12H12.4v12.4h12v-12.4h12.4v-12h-12.4V0Z"
+                                fill="#01d7ed" />
+                        </clipPath>
+                    </defs>
+                    <g id="Group_20" data-name="Group 20" clip-path="url(#clip-path)">
+                        <rect id="Rectangle_13" data-name="Rectangle 13" width="36.812" height="36.812"
+                            transform="translate(0 0)" fill="#01d7ed" />
+                    </g>
+                </svg>
+            </div>
+            <div class="floatIcon floatIconPlus floatIconPlusRight">
+                <svg viewBox="0 0 36.812 36.812">
+                    <defs>
+                        <clipPath id="clip-path">
+                            <path id="Path_47" data-name="Path 47"
+                                d="M1.058,13.463h12.4V1.059h9.887v12.4h12.4V23.35h-12.4v12.4H13.462V23.35H1.058ZM12.4,0V12.4H0v12H12.4v12.4h12v-12.4h12.4v-12h-12.4V0Z"
+                                fill="#01d7ed" />
+                        </clipPath>
+                    </defs>
+                    <g id="Group_20" data-name="Group 20" clip-path="url(#clip-path)">
+                        <rect id="Rectangle_13" data-name="Rectangle 13" width="36.812" height="36.812"
+                            transform="translate(0 0)" fill="#01d7ed" />
+                    </g>
+                </svg>
+            </div>
+        </div>
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h5 class="modal-title">Post Review</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                    <div class="rateIcons">
+                        <svg viewBox="0 0 12.225 11.665">
+                            <g id="Group_3512" data-name="Group 3512" transform="translate(0 -210.74)">
+                                <path class="cls-1" id="Path_13296" data-name="Path 13296"
+                                    d="M11.78,216.96l1.63,3.3,3.646.529-2.638,2.562.622,3.63-3.26-1.714-3.251,1.714.622-3.63-2.638-2.562,3.638-.529Z"
+                                    transform="translate(-5.674 -5.418)" />
+                                <path class="cls-1" id="Path_13297" data-name="Path 13297"
+                                    d="M9.366,222.4a.838.838,0,0,1-.391-.1L6.108,220.8l-2.86,1.508a.84.84,0,0,1-1.22-.886l.547-3.193-2.32-2.255a.841.841,0,0,1,.465-1.434l3.2-.465,1.435-2.905a.874.874,0,0,1,1.506,0L8.3,214.076l3.209.465a.84.84,0,0,1,.465,1.434L9.65,218.23l.547,3.193a.843.843,0,0,1-.334.822A.857.857,0,0,1,9.366,222.4Zm-3.26-3.394a.832.832,0,0,1,.391.1l1.753.922-.334-1.951a.84.84,0,0,1,.243-.744l1.414-1.375-1.957-.284a.84.84,0,0,1-.633-.46l-.876-1.776-.876,1.776a.84.84,0,0,1-.632.46l-1.95.283,1.415,1.374a.842.842,0,0,1,.243.745l-.334,1.948,1.744-.919A.839.839,0,0,1,6.107,219.011Z" />
+                            </g>
+                        </svg>
+                        <svg viewBox="0 0 12.224 11.666">
+                            <g id="Group_3513" data-name="Group 3513" transform="translate(-53.767 -210.741)">
+                                <path class="cls-2" id="Path_13304" data-name="Path 13304"
+                                    d="M428.941,216.96l1.63,3.3,3.646.529-2.638,2.562.622,3.63-3.26-1.714-3.251,1.714.622-3.63-2.638-2.562,3.638-.529Z"
+                                    transform="translate(-369.064 -5.418)" />
+                                <path class="cls-2" id="Path_13305" data-name="Path 13305"
+                                    d="M420.009,222.406a.839.839,0,0,1-.827-.982l.546-3.193-2.321-2.255a.84.84,0,0,1,.465-1.434l3.2-.465,1.434-2.905a.874.874,0,0,1,1.506,0l1.435,2.906,3.209.465a.84.84,0,0,1,.465,1.434l-2.321,2.255.547,3.193a.839.839,0,0,1-1.218.885L423.26,220.8,420.4,222.31A.853.853,0,0,1,420.009,222.406Zm3.251-3.394a.835.835,0,0,1,.391.1l1.754.922-.334-1.951a.84.84,0,0,1,.242-.744l1.415-1.375-1.957-.284a.84.84,0,0,1-.633-.46l-.877-1.776-.876,1.775a.84.84,0,0,1-.633.46l-1.949.283,1.415,1.374a.839.839,0,0,1,.242.744l-.333,1.948,1.742-.919A.842.842,0,0,1,423.26,219.011Z"
+                                    transform="translate(-363.385)" />
+                            </g>
+                        </svg>
+                        <svg viewBox="0 0 12.224 11.666">
+                            <g id="Group_3513" data-name="Group 3513" transform="translate(-53.767 -210.741)">
+                                <path class="cls-2" id="Path_13304" data-name="Path 13304"
+                                    d="M428.941,216.96l1.63,3.3,3.646.529-2.638,2.562.622,3.63-3.26-1.714-3.251,1.714.622-3.63-2.638-2.562,3.638-.529Z"
+                                    transform="translate(-369.064 -5.418)" />
+                                <path class="cls-2" id="Path_13305" data-name="Path 13305"
+                                    d="M420.009,222.406a.839.839,0,0,1-.827-.982l.546-3.193-2.321-2.255a.84.84,0,0,1,.465-1.434l3.2-.465,1.434-2.905a.874.874,0,0,1,1.506,0l1.435,2.906,3.209.465a.84.84,0,0,1,.465,1.434l-2.321,2.255.547,3.193a.839.839,0,0,1-1.218.885L423.26,220.8,420.4,222.31A.853.853,0,0,1,420.009,222.406Zm3.251-3.394a.835.835,0,0,1,.391.1l1.754.922-.334-1.951a.84.84,0,0,1,.242-.744l1.415-1.375-1.957-.284a.84.84,0,0,1-.633-.46l-.877-1.776-.876,1.775a.84.84,0,0,1-.633.46l-1.949.283,1.415,1.374a.839.839,0,0,1,.242.744l-.333,1.948,1.742-.919A.842.842,0,0,1,423.26,219.011Z"
+                                    transform="translate(-363.385)" />
+                            </g>
+                        </svg>
+                        <svg viewBox="0 0 12.224 11.666">
+                            <g id="Group_3513" data-name="Group 3513" transform="translate(-53.767 -210.741)">
+                                <path class="cls-2" id="Path_13304" data-name="Path 13304"
+                                    d="M428.941,216.96l1.63,3.3,3.646.529-2.638,2.562.622,3.63-3.26-1.714-3.251,1.714.622-3.63-2.638-2.562,3.638-.529Z"
+                                    transform="translate(-369.064 -5.418)" />
+                                <path class="cls-2" id="Path_13305" data-name="Path 13305"
+                                    d="M420.009,222.406a.839.839,0,0,1-.827-.982l.546-3.193-2.321-2.255a.84.84,0,0,1,.465-1.434l3.2-.465,1.434-2.905a.874.874,0,0,1,1.506,0l1.435,2.906,3.209.465a.84.84,0,0,1,.465,1.434l-2.321,2.255.547,3.193a.839.839,0,0,1-1.218.885L423.26,220.8,420.4,222.31A.853.853,0,0,1,420.009,222.406Zm3.251-3.394a.835.835,0,0,1,.391.1l1.754.922-.334-1.951a.84.84,0,0,1,.242-.744l1.415-1.375-1.957-.284a.84.84,0,0,1-.633-.46l-.877-1.776-.876,1.775a.84.84,0,0,1-.633.46l-1.949.283,1.415,1.374a.839.839,0,0,1,.242.744l-.333,1.948,1.742-.919A.842.842,0,0,1,423.26,219.011Z"
+                                    transform="translate(-363.385)" />
+                            </g>
+                        </svg>
+                        <svg viewBox="0 0 12.224 11.666">
+                            <g id="Group_3513" data-name="Group 3513" transform="translate(-53.767 -210.741)">
+                                <path class="cls-2" id="Path_13304" data-name="Path 13304"
+                                    d="M428.941,216.96l1.63,3.3,3.646.529-2.638,2.562.622,3.63-3.26-1.714-3.251,1.714.622-3.63-2.638-2.562,3.638-.529Z"
+                                    transform="translate(-369.064 -5.418)" />
+                                <path class="cls-2" id="Path_13305" data-name="Path 13305"
+                                    d="M420.009,222.406a.839.839,0,0,1-.827-.982l.546-3.193-2.321-2.255a.84.84,0,0,1,.465-1.434l3.2-.465,1.434-2.905a.874.874,0,0,1,1.506,0l1.435,2.906,3.209.465a.84.84,0,0,1,.465,1.434l-2.321,2.255.547,3.193a.839.839,0,0,1-1.218.885L423.26,220.8,420.4,222.31A.853.853,0,0,1,420.009,222.406Zm3.251-3.394a.835.835,0,0,1,.391.1l1.754.922-.334-1.951a.84.84,0,0,1,.242-.744l1.415-1.375-1.957-.284a.84.84,0,0,1-.633-.46l-.877-1.776-.876,1.775a.84.84,0,0,1-.633.46l-1.949.283,1.415,1.374a.839.839,0,0,1,.242.744l-.333,1.948,1.742-.919A.842.842,0,0,1,423.26,219.011Z"
+                                    transform="translate(-363.385)" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" placeholder="Share Your Feedback"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="baseBtn" data-bs-dismiss="modal"><span>Cancel</span></button>
+                    <button type="button" class="baseBtn fill"><span>Post</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 </div>

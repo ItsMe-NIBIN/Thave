@@ -236,10 +236,10 @@ svg
 
 .baseBtn
   width: auto
-  min-width: 180px
-  max-width: 180px
-  height: 64px
-  font-size: 16px
+  min-width: 110px
+  max-width: 110px
+  height: 40px
+  font-size: 12px
   font-weight: 600
   color: #010101
   border: 1px solid #707070
@@ -250,6 +250,30 @@ svg
   position: relative
   overflow: hidden
   background-color: transparent
+  @media only screen and (min-width: 576px)
+    min-width: 124px
+    max-width: 124px
+    height: 46px
+    font-size: 13px
+  @media only screen and (min-width: 1200px)
+    min-width: 132px
+    max-width: 132px
+    height: 48px
+    font-size: 14px
+  @media only screen and (min-width: 1441px)
+    min-width: 152px
+    max-width: 152px
+    height: 52px
+    font-size: 15px
+  @media only screen and (min-width: 1551px)
+    min-width: 168px
+    max-width: 168px
+    height: 58px
+  @media only screen and (min-width: 1681px)
+    min-width: 180px
+    max-width: 180px
+    height: 64px
+    font-size: 16px
   &::before
     content: ''
     position: absolute
@@ -271,6 +295,9 @@ svg
     transform-origin: right
   span
     position: relative
+  &:focus-visible
+    box-shadow: none
+    outline: none
   &:hover
     border-color: $basecolor
     span
@@ -300,16 +327,31 @@ svg
         transform: scaleX(1)
 
 .MainHeading
-  font-size: 40px
-  line-height: 49px
+  font-size: 28px
+  line-height: 36px
   font-weight: 500
   color: $basecolor2
+  @media only screen and (min-width: 576px)
+    font-size: 34px
+    line-height: 42px
+  @media only screen and (min-width: 1441px)
+    font-size: 36px
+    line-height: 47px
+  @media only screen and (min-width: 1551px)
+    font-size: 40px
+    line-height: 49px
 
 .SubHeading
-  font-size: 20px
-  line-height: 24px
+  font-size: 16px
+  line-height: 20px
   font-weight: 500
   color: #48BFDB
+  @media only screen and ( min-width: 576px )
+    font-size: 18px
+    line-height: 22px
+  @media only screen and (min-width: 1551px)
+    font-size: 20px
+    line-height: 24px
 
 .HeadingSec
   &.center
@@ -317,13 +359,23 @@ svg
       display: block
       text-align: center
       margin: auto
-      margin-bottom: 14px
+      margin-bottom: 6px
+      @media only screen and ( min-width: 576px )
+        margin-bottom: 10px
+      @media only screen and ( min-width: 1441px )
+        margin-bottom: 14px
     p
-      font-size: 20px
-      line-height: 24px
+      font-size: 15px
+      line-height: 18px
       text-align: center
       margin: auto
       display: block
+      @media only screen and ( min-width: 576px )
+        font-size: 18px
+        line-height: 22px
+      @media only screen and ( min-width: 1551px )
+        font-size: 20px
+        line-height: 24px
 
 .BG-light
   background-color: #F0FDFE

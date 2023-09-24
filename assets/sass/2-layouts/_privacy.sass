@@ -1,0 +1,73 @@
+.privacyPage
+    #privacyPolicySec
+        padding: 70px 0 62px
+        @media only screen and (min-width: 576px)
+            padding: 92px 0 86px
+        @media only screen and (min-width: 1441px)
+            padding: 93px 0 106px
+        h2,h3,h4
+            font-size: 22px
+            line-height: 30px
+            margin-bottom: 15px
+            font-weight: 600
+            color: $black
+            @media only screen and (min-width: 576px)
+                font-size: 26px
+                line-height: 34px
+                margin-bottom: 22px
+            @media only screen and (min-width: 1441px)
+                font-size: 28px
+                line-height: 42px
+                margin-bottom: 29px
+        p   
+            font-size: 15px
+            line-height: 25px
+            margin-bottom: 30px
+            color: $black
+            @media only screen and (min-width: 576px)
+                font-size: 18px
+                line-height: 30px
+                margin-bottom: 45px
+            @media only screen and (min-width: 1441px)
+                font-size: 20px
+                line-height: 32px
+                margin-bottom: 61px
+            &:last-child
+                margin-bottom: 0                
+        ul
+            margin: -12px 0 32px
+            @media only screen and (min-width: 576px)
+                margin: -18px 0 40px
+            @media only screen and (min-width: 1441px)
+                margin: -22px 0 54px
+            li
+                position: relative
+                font-size: 15px
+                line-height: 24px
+                padding-left: 25px
+                color: $black
+                @media only screen and (min-width: 576px)
+                    font-size: 18px
+                    line-height: 28px
+                    padding-left: 32px
+                @media only screen and (min-width: 1441px)
+                    font-size: 20px
+                    line-height: 32px
+                    padding-left: 42px
+                &:not(:last-of-type)
+                    margin-bottom: 10px  
+                    @media only screen and (min-width: 576px)                  
+                        margin-bottom: 14px  
+                &::before
+                    position: absolute
+                    content: ""
+                    width: 8px
+                    height: 8px
+                    top: 8px
+                    left: 0
+                    border-radius: 50%
+                    background-color: $black
+                    @media only screen and (min-width: 576px)
+                        width: 10px
+                        height: 10px
+                        top: 10px

@@ -114,6 +114,7 @@
                                         <div class="col-lg-6">
                                             <div class="form-group">
                                                 <input type="text" class="form-control" placeholder="First Name">
+                                                <div class="help-block">Invalid Input</div>
                                             </div>
                                         </div>
                                         <div class="col-lg-6">

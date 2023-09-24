@@ -1,143 +1,361 @@
 .servicePage
     #servicelistingSec
-        padding: 196px 0 160px
+        padding: 72px 0 76px
+        @media only screen and (min-width: 576px)
+            padding: 104px 0 98px
+        @media only screen and (min-width: 1441px)
+            padding: 144px 0 130px
+        @media only screen and (min-width: 1551px)
+            padding: 196px 0 160px
         &.spacing
-            padding: 184px 0 114px
+            padding: 72px 0 76px
+            @media only screen and (min-width: 576px)
+                padding: 104px 0 98px
+            @media only screen and (min-width: 1441px)
+                padding: 144px 0 130px
+            @media only screen and (min-width: 1551px)
+                padding: 184px 0 114px
         .serviceLists
-            margin: -19px
-            @include display    
+            margin: -10px
+            @include display
+            @media only screen and (min-width: 576px)
+                margin: -12px
+            @media only screen and (min-width: 1441px)    
+                margin: -16px
+            @media only screen and (min-width: 1551px)
+                margin: -19px
             &>*
-                width: calc( 100% / 4 )
-                padding: 19px
+                width: 100%
+                padding: 10px
+                @media only screen and (min-width: 576px)
+                    width: calc( 100% / 2 )
+                    padding: 12px
+                @media only screen and (min-width: 992px)
+                    width: calc( 100% / 3 )
+                @media only screen and (min-width: 1200px)
+                    width: calc( 100% / 4 )
+                @media only screen and (min-width: 1441px)
+                    padding: 16px
+                @media only screen and (min-width: 1551px)
+                    padding: 19px
 
     #rateCardSec
-        padding: 139px 0 146px
+        padding: 58px 0 54px
+        @media only screen and (min-width: 576px)
+            padding: 78px 0 84px
+        @media only screen and (min-width: 1200px)
+            padding: 94px 0 100px
+        @media only screen and (min-width: 1441px)
+            padding: 139px 0 146px
         .HeadingSec
-            margin-bottom: 39px
+            margin-bottom: 15px
+            @media only screen and (min-width: 576px)
+                margin-bottom: 25px
+            @media only screen and (min-width: 1200px)
+                margin-bottom: 30px
+            @media only screen and (min-width: 1441px)
+                margin-bottom: 39px
         .dFlxSec
             display: flex
             justify-content: space-between
-            gap: 55px
+            gap: 15px
+            @media only screen and (min-width: 576px)
+                gap: 25px
+            @media only screen and (min-width: 992px)
+                gap: 34px
+            @media only screen and (min-width: 1200px)
+                gap: 46px
+            @media only screen and (min-width: 1441px)
+                gap: 55px
+            @media only screen and (max-width: 991px)
+                flex-direction: column
             .specializeBox
+                width: 100%
                 border-radius: 18px
-                width: calc( 100% - 667px )
+                padding: 24px 20px
                 background-color: $basecolor
-                padding: 50px 72px 58px
+                @media only screen and (min-width: 576px)
+                    padding: 34px 38px 34px
+                @media only screen and (min-width: 992px)
+                    width: calc( 100% - 410px )
+                @media only screen and (min-width: 1200px)
+                    width: calc( 100% - 540px )
+                    padding: 40px 45px 40px
+                @media only screen and (min-width: 1441px)
+                    width: calc( 100% - 667px )
+                    padding: 50px 72px 58px
                 .topSec
-                    margin-bottom: 27px
-                    padding-bottom: 29px
+                    margin-bottom: 15px
+                    padding-bottom: 12px
                     border-bottom: 1px solid $white
+                    @media only screen and (min-width: 576px)
+                        margin-bottom: 20px
+                        padding-bottom: 18px
+                    @media only screen and (min-width: 1441px)
+                        margin-bottom: 27px
+                        padding-bottom: 29px
                     ul
                         justify-content: space-between
                         @include display    
                         li
-                            font-size: 25px
-                            line-height: 35px
+                            font-size: 18px
+                            line-height: 24px
                             color: $white
                             font-weight: 700
+                            @media only screen and (min-width: 576px)
+                                font-size: 22px
+                                line-height: 32px
+                            @media only screen and (min-width: 1441px)
+                                font-size: 25px
+                                line-height: 35px
                 .btmSec
                     ul
                         &>*
                             &:not(:last-of-type)
-                                margin-bottom: 18px                                
+                                margin-bottom: 12px 
+                                @media only screen and (min-width: 576px)
+                                    margin-bottom: 15px 
+                                @media only screen and (min-width: 1441px)                               
+                                    margin-bottom: 18px 
                         li
                             justify-content: space-between
                             @include display    
                             p
-                                font-size: 20px
-                                line-height: 35px
+                                font-size: 15px
+                                line-height: 22px
                                 color: $white
+                                @media only screen and (min-width: 576px)
+                                    font-size: 18px
+                                    line-height: 26px
+                                @media only screen and (min-width: 1441px)
+                                    font-size: 20px
+                                    line-height: 35px
             .imageBox
-                width: 667px
+                width: 100%
                 border-radius: 18px
                 overflow: hidden
+                @media only screen and (min-width: 992px)
+                    width: 410px
+                @media only screen and (min-width: 1200px)
+                    width: 540px
+                @media only screen and (min-width: 1441px)
+                    width: 667px
                 img
                     @include imgFit
 
     #benefitSec
-        padding: 137px 0 142px
+        padding: 62px 0 70px
+        @media only screen and (min-width: 576px)
+            padding: 76px 0 88px
+        @media only screen and (min-width: 1441px)
+            padding: 102px 0 108px
+        @media only screen and (min-width: 1551px)
+            padding: 137px 0 142px
+        .row    
+            align-items: center
+            @media only screen and (max-width: 1199px)
+                flex-direction: column-reverse
         .imgbx
             width: 100%
             height: 100%
             border-radius: 18px
             overflow: hidden
-            max-width: 658px
+            max-width: 510px
+            height: 370px
+            @media only screen and (min-width: 576px)
+                height: 530px
+            @media only screen and (min-width: 1441px)
+                max-width: 575px
+                height: 585px
+            @media only screen and (min-width: 1551px)
+                max-width: 658px
+                height: 645px
+            @media only screen and (max-width: 1199px)
+                margin-top: 30px
             img
                 @include imgFit
         .cntbx
             .MainHeading
-                margin-bottom: 26px
+                margin-bottom: 12px
+                @media only screen and (min-width: 576px)
+                    margin-bottom: 18px
+                @media only screen and (min-width: 1551px)
+                    margin-bottom: 26px
             p
-                font-size: 20px
-                line-height: 30px
-                margin-bottom: 18px
+                font-size: 15px
+                line-height: 24px
+                margin-bottom: 15px
                 color: #50596E
+                @media only screen and (min-width: 576px)
+                    font-size: 18px
+                    line-height: 28px
+                    margin-bottom: 16px
+                @media only screen and (min-width: 1551px)
+                    font-size: 20px
+                    line-height: 30px
+                    margin-bottom: 18px
             ul
                 &>*
                     &:not(:last-of-type)
-                        margin-bottom: 18px                        
+                        margin-bottom: 10px  
+                        @media only screen and (min-width: 576px)
+                            margin-bottom: 12px  
+                        @media only screen and (min-width: 1551px)                      
+                            margin-bottom: 18px  
                 li
-                    font-size: 20px
-                    line-height: 30px
-                    padding-left: 25px
+                    font-size: 15px
+                    line-height: 24px
+                    padding-left: 20px
                     color: #50596E
                     position: relative
+                    @media only screen and (min-width: 576px)
+                        font-size: 18px
+                        line-height: 28px
+                        padding-left: 25px
+                    @media only screen and (min-width: 1551px)
+                        font-size: 20px
+                        line-height: 30px
                     &::before
                         position: absolute
                         content: ""
-                        width: 10px
-                        height: 10px
-                        top: 10px
+                        width: 6px
+                        height: 6px
+                        top: 8px
                         left: 0
                         background-color: #004C90
                         border-radius: 50%
+                        @media only screen and (min-width: 576px)
+                            width: 8px
+                            height: 8px
+                            top: 10px
+                        @media only screen and (min-width: 1551px)
+                            width: 10px
+                            height: 10px
 
     #serviceDetailSec
-        padding: 148px 0 50px
+        padding: 68px 0 28px
+        @media only screen and (min-width: 576px)
+            padding: 98px 0 35px
+        @media only screen and (min-width: 1441px)
+            padding: 125px 0 35px
+        @media only screen and (min-width: 1551px)
+            padding: 148px 0 50px
         .row    
             align-items: center
         .imgSec
             width: 100%
-            height: 519px
-            border-radius: 18px
             max-width: 710px
+            height: 390px
+            border-radius: 18px
             overflow: hidden
+            @media only screen and (min-width: 576px)
+                height: 480px
+            @media only screen and (min-width: 1441px)
+                height: 519px
             img
                 @include imgFit
         .cntSec
-            padding-left: 42px
+            @media only screen and (min-width: 992px)
+                padding-left: 28px
+            @media only screen and (min-width: 1441px)
+                padding-left: 36px
+            @media only screen and (min-width: 1551px)
+                padding-left: 42px
+            @media only screen and (max-width: 991px)
+                margin-bottom: 30px
             .MainHeading
                 color: $black
-                margin-bottom: 22px
+                margin-bottom: 6px
+                @media only screen and (min-width: 576px)
+                    margin-bottom: 10px
+                @media only screen and (min-width: 1441px)
+                    margin-bottom: 14px
+                @media only screen and (min-width: 1551px)
+                    margin-bottom: 22px
             .subHeading
-                font-size: 25px
-                line-height: 35px
-                margin-bottom: 35px
+                font-size: 18px
+                line-height: 25px
+                margin-bottom: 12px
                 color: $basecolor3
+                @media only screen and (min-width: 576px)
+                    font-size: 20px
+                    line-height: 28px
+                    margin-bottom: 15px
+                @media only screen and (min-width: 1441px)
+                    font-size: 22px
+                    line-height: 30px
+                    margin-bottom: 20px
+                @media only screen and (min-width: 1551px)
+                    font-size: 25px
+                    line-height: 35px
+                    margin-bottom: 35px
             p
-                font-size: 20px
-                line-height: 35px
+                font-size: 15px
+                line-height: 26px
+                @media only screen and (min-width: 576px)
+                    font-size: 17px
+                    line-height: 29px
+                @media only screen and (min-width: 1441px)
+                    font-size: 18px
+                    line-height: 30px
+                @media only screen and (min-width: 1551px)
+                    font-size: 20px
+                    line-height: 35px
         .cntSecFull
-            margin-top: 80px
+            margin-top: 35px
+            @media only screen and (min-width: 576px)
+                margin-top: 58px
+            @media only screen and (min-width: 1441px)
+                margin-top: 62px
+            @media only screen and (min-width: 1551px)
+                margin-top: 80px
             .MainHead
-                font-size: 28px
-                line-height: 42px
-                margin-bottom: 29px
+                font-size: 22px
+                line-height: 32px
+                margin-bottom: 12px
                 font-weight: 600
                 color: $black
+                @media only screen and (min-width: 576px)
+                    font-size: 26px
+                    line-height: 36px
+                    margin-bottom: 18px
+                @media only screen and (min-width: 1551px)
+                    font-size: 28px
+                    line-height: 42px
+                    margin-bottom: 29px
             p   
-                font-size: 20px
-                line-height: 32px
-                margin-bottom: 42px
+                font-size: 15px
+                line-height: 26px
+                margin-bottom: 12px
+                @media only screen and (min-width: 576px)
+                    font-size: 17px
+                    line-height: 29px
+                    margin-bottom: 15px
+                @media only screen and (min-width: 1441px)
+                    font-size: 18px
+                    line-height: 30px
+                    margin-bottom: 22px
+                @media only screen and (min-width: 1551px)
+                    font-size: 20px
+                    line-height: 32px
+                    margin-bottom: 42px
                 &:last-of-type
                     margin-bottom: 0
 
 
 
     #relatedServiceSec
-        padding: 50px 0 112px
+        padding: 28px 0 56px
+        @media only screen and (min-width: 576px)
+            padding: 35px 0 80px
+        @media only screen and (min-width: 1551px)
+            padding: 50px 0 112px
         .MainHeading
-            margin-bottom: 40px
+            margin-bottom: 22px
+            @media only screen and (min-width: 576px)
+                margin-bottom: 30px
+            @media only screen and (min-width: 1551px)
+                margin-bottom: 40px
         .relatedServSlide
             .owl-stage-outer
                 overflow: visible

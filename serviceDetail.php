@@ -84,13 +84,13 @@
         <div class="container">
             <div class="detailsContents">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 order-lg-1 order-2">
                         <div class="imgSec">
                             <img src="assets/images/service-detail.png" alt="Service Details" width="711" height="519"
                                 class="lazy" loading="lazy" data-src="assets/images/service-detail.png">
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 order-lg-2 order-1">
                         <div class="cntSec">
                             <div class="MainHeading">Lorem ipsum dolor sit amet, conse</div>
                             <div class="subHeading">Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -106,7 +106,7 @@
                                 Reges: constructio interrdete. Quem si tendueris, non modo meum</p>
                         </div>
                     </div>
-                    <div class="col-lg-12">
+                    <div class="col-lg-12 order-lg-3 order-3">
                         <div class="cntSecFull">
                             <div class="MainHead">Lorem Ipsum Is Simply Dummy Text Of The Printing Lorem Ipsum Is Simply
                                 Dummy Text </div>
@@ -249,22 +249,30 @@
             margin: 10,
             responsive: {
                 0: {
-                    items: 2,
+                    items: 1.2,
+                    margin: 14,
                 },
                 468: {
-                    items: 2,
+                    items: 1.4,
+                    margin: 16,
                 },
                 576: {
-                    items: 3,
+                    items: 2,
+                    margin: 18,
                 },
                 768: {
                     items: 3,
                     margin: 20,
                 },
                 992: {
-                    items: 4,
+                    items: 3,
+                    margin: 24,
                 },
                 1200: {
+                    items: 4,
+                    margin: 28,
+                },
+                1441: {
                     items: 4,
                     margin: 38,
                 },

@@ -86,14 +86,14 @@
             <div class="serviceLists">
                 <div class="itm">
                     <div class="servBox">
-                        <a href="serviceDetail.php" class="imgSec">
+                        <a href="serviceListing.php" class="imgSec">
                             <img src="assets/images/serv1.png" alt="Service" width="343" height="205" class="lazy"
                                 loading="lazy" data-src="assets/images/serv1.png">
                         </a>
                         <div class="cntSec">
-                            <a href="serviceDetail.php" class="title">Long Term Nursing
+                            <a href="serviceListing.php" class="title">Long Term Nursing
                                 Services</a>
-                            <a href="serviceDetail.php" class="subTitle">Lorem ipsum dolor sit amet, consetetur
+                            <a href="serviceListing.php" class="subTitle">Lorem ipsum dolor sit amet, consetetur
                                 sadipscing </a>
                             <button class="baseBtn" data-bs-toggle="modal" data-bs-target="#quoteModal"><span>Book
                                     Now</span></button>
@@ -102,14 +102,14 @@
                 </div>
                 <div class="itm">
                     <div class="servBox">
-                        <a href="serviceDetail.php" class="imgSec">
+                        <a href="serviceListing.php" class="imgSec">
                             <img src="assets/images/serv2.png" alt="Service" width="343" height="205" class="lazy"
                                 loading="lazy" data-src="assets/images/serv2.png">
                         </a>
                         <div class="cntSec">
-                            <a href="serviceDetail.php" class="title">Short term Nursing
+                            <a href="serviceListing.php" class="title">Short term Nursing
                                 Services</a>
-                            <a href="serviceDetail.php" class="subTitle">Lorem ipsum dolor sit amet, consetetur
+                            <a href="serviceListing.php" class="subTitle">Lorem ipsum dolor sit amet, consetetur
                                 sadipscing </a>
                             <button class="baseBtn" data-bs-toggle="modal" data-bs-target="#quoteModal"><span>Book
                                     Now</span></button>
@@ -118,13 +118,13 @@
                 </div>
                 <div class="itm">
                     <div class="servBox">
-                        <a href="serviceDetail.php" class="imgSec">
+                        <a href="serviceListing.php" class="imgSec">
                             <img src="assets/images/serv3.png" alt="Service" width="343" height="205" class="lazy"
                                 loading="lazy" data-src="assets/images/serv3.png">
                         </a>
                         <div class="cntSec">
-                            <a href="serviceDetail.php" class="title">Nursing Attenders</a>
-                            <a href="serviceDetail.php" class="subTitle">Lorem ipsum dolor sit amet, consetetur
+                            <a href="serviceListing.php" class="title">Nursing Attenders</a>
+                            <a href="serviceListing.php" class="subTitle">Lorem ipsum dolor sit amet, consetetur
                                 sadipscing </a>
                             <button class="baseBtn" data-bs-toggle="modal" data-bs-target="#quoteModal"><span>Book
                                     Now</span></button>
@@ -273,13 +273,13 @@
     <section id="benefitSec" class="BG-light">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-xl-6">
                     <div class="imgbx">
                         <img src="assets/images/benefit.png" alt="Benefits" width="658" height="645" class="lazy"
                             loading="lazy" data-src="assets/images/benefit.png">
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-xl-6">
                     <div class="cntbx">
                         <div class="MainHeading">What Are The Benefits Of
                             Home Nursing Care?</div>

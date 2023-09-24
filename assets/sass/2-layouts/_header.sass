@@ -22,7 +22,11 @@
         background: transparent
         position: relative
         z-index: 1
-        padding: 22px 0
+        padding: 10px 0
+        @media only screen and (min-width: 1200px)
+            padding: 14px 0
+        @media only screen and (min-width: 1441px)
+            padding: 22px 0
         .FlexRow
             display: flex
             align-items: center
@@ -32,18 +36,23 @@
             @media only screen and (min-width: 992px)
                 padding-right: 0
         .LogoSec
-            width: 85px
+            width: 110px
             display: flex
             align-items: center
             justify-content: center
             transition: .3s all
+            @media only screen and (min-width: 576px)
+                width: 132px
             @media only screen and (min-width: 992px)
-                width: 90px
-                display: flex
-                align-items: center
-                justify-content: center
+                width: 138px
             @media only screen and (min-width: 1200px)
-                width: 280px
+                width: 168px
+            @media only screen and (min-width: 1441px)
+                width: 185px
+            @media only screen and (min-width: 1551px)
+                width: 210px
+            @media only screen and (min-width: 1681px)
+                width: 260px
             img
                 width: 100%
                 height: 100%
@@ -56,9 +65,16 @@
             display: flex
             align-items: center
             justify-content: end
-            width: calc( 100% - 180px )
+            @media only screen and (min-width: 992px)
+                width: calc( 100% - 138px )
             @media only screen and (min-width: 1200px)
-                width: calc( 100% - 280px )
+                width: calc( 100% - 168px )
+            @media only screen and (min-width: 1441px)
+                width: calc( 100% - 185px )
+            @media only screen and (min-width: 1551px)
+                width: calc( 100% - 210px )
+            @media only screen and (min-width: 1681px)
+                width: calc( 100% - 260px )
 
         #HeaderPOP
             min-height: 100vh
@@ -170,17 +186,19 @@
                         display: none
             .mobLogo
                 position: relative
-                max-width: 90px
-                margin-top: 0px
-                margin-left: 20px
+                max-width: 110px
+                margin-top: 15px
+                margin-left: 15px
                 @media only screen and (min-width: 576px)
-                    max-width: 114px
-                    margin-top: 0px
+                    max-width: 138px
+                    margin-top: 20px
                     margin-left: 20px
                 @media only screen and (min-width: 992px)
                     display: none
+                img
+                    @include imgFit
             #AccordMenu
-                padding-top: 15px
+                padding-top: 35px
                 @media only screen and (min-width: 992px)
                     padding: 0
                     display: flex
@@ -199,8 +217,8 @@
                                 transform: translate(0, 0)
                     .accordion-header
                         a, button
-                            font-size: 14px
-                            color: #fff
+                            font-size: 15px
+                            color: #000
                             border: none
                             background: none
                             outline: none
@@ -215,24 +233,22 @@
                             @media only screen and (min-width: 576px)
                                 padding: 10px 20px
                             @media only screen and (min-width: 992px)
-                                padding: 10px 5px
-                                font-size: 12px
+                                padding: 10px 7px
+                                font-size: 14px
+                                color: #fff
                             @media only screen and (min-width: 1200px)
+                                font-size: 16px
+                                padding: 15px 10px
+                            @media only screen and (min-width: 1441px)
+                                font-size: 17px
+                                padding: 15px 12px
+                            @media only screen and (min-width: 1551px)
                                 font-size: 18px
-                                padding: 15px 17px
+                                padding: 15px 14px
                             &::after
                                 display: none
                             &.active, &:hover
                                 color: $basecolor !important
-                        .quickBtn
-                            font-size: 18px
-                            color: $white
-                            border: 2px solid $white
-                            min-width: 178px
-                            min-height: 41px
-                            padding: 0 !important
-                            height: fit-content
-                            @include flex
                         &.hasAccord
                             display: flex
                             align-items: center
@@ -278,9 +294,11 @@
                             height: fit-content !important
                             height: -moz-fit-content !important
                             top: 100%
-                            min-width: 205px
+                            min-width: 160px
                             border-radius: 0
                         @media only screen and ( min-width: 1441px )
+                            min-width: 205px
+                        @media only screen and ( min-width: 1551px )
                             min-width: 227px
                         // &::after
                         //     position: absolute
@@ -295,7 +313,7 @@
                         //     @media only screen and ( max-width: 991px )
                         //         display: none
                         .accordion-body
-                            padding: 0 32px
+                            padding: 0 20px
                             text-align: start
                             @media only screen and ( min-width: 992px )
                                 text-align: start
@@ -306,10 +324,16 @@
                                         color: #000
                                         display: block
                                         padding: 0
-                                        font-size: 16px
+                                        font-size: 13px
+                                        padding: 7px 12px
                                         position: relative
-                                        padding: 12px 24px
                                         transition: none
+                                        @media only screen and (min-width: 992px)
+                                            font-size: 13px
+                                            padding: 9px 16px
+                                        @media only screen and (min-width: 1551px)
+                                            font-size: 16px
+                                            padding: 12px 24px
                                         &:hover
                                             background-color: $basecolor
                                             color: $white
@@ -385,28 +409,84 @@
                     left: 0px
                     transform: translateX(0px)
         .contactSec
-            gap: 31px
+            gap: 10px
+            margin-left: 8px
             display: flex
-            margin-left: 33px
+            @media only screen and (min-width: 1200px)
+                gap: 12px
+                margin-left: 12px
+            @media only screen and (min-width: 1441px)
+                gap: 22px
+            @media only screen and (min-width: 1551px)
+                margin-left: 15px
+            @media only screen and (min-width: 1681px)
+                gap: 25px
+                margin-left: 18px
             .Dflx
                 align-items: center
                 @include display
+                @media only screen and (max-width: 991px)
+                    display: none
                 .lftSec
-                    width: 54px
-                    height: 54px
+                    width: 32px
+                    height: 32px
                     border-radius: 50%
                     background-color: #ADC71F
                     display: flex
                     justify-content: center
                     align-items: center
+                    @media only screen and (min-width: 1200px)
+                        width: 36px
+                        height: 36px
+                    @media only screen and (min-width: 1441px)
+                        width: 40px
+                        height: 40px
+                    @media only screen and (min-width: 1551px)
+                        width: 46px
+                        height: 46px
+                    @media only screen and (min-width: 1681px)
+                        width: 54px
+                        height: 54px
+                    svg
+                        max-width: 16px
+                        @media only screen and (min-width: 1200px)
+                            max-width: 18px
+                        @media only screen and (min-width: 1441px)
+                            max-width: 20px
+                        @media only screen and (min-width: 1681px)
+                            max-width: 24px
                 .ritSec
-                    width: calc( 100% - 54px )
-                    padding-left: 21px
+                    width: calc( 100% - 32px )
+                    padding-left: 6px
+                    @media only screen and (min-width: 1200px)
+                        width: calc( 100% - 36px )
+                        padding-left: 8px
+                    @media only screen and (min-width: 1441px)
+                        width: calc( 100% - 40px )
+                        padding-left: 10px
+                    @media only screen and (min-width: 1551px)
+                        width: calc( 100% - 46px )
+                        padding-left: 15px
+                    @media only screen and (min-width: 1681px)
+                        width: calc( 100% - 54px )
+                        padding-left: 21px
                     a
                         display: flex
-                        font-size: 18px
-                        line-height: 21px
+                        font-size: 13px
+                        line-height: 16px
                         color: #fff
+                        @media only screen and (min-width: 1200px)
+                            font-size: 14px
+                            line-height: 17px
+                        @media only screen and (min-width: 1441px)
+                            font-size: 15px
+                            line-height: 19px
+                        @media only screen and (min-width: 1551px)
+                            font-size: 17px
+                            line-height: 21px
+                        @media only screen and (min-width: 1681px)
+                            font-size: 18px
+                            line-height: 21px
                         &.bold
                             font-weight: 600
                             color: $basecolor
@@ -504,14 +584,37 @@
         background: $white
         @media only screen and ( min-width: 768px )
             padding: 0
+        &::before
+            display: none
         .HeaderMenu
-            padding: 15px 0
+            padding: 10px 0
+            @media only screen and (min-width: 1441px)
+                padding: 15px 0
             .LogoSec
-                width: 190px
+                @media only screen and (min-width: 1441px)
+                    width: 190px
+                img
+                    &.logoNormal
+                        display: block
+                    &.logoWhite
+                        display: none
+            .contactSec 
+                .Dflx 
+                    .ritSec 
+                        a
+                            color: #4a4a4a
+                            &:hover
+                                color: $basecolor
+                            &.bold  
+                                color: $basecolor
+                                &:hover
+                                    color: $basecolor2
             .menuBx
-                width: calc( 100% - 190px )
+                @media only screen and (min-width: 1441px)
+                    width: calc( 100% - 190px )
             #HeaderPOP
                 #AccordMenu
                     .accordion-item
                         .accordion-header
                             a, button
+                                color: $black

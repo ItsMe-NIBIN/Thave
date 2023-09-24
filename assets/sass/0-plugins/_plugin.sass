@@ -16,16 +16,26 @@
     align-items: center
     text-align: left
     background-position: right 5px center !important
-    height: 50px !important
+    height: 36px !important
     @media only screen and (min-width: 468px)
         background-size: 11px
         background-position: right 3px center !important
+    @media only screen and (min-width: 1200px)
+        height: 42px !important
+    @media only screen and (min-width: 1441px)
+        height: 50px !important
     .select2-selection__rendered
         width: 100%
         padding: 0 !important
         color: rgba(0, 0, 0, 1)
         font-weight: 500
-        font-size: 16px
+        font-size: 13px
+        @media only screen and (min-width: 576px)
+            font-size: 14px
+        @media only screen and (min-width: 1200px)
+            font-size: 15px
+        @media only screen and (min-width: 1441px)
+            font-size: 16px
 .select2-dropdown
     border: 0 !important 
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16)
@@ -38,8 +48,14 @@
 .select2-results__option
     padding: 10px 10px !important
     color: rgba(0, 0, 0, 1) !important
-    font-size: 16px
+    font-size: 13px
     font-weight: 500
+    @media only screen and (min-width: 576px)
+        font-size: 14px
+    @media only screen and (min-width: 1200px)
+        font-size: 15px
+    @media only screen and (min-width: 1441px)
+        font-size: 16px
     &:hover
         background-color: $basecolor
         color: $white !important

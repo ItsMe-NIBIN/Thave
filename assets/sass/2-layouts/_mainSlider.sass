@@ -1,6 +1,9 @@
 #MainSliderSec
-    height: 100vh
     position: relative
+    @media only screen and (min-width: 992px)
+        height: 100vh
+    @media only screen and (max-width: 991px)
+        padding: 78px 0 40px
     &::before
         position: absolute
         content: ""
@@ -17,18 +20,41 @@
         flex-wrap: wrap
         align-content: center
         height: 100%
+        @media only screen and (max-width: 991px)
+            justify-content: center
         .row
             width: 100%
+            @media only screen and (max-width: 991px)
+                flex-direction: column-reverse
     .sliderBox
         position: relative
-        margin-left: 106px
-        width: 579px
-        height: 579px
+        width: 312px
+        height: 312px
         border-radius: 50%
         position: relative
         transition: 0.4s all
         overflow: hidden
         background: transparent linear-gradient(180deg, #5BE0FF 0%, #04AED5 100%) 0% 0%
+        @media only screen and (min-width: 576px)
+            width: 420px
+            height: 420px
+        @media only screen and (min-width: 992px)
+            margin-left: 34px
+        @media only screen and (min-width: 1200px)
+            margin-left: 86px
+            width: 464px
+            height: 464px
+        @media only screen and (min-width: 1441px)
+            margin-left: 84px
+            width: 532px
+            height: 532px
+        @media only screen and (min-width: 1551px)
+            margin-left: 106px
+            width: 579px
+            height: 579px
+        @media only screen and (max-width: 991px)
+            margin: auto
+            margin-bottom: 25px
         &::after
             position: absolute
             content: ""
@@ -50,10 +76,22 @@
             position: absolute
             top: 0
             left: 0
-            width: 519px
-            height: 519px
+            width: 292px
+            height: 292px
             border-radius: 50%
             overflow: hidden
+            @media only screen and (min-width: 576px)
+                width: 394px
+                height: 394px
+            @media only screen and (min-width: 1200px)
+                width: 430px
+                height: 430px
+            @media only screen and (min-width: 1441px)
+                width: 490px
+                height: 490px
+            @media only screen and (min-width: 1551px)
+                width: 519px
+                height: 519px
             .carousel
                 width: 100%
                 height: 100%
@@ -65,6 +103,45 @@
                         height: 100%
                         img
                             @include imgFit
+
+    .carousel-indicators
+        position: absolute
+        top: 0
+        left: 10px
+        width: 8px
+        margin: 0 !important
+        height: auto
+        display: flex
+        flex-direction: column
+        align-items: center
+        z-index: 1
+        @media only screen and (min-width: 576px)
+            left: 8px
+        @media only screen and (min-width: 1441px)
+            left: 30px
+            width: 8px
+        @media only screen and (min-width: 1681px)
+            left: 93px
+        @media only screen and (max-width: 575px)
+            padding-top: 178px
+            justify-content: start
+        button
+            width: 6px
+            height: 6px
+            margin: 10px 0
+            background: #DDE7EF
+            border: 0
+            border-radius: 50%
+            @media only screen and (min-width: 576px)
+                margin: 14px 0
+            @media only screen and (min-width: 1441px)
+                width: 8px
+                height: 8px
+                margin: 20px 0
+            &.active
+                background: $basecolor
+                border: 0
+
 
     .FloatIcons
         position: relative
@@ -151,7 +228,9 @@
                         fill: #48bfdb
                 &.floatIconPlusGreen
                     bottom: 22%
-                    right: -9%
+                    right: 0%
+                    @media only screen and (min-width: 1681px)
+                        right: -9%
                     svg
                         fill: #ADC71F
 
@@ -175,23 +254,3 @@
                         stroke: #adc71f
                         fill: none
                         stroke-width: 2px
-    .carousel-indicators
-        position: absolute
-        top: 0
-        left: 93px
-        margin: 0 !important
-        width: 8px
-        height: auto
-        display: flex
-        flex-direction: column
-        align-items: center
-        button
-            width: 8px
-            height: 8px
-            background: #DDE7EF
-            border: 0
-            margin: 20px 0
-            border-radius: 50%
-            &.active
-                background: $basecolor
-                border: 0
