@@ -22,27 +22,140 @@
                     width: calc( 100% / 3 )
 
     #blogDetailSec
-        padding: 125px 0 128px
-        .cntSec
-            padding-right: 96px
+        padding: 66px 0 60px
+        @media only screen and ( min-width: 576px )
+            padding: 98px 0 78px
+        @media only screen and ( min-width: 1441px )
+            padding: 112px 0 98px
+        @media only screen and ( min-width: 1551px )
+            padding: 125px 0 128px
+        .contentSec
+            @media only screen and ( min-width: 1200px )
+                padding-right: 45px
+            @media only screen and ( min-width: 1441px )
+                padding-right: 66px
+            @media only screen and ( min-width: 1551px )
+                padding-right: 96px
             .blogBx
                 .imgSec
-                    height: 508px
+                    height: 335px
+                    @media only screen and ( min-width: 576px )
+                        height: 410px
+                    @media only screen and ( min-width: 1441px )
+                        height: 445px
+                    @media only screen and ( min-width: 1551px )
+                        height: 508px
                 &:hover
                     img
                         transform: none
+            .blogContents
+                margin-top: 25px
+                @media only screen and ( min-width: 576px )
+                    margin-top: 30px
+                @media only screen and ( min-width: 1441px )
+                    margin-top: 35px
+                @media only screen and ( min-width: 1551px )
+                    margin-top: 40px
+                .blogTitle
+                    font-size: 22px
+                    line-height: 30px
+                    margin-bottom: 5px
+                    font-weight: 600
+                    color: $black
+                    @media only screen and ( min-width: 576px )
+                        font-size: 24px
+                        line-height: 35px
+                    @media only screen and ( min-width: 1441px )
+                        font-size: 26px
+                        line-height: 40px
+                    @media only screen and ( min-width: 1551px )
+                        font-size: 28px
+                        line-height: 42px
+                        margin-bottom: 9px
+                .date
+                    display: flex
+                    align-items: center
+                    gap: 10px
+                    margin-bottom: 15px
+                    @media only screen and ( min-width: 576px )
+                        margin-bottom: 20px
+                    @media only screen and ( min-width: 1441px )
+                        margin-bottom: 26px
+                    @media only screen and ( min-width: 576px )
+                        gap: 14px
+                    @media only screen and ( min-width: 1441px )
+                        gap: 18px
+                    @media only screen and ( min-width: 1551px )
+                        margin-bottom: 40px
+                    svg
+                        width: 14px
+                        @media only screen and ( min-width: 576px )
+                            width: 16px
+                        @media only screen and ( min-width: 1441px )
+                            width: 18px
+                    span
+                        font-size: 14px
+                        line-height: 26px
+                        color: rgba(0, 0, 0, 0.6)
+                        @media only screen and ( min-width: 576px )
+                            font-size: 15px
+                            line-height: 28px
+                        @media only screen and ( min-width: 1441px )
+                            font-size: 16px
+                            line-height: 30px
+                        @media only screen and ( min-width: 1551px )
+                            font-size: 18px
+                            line-height: 32px
+                p   
+                    font-size: 15px
+                    line-height: 25px
+                    margin-bottom: 14px
+                    color: $black
+                    @media only screen and ( min-width: 576px )
+                        font-size: 17px
+                        line-height: 28px
+                        margin-bottom: 18px
+                    @media only screen and ( min-width: 1441px )
+                        font-size: 18px
+                        line-height: 30px
+                        margin-bottom: 22px
+                    @media only screen and ( min-width: 1551px )
+                        font-size: 20px
+                        line-height: 32px
+                        margin-bottom: 40px
+                    &:last-child
+                        margin-bottom: 0
 
 
         .recentBlogs
-            .title
-                font-size: 28px
-                line-height: 42px
-                margin-bottom: 35px
+            @media only screen and ( max-width: 1199px )
+                margin-top: 30px
+            .recentTitle
+                font-size: 22px
+                line-height: 24px
+                margin-bottom: 18px
                 font-weight: 600
                 color: $black
+                @media only screen and ( min-width: 576px )
+                    font-size: 26px
+                    line-height: 28px
+                    margin-bottom: 25px
+                @media only screen and ( min-width: 1441px )
+                    font-size: 28px
+                    line-height: 42px
+                    margin-bottom: 35px
             .recentList
-                display: flex
-                flex-wrap: wrap
-                gap: 45px
-                &>*
-                    width: 100%
+                display: grid
+                grid-template-columns: 1fr
+                gap: 26px
+                @media only screen and ( min-width: 768px )
+                    grid-template-columns: 1fr 1fr
+                    gap: 38px
+                @media only screen and ( min-width: 1200px )
+                    grid-template-columns: 1fr
+                @media only screen and ( min-width: 1441px )
+                    gap: 45px
+                // &>*
+                //     width: calc( 100% / 2 )
+                //     @media only screen and ( min-width: 1200px )
+                //         width: 100%

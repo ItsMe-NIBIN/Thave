@@ -1,0 +1,94 @@
+.faqPage
+    #faqSec
+        padding: 44px 0 56px
+        @media only screen and (min-width: 576px)
+            padding: 72px 0 88px
+        @media only screen and (min-width: 1441px)
+            padding: 98px 0 124px
+        .faqCnts
+            margin: auto
+            max-width: 1380px
+            margin-bottom: 40px
+            @media only screen and (min-width: 576px)
+                margin-bottom: 75px
+            @media only screen and (min-width: 1441px)
+                margin-bottom: 98px
+            @media only screen and (min-width: 1551px)
+                margin-bottom: 118px
+            .accordion
+                .accordion-item
+                    background-color: transparent
+                    border: 0
+                    border-bottom: 1px solid #DDDDDD
+                    .accordion-header
+                        .accordion-button
+                            font-size: 17px
+                            padding: 20px 25px 20px 0
+                            font-weight: 600
+                            color: $black
+                            background-color: transparent
+                            position: relative
+                            @media only screen and (min-width: 576px)
+                                font-size: 22px
+                                padding: 25px 25px 25px 0
+                            @media only screen and (min-width: 1441px)
+                                font-size: 24px
+                                padding: 30px 25px 30px 0
+                            @media only screen and (min-width: 1551px)
+                                font-size: 28px
+                                padding: 34px 25px 34px 0
+                            &::after
+                                position: absolute
+                                width: 14px
+                                height: 14px
+                                top: 42%
+                                right: 0
+                                display: flex
+                                justify-content: center
+                                align-items: center
+                                background-position: center
+                                background-image: url("../images/accoPlusBlue.svg")
+                                background-repeat: no-repeat
+                                background-size: contain
+                                @media only screen and (min-width: 576px)
+                                    width: 15px
+                                    height: 15px
+                                @media only screen and (min-width: 1441px)
+                                    width: 17px
+                                    height: 17px
+                            &:focus
+                                box-shadow: none
+                            &[aria-expanded="true"]
+                                box-shadow: none
+                                &::after
+                                    background-image: url("../images/accoMinusBlue.svg")
+                                    transform: none
+                    .accordion-body
+                        padding: 0 0 20px
+                        @media only screen and (min-width: 576px)
+                            padding: 0 0 25px
+                        @media only screen and (min-width: 1441px)
+                            padding: 0 0 35px
+                        @media only screen and (min-width: 1551px)
+                            padding: 0 0 40px
+                        p   
+                            font-size: 15px
+                            line-height: 24px
+                            color: rgba(0, 0, 0, 0.6)
+                            @media only screen and (min-width: 576px)
+                                font-size: 18px
+                                line-height: 28px
+                            @media only screen and (min-width: 1441px)
+                                font-size: 19px
+                                line-height: 30px
+                            @media only screen and (min-width: 1551px)
+                                font-size: 20px
+
+
+        .quoteBox
+            width: 100%
+            @media only screen and (min-width: 1441px)
+                max-width: 1380px
+                margin: auto
+            .CommonFormbox
+                max-width: 100%

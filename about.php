@@ -84,13 +84,13 @@
     <section id="aboutSec">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-12 order-lg-1 order-2">
                     <div class="imgSec">
                         <img src="assets/images/about.png" alt="About" width="505" height="460" class="lazy"
                             loading="lazy" data-src="assets/images/about.png">
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6 col-md-12 order-lg-2 order-1">
                     <div class="contentSec">
                         <div class="abtContents">
                             <div class="SubHeading">About</div>
@@ -108,7 +108,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2">
+                <div class="col-lg-2 col-md-12 order-lg-3 order-3">
                     <div class="counterList">
                         <div class="countBox">
                             <div class="count"><span class="counter">5</span>+</div>
@@ -133,7 +133,7 @@
     <section id="visionMissionSec" class="BG-light">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5">
+                <div class="col-xl-5 col-lg-6 col-12">
                     <div class="ContentBox">
                         <div class="MainHeading">Vision</div>
                         <p>Our Start-ups is not only a convenience but also can be crucial to those who find difficulty
@@ -141,7 +141,7 @@
                             and truly believe that we are your family.</p>
                     </div>
                 </div>
-                <div class="col-lg-5">
+                <div class="col-xl-5 col-lg-6 col-12">
                     <div class="ContentBox">
                         <div class="MainHeading">Mission</div>
                         <p>We are excited to provide high class health care services as well as improving the quality of
@@ -168,7 +168,7 @@
                 <p>We will save your time, nerves and health and we protect your main value - health.</p>
             </div>
             <div class="row">
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-sm-6 col-12">
                     <div class="howWrkBox">
                         <div class="num">01</div>
                         <div class="icon">
@@ -182,7 +182,7 @@
                             Simply dial <a href="tel:9995363777">9995363777</a>.</p>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-sm-6 col-12">
                     <div class="howWrkBox">
                         <div class="num">02</div>
                         <div class="icon">
@@ -195,7 +195,7 @@
                         <p>Our executive gets in touch with you and schedules an appointment.</p>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-sm-6 col-12">
                     <div class="howWrkBox">
                         <div class="num">03</div>
                         <div class="icon">
@@ -208,7 +208,7 @@
                         <p>Our qualified expert visits your home initiates the service.</p>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-sm-6 col-12">
                     <div class="howWrkBox">
                         <div class="num">04</div>
                         <div class="icon">

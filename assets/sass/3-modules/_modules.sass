@@ -237,3 +237,185 @@
                 &.floatIconPlusRight
                     bottom: 32%
                     right: 22%
+
+.careerPopup
+    background-color: rgba(240, 253, 254, 0.99)
+    .modal-dialog
+        position: relative
+        z-index: 2
+        max-width: 100%
+        @media only screen and (min-width: 576px)
+            max-width: 390px
+        @media only screen and (min-width: 992px)
+            max-width: 390px
+        @media only screen and (min-width: 1200px)
+            max-width: 418px
+        @media only screen and (min-width: 1441px)
+            max-width: 470px
+        @media only screen and (min-width: 1551px)
+            max-width: 513px
+        .modal-content
+            border: 0
+            border-radius: 10px
+            .modal-body
+                position: relative
+                padding: 0
+                @media only screen and (max-width: 575px)
+                    padding: 15px 10px
+                .btn-close
+                    position: absolute
+                    width: 16px
+                    height: 16px
+                    top: 18px
+                    right: 20px
+                    opacity: 1
+                    padding: 0
+                    margin: 0
+                    z-index: 2
+                    @media only screen and (min-width: 576px)
+                        width: 21px
+                        height: 21px
+                        top: 30px
+                        right: 33px
+                    &:focus
+                        box-shadow: none
+                .modal-title
+                    font-size: 24px
+                    line-height: 36px
+                    font-weight: 600
+                    color: $basecolor2
+                    @media only screen and (min-width: 576px)
+                        font-size: 30px
+                        line-height: 40px
+                p
+                    font-size: 14px
+                    line-height: 19px
+                    margin-bottom: 8px
+                    @media only screen and (min-width: 576px)
+                        font-size: 16px
+                        line-height: 20px
+                        margin-bottom: 9px
+                .fileUploadInput
+                    border-radius: 0
+                    height: 36px
+                    font-size: 13px
+                    font-weight: 500
+                    color: $black
+                    display: flex
+                    align-items: center
+                    border: 0
+                    border-bottom: 2px solid rgba(0, 76, 144, 0.2)
+                    padding-left: 0
+                    @media only screen and (min-width: 576px)
+                        font-size: 14px
+                    @media only screen and (min-width: 1200px)
+                        height: 42px
+                        font-size: 15px
+                    @media only screen and (min-width: 1441px)
+                        height: 50px
+                        font-size: 16px
+                    &:focus
+                        border-color: $basecolor
+                    &::placeholder
+                        color: $basecolor2
+                    svg
+                        width: 15px
+                    label
+                        font-size: 13px
+                        font-weight: 500
+                        margin-bottom: 0
+                        color: $black
+                        padding-left: 12px
+                        @media only screen and (min-width: 576px)
+                            font-size: 14px
+                        @media only screen and (min-width: 1200px)
+                            font-size: 15px
+                        @media only screen and (min-width: 1441px)
+                            font-size: 16px
+    &.FloatIcons
+        .FloatIconWrpr
+            .floatIcon1
+                position: absolute
+                top: 20%
+                right: 36.4%
+                width: 56px
+                height: 56px
+                background: #01D7ED
+                filter: blur(10px)
+                animation: gradientOpacityQte1 alternate-reverse infinite 2s
+                transition: 0.4s all
+                border-radius: 50%
+                z-index: 1
+                @keyframes gradientOpacityQte1
+                    0%
+                        opacity: 0
+                    100%
+                        opacity: 0.5
+            .floatIcon2
+                position: absolute
+                top: 64%
+                left: 34%
+                width: 57px
+                height: 57px
+                background: #0FB4F8
+                filter: blur(10px)
+                animation: gradientOpacityQte2 alternate-reverse infinite 2s
+                transition: 0.4s all
+                border-radius: 50%
+                z-index: 1
+                @keyframes gradientOpacityQte2
+                    0%
+                        opacity: 0
+                    100%
+                        opacity: 0.5
+            .floatIcon3
+                position: absolute
+                bottom: 22%
+                right: 32%
+                width: 31px
+                height: 31px
+                background: #01D7ED
+                filter: blur(10px)
+                animation: gradientOpacityQte3 alternate-reverse infinite 2s
+                transition: 0.4s all
+                border-radius: 50%
+                z-index: 1
+                @keyframes gradientOpacityQte3
+                    0%
+                        opacity: 0
+                    100%
+                        opacity: 0.5
+            .floatIconRound1
+                position: absolute
+                top: 7%
+                right: 28%
+                width: 454px
+                height: 454px
+                background: #27EBFF
+                filter: blur(49px)
+                border-radius: 50%
+                z-index: 1
+                opacity: 0.01
+            .floatIconRound2
+                position: absolute
+                bottom: 14%
+                left: 30%
+                width: 295px
+                height: 295px
+                background: #004C90
+                filter: blur(49px)
+                border-radius: 50%
+                z-index: 1
+                opacity: 0.1
+            .floatIconPlus
+                position: absolute
+                width: 36px
+                height: 36px
+                transition: 0.4s all
+                z-index: 1
+                &.floatIconPlusLeft
+                    top: 42%
+                    left: 30%
+                &.floatIconPlusRight
+                    bottom: 32%
+                    right: 22%

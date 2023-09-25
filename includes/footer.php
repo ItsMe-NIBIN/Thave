@@ -342,7 +342,9 @@
         containerCssClass: "select2--small",
         selectionCssClass: "select2--small",
         dropdownCssClass: "select2--small",
+        dropdownParent: $("#quoteModal")
     });
+
 </script>
 
 </body>
