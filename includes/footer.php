@@ -119,7 +119,9 @@
                                     <a href="javascript:void(0);">Terms of Service</a>
                                 </li>
                                 <li>
-                                    <a href="privacyPolicy.php" class="<?= basename($_SERVER["SCRIPT_FILENAME"], '.php') == 'privacyPolicy' ? 'active' : '' ?>">Privacy Policy</a>
+                                    <a href="privacyPolicy.php"
+                                        class="<?= basename($_SERVER["SCRIPT_FILENAME"], '.php') == 'privacyPolicy' ? 'active' : '' ?>">Privacy
+                                        Policy</a>
                                 </li>
                             </ul>
                         </div>
@@ -277,7 +279,7 @@
                             <div class="help-block d-none">Invalid Input</div>
                         </div>
                         <div class="form-group">
-                            <select class="form-select select" data-select2-id="select2-ServicePop"
+                            <select class="form-select select quoteSelect" data-select2-id="select2-ServicePop"
                                 aria-label="Default select example" id="select2ServicePop">
                                 <option selected disabled="disabled">Select Services</option>
                                 <option value="1">India</option>
@@ -287,7 +289,7 @@
                             <div class="help-block d-none">Invalid Input</div>
                         </div>
                         <div class="form-group">
-                            <select class="form-select select" data-select2-id="select2-CityPop"
+                            <select class="form-select select quoteSelect" data-select2-id="select2-CityPop"
                                 aria-label="Default select example" id="select2CityPop">
                                 <option selected disabled="disabled">Select City</option>
                                 <option value="1">Kottayam</option>
@@ -325,16 +327,16 @@
 <!-- CUSTOME --->
 <script type="text/javascript" src="assets/js/app.js"></script>
 
-
 <!-- SELECT2-->
 <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
+<!-- GSAP --->
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+
+
 
 <script>
-    $(function () {
-        $('.selectpicker').selectpicker();
-    });
 
     $(".select").select2({
         minimumResultsForSearch: Infinity,
@@ -342,8 +344,60 @@
         containerCssClass: "select2--small",
         selectionCssClass: "select2--small",
         dropdownCssClass: "select2--small",
+    });
+
+    $(".quoteSelect").select2({
+        minimumResultsForSearch: Infinity,
+        theme: "bootstrap-5",
+        containerCssClass: "select2--small",
+        selectionCssClass: "select2--small",
+        dropdownCssClass: "select2--small",
         dropdownParent: $("#quoteModal")
     });
+
+
+    // Quote Popup
+    var tQuote = new TimelineLite()
+    tQuote.to(".quotePopup .FloatIconWrpr .floatIconPlus.floatIconPlusLeft",
+        5, {
+        x: -30,
+        y: 50,
+        repeat: -1,
+        yoyo: true
+    })
+        .to(".quotePopup .FloatIconWrpr .floatIconPlus.floatIconPlusRight",
+            5, {
+            x: 40,
+            y: 30,
+            repeat: -1,
+            yoyo: true
+        }, 0)
+        .to(".quotePopup .FloatIconWrpr .floatIconPlus.floatIconPlusGreen",
+            5, {
+            x: -40,
+            y: -30,
+            repeat: -1,
+            yoyo: true
+        }, 0)
+    // Quote Popup
+
+    // Review Popup
+    var tReview = new TimelineLite()
+    tReview.to(".reviewPopup .FloatIconWrpr .floatIconPlus.floatIconPlusLeft",
+        5, {
+        x: -30,
+        y: 50,
+        repeat: -1,
+        yoyo: true
+    })
+        .to(".reviewPopup .FloatIconWrpr .floatIconPlus.floatIconPlusRight",
+            5, {
+            x: -40,
+            y: -30,
+            repeat: -1,
+            yoyo: true
+        }, 0)
+    // Review Popup
 
 </script>
 

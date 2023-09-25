@@ -215,11 +215,11 @@
     <!-- Rate Cards Section  -->
     <section id="rateCardSec">
         <div class="container">
-            <div class="HeadingSec center">
+            <div class="HeadingSec center" data-aos="fade-up">
                 <div class="MainHeading">RATE CARD</div>
             </div>
             <div class="dFlxSec">
-                <div class="specializeBox">
+                <div class="specializeBox" data-aos="fade-up">
                     <div class="topSec">
                         <ul>
                             <li>Specialization</li>
@@ -259,7 +259,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="imageBox">
+                <div class="imageBox" data-aos="fade-up">
                     <img src="assets/images/rateCard.png" alt="Rate" width="667" height="477" class="lazy"
                         loading="lazy" data-src="assets/images/rateCard.png">
                 </div>
@@ -274,13 +274,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-6">
-                    <div class="imgbx">
+                    <div class="imgbx" data-aos="fade-up">
                         <img src="assets/images/benefit.png" alt="Benefits" width="658" height="645" class="lazy"
                             loading="lazy" data-src="assets/images/benefit.png">
                     </div>
                 </div>
                 <div class="col-xl-6">
-                    <div class="cntbx">
+                    <div class="cntbx" data-aos="fade-up">
                         <div class="MainHeading">What Are The Benefits Of
                             Home Nursing Care?</div>
                         <p>The benefit of home health care is plenty. Besides being convenient than getting admitted in

@@ -107,7 +107,7 @@
                         </div>
                     </div>
                     <div class="col-lg-12 order-lg-3 order-3">
-                        <div class="cntSecFull">
+                        <div class="cntSecFull" data-aos="fade-up">
                             <div class="MainHead">Lorem Ipsum Is Simply Dummy Text Of The Printing Lorem Ipsum Is Simply
                                 Dummy Text </div>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
@@ -160,8 +160,8 @@
     <!-- Related Service Section  -->
     <section id="relatedServiceSec" class="BG-light">
         <div class="container">
-            <div class="MainHeading">Related Services</div>
-            <div class="owl-carousel owl-theme relatedServSlide">
+            <div class="MainHeading" data-aos="fade-up">Related Services</div>
+            <div class="owl-carousel owl-theme relatedServSlide" data-aos="fade-up">
                 <div class="servBox">
                     <a href="serviceDetail.php" class="imgSec">
                         <img src="assets/images/serv27.png" alt="Service" width="343" height="205" class="lazy"
@@ -239,7 +239,7 @@
             loop: true,
             lazyLoad: true,
             rewind: false,
-            autoplay: false,
+            autoplay: true,
             smartSpeed: 1000,
             autoplayTimeout: 2000,
             autoplayHoverPause: true,

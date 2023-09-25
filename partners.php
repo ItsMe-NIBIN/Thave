@@ -116,7 +116,7 @@
                     </div>
                 </div>
             </div>
-            <div class="quoteBox">
+            <div class="quoteBox" data-aos="fade-up">
                 <div class="CommonFormbox">
                     <div class="titleSec">
                         <div class="title">Request A Quote</div>

@@ -232,6 +232,7 @@ console.log("Powered by " + str);
 // AOS
 AOS.init({
     duration: 700,
+    once: true,
 });
 
 // LAZY LOAD

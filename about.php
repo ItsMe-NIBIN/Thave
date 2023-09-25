@@ -134,7 +134,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-5 col-lg-6 col-12">
-                    <div class="ContentBox">
+                    <div class="ContentBox" data-aos="fade-up">
                         <div class="MainHeading">Vision</div>
                         <p>Our Start-ups is not only a convenience but also can be crucial to those who find difficulty
                             in visiting and staying in hospitals. We at TNC provide our patients with the utmost care
@@ -142,7 +142,7 @@
                     </div>
                 </div>
                 <div class="col-xl-5 col-lg-6 col-12">
-                    <div class="ContentBox">
+                    <div class="ContentBox" data-aos="fade-up">
                         <div class="MainHeading">Mission</div>
                         <p>We are excited to provide high class health care services as well as improving the quality of
                             life for our clients. To make a difference in the lives of individuals and enhance the
@@ -163,13 +163,13 @@
     <!-- How it works Section  -->
     <section id="howitworkSec">
         <div class="container">
-            <div class="HeadingSec center">
+            <div class="HeadingSec center" data-aos="fade-up">
                 <div class="MainHeading">How it Works</div>
                 <p>We will save your time, nerves and health and we protect your main value - health.</p>
             </div>
             <div class="row">
                 <div class="col-lg-3 col-sm-6 col-12">
-                    <div class="howWrkBox">
+                    <div class="howWrkBox" data-aos="fade-up">
                         <div class="num">01</div>
                         <div class="icon">
                             <img src="assets/images/how-work1.svg" alt="How Work Icon" width="65" height="65"
@@ -183,7 +183,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-12">
-                    <div class="howWrkBox">
+                    <div class="howWrkBox" data-aos="fade-up">
                         <div class="num">02</div>
                         <div class="icon">
                             <img src="assets/images/how-work2.svg" alt="How Work Icon" width="65" height="65"
@@ -196,7 +196,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-12">
-                    <div class="howWrkBox">
+                    <div class="howWrkBox" data-aos="fade-up">
                         <div class="num">03</div>
                         <div class="icon">
                             <img src="assets/images/how-work3.svg" alt="How Work Icon" width="65" height="65"
@@ -209,7 +209,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-12">
-                    <div class="howWrkBox">
+                    <div class="howWrkBox" data-aos="fade-up">
                         <div class="num">04</div>
                         <div class="icon">
                             <img src="assets/images/how-work4.svg" alt="How Work Icon" width="65" height="65"
@@ -231,7 +231,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <div class="cntSec">
+                    <div class="cntSec" data-aos="fade-up">
                         <div class="MainHeading">What Does Home Nursing
                             Care Means?</div>
                         <div class="infoSec">
@@ -260,7 +260,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="imgSec">
+                    <div class="imgSec" data-aos="fade-up">
                         <img src="assets/images/about-content.png" alt="About" width="580" height="520" class="lazy"
                             loading="lazy" data-src="assets/images/about-content.png">
                     </div>

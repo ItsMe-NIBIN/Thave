@@ -213,13 +213,13 @@
             </div>
         </div>
         <div class="container">
-            <div class="HeadSec">
+            <div class="HeadSec" data-aos="fade-up">
                 <div class="MainHeading">Our Services</div>
                 <a href="serviceListing.php" class="viewBtn">View all +</a>
             </div>
         </div>
         <div class="custom_container">
-            <div class="owl-carousel owl-theme serviceSlide">
+            <div class="owl-carousel owl-theme serviceSlide" data-aos="fade-up">
                 <div class="serviceBox">
                     <a href="services.php" class="imgBox">
                         <img src="assets/images/service1.png" alt="Service" width="440" height="427" class="lazy"
@@ -285,7 +285,7 @@
                 <div class="floatIcon floatIcon1"></div>
                 <div class="floatIcon floatIcon2"></div>
                 <div class="floatIcon floatIcon3"></div>
-                <div class="floatIcon floatIconPlus floatIconPlus">
+                <div class="floatIcon floatIconPlus">
                     <svg viewBox="0 0 36.812 36.812">
                         <defs>
                             <clipPath id="clip-path">
@@ -303,14 +303,14 @@
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-5">
-                    <div class="imgSec">
+                    <div class="imgSec" data-aos="fade-up">
                         <img src="assets/images/about.png" alt="About" width="505" height="460" class="lazy"
                             loading="lazy" data-src="assets/images/about.png">
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-7">
                     <div class="contentSec">
-                        <div class="abtContents">
+                        <div class="abtContents" data-aos="fade-up">
                             <div class="SubHeading">About</div>
                             <div class="MainHeading">Thave Healthcare LLP</div>
                             <p>We want to make the world a safer place by giving people the health care information they
@@ -319,7 +319,7 @@
                                 everything is right.</p>
                             <a href="about.php" class="learnBtn">Learn More +</a>
                         </div>
-                        <div class="counterList">
+                        <div class="counterList" data-aos="fade-up">
                             <div class="countBox active">
                                 <div class="count"><span class="counter">5</span>+</div>
                                 <div class="text">Year of <br> Experience</div>
@@ -336,7 +336,7 @@
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-12">
-                    <div class="getintouchBox">
+                    <div class="getintouchBox" data-aos="fade-up">
                         <div class="icon">
                             <svg width="60.907" height="75" viewBox="0 0 60.907 75">
                                 <g id="nurse_2_" data-name="nurse (2)" transform="translate(-48.103)">
@@ -438,11 +438,11 @@
                     </svg>
                 </div>
             </div>
-            <div class="HeadingSec center">
+            <div class="HeadingSec center" data-aos="fade-up">
                 <div class="MainHeading">Why Choose Us</div>
                 <p>We will save your time, nerves and health and we protect your main value - health.</p>
             </div>
-            <div class="owl-carousel owl-theme whyChooseSlide">
+            <div class="owl-carousel owl-theme whyChooseSlide" data-aos="fade-up">
                 <div class="whyChooseBox">
                     <div class="icon">
                         <img src="assets/images/whychoose1.svg" alt="Why Choose Icons" width="78" height="74"
@@ -512,11 +512,11 @@
     <!-- Partners Section -->
     <section id="partnerSec" class="BG-light">
         <div class="container">
-            <div class="HeadingSec center">
+            <div class="HeadingSec center" data-aos="fade-up">
                 <div class="MainHeading">Our Partners</div>
                 <p>We will save your time, nerves and health and we protect your main value - health.</p>
             </div>
-            <div class="partnerSlide owl-carousel owl-theme">
+            <div class="partnerSlide owl-carousel owl-theme" data-aos="fade-up">
                 <div class="partnerBox">
                     <img src="assets/images/partner1.png" alt="Partner" width="259" height="146" class="lazy"
                         loading="lazy" data-src="assets/images/partner1.png">
@@ -593,11 +593,11 @@
                     </svg>
                 </div>
             </div>
-            <div class="HeadingSec center">
+            <div class="HeadingSec center" data-aos="fade-up">
                 <div class="MainHeading">Our Testimonials</div>
                 <p>We will save your time, nerves and health and we protect your main value - health.</p>
             </div>
-            <div class="owl-carousel owl-theme testimonialSlide">
+            <div class="owl-carousel owl-theme testimonialSlide" data-aos="fade-up">
                 <div class="testimonialBox">
                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
                         alteration in some form, by injected humour, or randomised words which don't look even slightly
@@ -729,7 +729,7 @@
                     </div>
                 </div>
             </div>
-            <button class="baseBtn fill" data-bs-toggle="modal" data-bs-target="#reviewModal"><span>Add
+            <button class="baseBtn fill data-aos="fade-up"" data-bs-toggle="modal" data-bs-target="#reviewModal"><span>Add
                     Review</span></button>
         </div>
     </section>
@@ -757,6 +757,10 @@
     <script type="text/javascript"
         src="//cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js">
         </script>
+
+    <!-- GSAP --->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+
 
 
     <script>
@@ -820,7 +824,7 @@
             loop: true,
             lazyLoad: true,
             rewind: false,
-            autoplay: false,
+            autoplay: true,
             smartSpeed: 1000,
             autoplayTimeout: 2000,
             autoplayHoverPause: true,
@@ -859,7 +863,7 @@
             loop: true,
             lazyLoad: true,
             rewind: false,
-            autoplay: false,
+            autoplay: true,
             smartSpeed: 1000,
             autoplayTimeout: 2000,
             autoplayHoverPause: true,
@@ -905,7 +909,7 @@
             loop: true,
             lazyLoad: true,
             rewind: false,
-            autoplay: false,
+            autoplay: true,
             smartSpeed: 1000,
             autoplayTimeout: 2000,
             autoplayHoverPause: true,
@@ -954,7 +958,7 @@
             loop: true,
             lazyLoad: true,
             rewind: false,
-            autoplay: false,
+            autoplay: true,
             smartSpeed: 1000,
             autoplayTimeout: 2000,
             autoplayHoverPause: true,
@@ -992,7 +996,7 @@
             loop: true,
             lazyLoad: true,
             rewind: false,
-            autoplay: false,
+            autoplay: true,
             smartSpeed: 1000,
             autoplayTimeout: 2000,
             autoplayHoverPause: true,
@@ -1024,6 +1028,118 @@
         })
         // Testimonial Slider
 
+        // TweenLite 
+        TweenLite.defaultEase = Linear.easeNone;
+        // Banner 
+        var tBanner = new TimelineLite()
+        tBanner.to("#MainSliderSec .FloatIconWrpr .floatIconPlusBlue.floatIconPlusFill",
+            5, {
+            x: 20,
+            y: 20,
+            repeat: -1,
+            yoyo: true
+        })
+            .to("#MainSliderSec .FloatIconWrpr .floatIconPlusGreen.floatIconPlusOutline",
+                5, {
+                x: 30,
+                y: -20,
+                repeat: -1,
+                yoyo: true
+            }, 0)
+            .to("#MainSliderSec .FloatIconWrpr .floatIconPlusBlue.floatIconPlusOutline",
+                5, {
+                x: -20,
+                y: -20,
+                repeat: -1,
+                yoyo: true
+            }, 0)
+            .to("#MainSliderSec .FloatIconWrpr .floatIconPlusGreen.floatIconPlusFill",
+                5, {
+                x: -20,
+                y: -40,
+                repeat: -1,
+                yoyo: true
+            }, 0)
+        // Banner 
+
+        // Service 
+        var tserv = new TimelineLite()
+        tserv.to("#serviceSec .FloatIconWrpr .floatIconPlus.floatIconPlusLeft",
+            5, {
+            x: 30,
+            y: 50,
+            repeat: -1,
+            yoyo: true
+        })
+            .to("#serviceSec .FloatIconWrpr .floatIconPlus.floatIconPlusRight",
+                5, {
+                x: 40,
+                y: -30,
+                repeat: -1,
+                yoyo: true
+            }, 0)
+        // Service 
+
+        // About 
+        var tabout = new TimelineLite()
+        tabout.to("#aboutSec .FloatIconWrpr .floatIconPlus",
+            5, {
+            x: 30,
+            y: 50,
+            repeat: -1,
+            yoyo: true
+        })
+        // About 
+
+        // Why Choose 
+        var tchoose = new TimelineLite()
+        tchoose.to("#whyChooseSec .FloatIconWrpr .floatIconPlus.floatIconPlusLeft",
+            5, {
+            x: -30,
+            y: 50,
+            repeat: -1,
+            yoyo: true
+        })
+            .to("#whyChooseSec .FloatIconWrpr .floatIconPlus.floatIconPlusRight",
+                5, {
+                x: 40,
+                y: 30,
+                repeat: -1,
+                yoyo: true
+            }, 0)
+            .to("#whyChooseSec .FloatIconWrpr .floatIconPlus.floatIconPlusLeftBtm",
+                5, {
+                x: 40,
+                y: 30,
+                repeat: -1,
+                yoyo: true
+            }, 0)
+        // Why Choose 
+  
+        // Testimonial
+        var tchoose = new TimelineLite()
+        tchoose.to("#testimonialSec .FloatIconWrpr .floatIconQuote.floatIconQuoteLeft",
+            5, {
+            x: -30,
+            y: 50,
+            repeat: -1,
+            yoyo: true
+        })
+            .to("#testimonialSec .FloatIconWrpr .floatIconQuote.floatIconQuoteRight",
+                5, {
+                x: 40,
+                y: 30,
+                repeat: -1,
+                yoyo: true
+            }, 0)
+            .to("#testimonialSec .FloatIconWrpr .floatIconQuote.floatIconQuoteLeftBtm",
+                5, {
+                x: 40,
+                y: 30,
+                repeat: -1,
+                yoyo: true
+            }, 0)
+        // Testimonial
     </script>
 
 
