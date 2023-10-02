@@ -311,7 +311,143 @@
                             font-size: 16px
                         @media only screen and (min-width: 1200px)
                             font-size: 17px
+        .FloatIcons
+            position: relative
+            .FloatIconWrpr
+                .floatIcon1
+                    position: absolute
+                    top: 0%
+                    left: 38%
+                    width: 26px
+                    height: 26px
+                    background: #00D7ED
+                    filter: blur(10px)
+                    animation: gradientOpacitySer1 alternate-reverse infinite 2s
+                    transition: 0.4s all
+                    border-radius: 50%
+                    z-index: 1
+                    opacity: 0.26
+                    @media only screen and (min-width: 576px)
+                        width: 34px
+                        height: 34px
+                    @media only screen and (min-width: 1441px)
+                        width: 41px
+                        height: 41px
+                    @keyframes gradientOpacitySer1
+                        0%
+                            opacity: 0
+                        100%
+                            opacity: 0.26
+                .floatIcon2
+                    position: absolute
+                    top: 50%
+                    left: 8%
+                    width: 29px
+                    height: 29px
+                    background: #0FB4F8
+                    filter: blur(10px)
+                    animation: gradientOpacitySer2 alternate-reverse infinite 2s
+                    animation-delay: 1s
+                    transition: 0.4s all
+                    border-radius: 50%
+                    z-index: 1
+                    opacity: 0.5
+                    @media only screen and (min-width: 576px)
+                        width: 46px
+                        height: 46px
+                    @media only screen and (min-width: 1441px)
+                        width: 57px
+                        height: 57px
+                    @keyframes gradientOpacitySer2
+                        0%
+                            opacity: 0
+                        100%
+                            opacity: 0.5
+                .floatIcon4
+                    position: absolute
+                    bottom: -2%
+                    right: 22%
+                    width: 19px
+                    height: 19px
+                    background: #0FB4F8
+                    filter: blur(10px)
+                    animation: gradientOpacitySer4 alternate-reverse infinite 2s
+                    animation-delay: 3s
+                    transition: 0.4s all
+                    border-radius: 50%
+                    z-index: 1
+                    opacity: 0.5
+                    @media only screen and (min-width: 576px)
+                        width: 26px
+                        height: 26px
+                        bottom: -10%
+                    @media only screen and (min-width: 1441px)
+                        width: 31px
+                        height: 31px
+                    @keyframes gradientOpacitySer4
+                        0%
+                            opacity: 0
+                        100%
+                            opacity: 0.5
+                .floatIcon5
+                    position: absolute
+                    top: 8%
+                    right: 24%
+                    width: 229px
+                    height: 230px
+                    background: #27EBFF
+                    filter: blur(49px)
+                    transition: 0.4s all
+                    border-radius: 50%
+                    z-index: 1
+                    opacity: 0.1
+                .floatIcon6
+                    position: absolute
+                    bottom: 7%
+                    left: -20%
+                    width: 312px
+                    height: 312px
+                    background: #27EBFF
+                    filter: blur(49px)
+                    transition: 0.4s all
+                    border-radius: 50%
+                    z-index: 1
+                    opacity: 0.1
+                    @media only screen and (min-width: 576px)
+                        left: 28%
+                .floatIcon7
+                    position: absolute
+                    top: 48%
+                    left: 8%
+                    width: 295px
+                    height: 295px
+                    background: #004C90
+                    filter: blur(49px)
+                    transition: 0.4s all
+                    border-radius: 50%
+                    z-index: 1
+                    opacity: 0.15
 
+                .floatIconPlus
+                    position: absolute
+                    width: 22px
+                    height: 22px
+                    transition: 0.4s all
+                    z-index: 1
+                    @media only screen and (min-width: 576px)
+                        width: 28px
+                        height: 28px
+                    @media only screen and (min-width: 1441px)
+                        width: 36px
+                        height: 36px
+                    &.floatIconPlusLeft
+                        top: 12%
+                        left: 2%
+                        @media only screen and (min-width: 576px)
+                            top: 27%
+                    &.floatIconPlusRight
+                        top: 10%
+                        right: 4%
 
     #mapSec
         width: 100%

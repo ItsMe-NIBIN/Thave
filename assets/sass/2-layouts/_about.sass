@@ -22,6 +22,36 @@
             p
                 &:last-of-type
                     margin-bottom: 0
+        .FloatIcons
+            .FloatIconWrpr
+                .floatIconRound1
+                    position: absolute
+                    top: 50%
+                    right: -12%
+                    width: 444px
+                    height: 444px
+                    background: #27EBFF
+                    filter: blur(49px)
+                    border-radius: 50%
+                    z-index: 1
+                    opacity: 0.1
+                    @media only screen and (min-width: 576px)
+                        top: -22%
+                .floatIconRound2
+                    position: absolute
+                    bottom: -11%
+                    right: 50%
+                    width: 192px
+                    height: 192px
+                    background: #27EBFF
+                    filter: blur(50px)
+                    border-radius: 50%
+                    z-index: 1
+                    opacity: 0.13
+                    @media only screen and (min-width: 576px)
+                        right: 10%
+
+
 
     #visionMissionSec
         padding: 68px 0 70px
@@ -92,6 +122,219 @@
                 @include imgFit
                 @media only screen and (min-width: 1441px)
                     border-radius: 100px 0 0 20px
+
+        .FloatIcons
+            position: relative
+            .FloatIconWrpr
+                .floatIcon1
+                    position: absolute
+                    top: -14%
+                    left: 40%
+                    width: 22px
+                    height: 22px
+                    background: #00D7ED
+                    filter: blur(10px)
+                    animation: gradientOpacityGet1 alternate-reverse infinite 2s
+                    transition: 0.4s all
+                    border-radius: 50%
+                    opacity: 0.5
+                    @media only screen and ( min-width: 576px )
+                        width: 30px
+                        height: 30px
+                    @media only screen and ( min-width: 1441px )
+                        width: 40px
+                        height: 40px
+                    @keyframes gradientOpacityGet1
+                        0%
+                            opacity: 0
+                        100%
+                            opacity: 0.5
+                .floatIcon2
+                    position: absolute
+                    top: 56%
+                    left: -3%
+                    width: 26px
+                    height: 26px
+                    background: #0FB4F8
+                    filter: blur(10px)
+                    animation: gradientOpacityGet2 alternate-reverse infinite 2s
+                    animation-delay: 1s
+                    transition: 0.4s all
+                    border-radius: 50%
+                    opacity: 0.5
+                    z-index: 1
+                    @media only screen and ( min-width: 576px )
+                        width: 34px
+                        height: 34px
+                    @media only screen and ( min-width: 1441px )
+                        width: 47px
+                        height: 47px
+                    @keyframes gradientOpacityGet2
+                        0%
+                            opacity: 0
+                        100%
+                            opacity: 0.5
+                .floatIcon3
+                    position: absolute
+                    top: 22%
+                    right: 0%
+                    width: 32px
+                    height: 32px
+                    background: #01D7ED
+                    filter: blur(10px)
+                    animation: gradientOpacityGet3 alternate-reverse infinite 2s
+                    animation-delay: 2s
+                    transition: 0.4s all
+                    border-radius: 50%
+                    z-index: 1
+                    opacity: 0.5
+                    @media only screen and ( min-width: 576px )
+                        width: 42px
+                        height: 42px
+                    @media only screen and ( min-width: 1441px )
+                        width: 56px
+                        height: 56px
+                    @keyframes gradientOpacityGet3
+                        0%
+                            opacity: 0
+                        100%
+                            opacity: 0.5
+                .floatIcon4
+                    position: absolute
+                    bottom: -3%
+                    right: 26%
+                    width: 25px
+                    height: 25px
+                    background: #01D7ED
+                    filter: blur(10px)
+                    animation: gradientOpacityGet4 alternate-reverse infinite 2s
+                    animation-delay: 3s
+                    transition: 0.4s all
+                    border-radius: 50%
+                    z-index: 1
+                    opacity: 0.5
+                    @media only screen and ( min-width: 576px )
+                        bottom: -17%
+                    @keyframes gradientOpacityGet4
+                        0%
+                            opacity: 0
+                        100%
+                            opacity: 0.5
+                .floatIcon5
+                    position: absolute
+                    bottom: -1%
+                    left: 34.5%
+                    width: 25px
+                    height: 25px
+                    background: #01D7ED
+                    filter: blur(5px)
+                    animation: gradientOpacityGet5 alternate-reverse infinite 2s
+                    animation-delay: 3s
+                    transition: 0.4s all
+                    border-radius: 50%
+                    opacity: 0.5
+                    z-index: 1
+                    @media only screen and ( min-width: 576px )
+                        width: 32px
+                        height: 32px
+                        bottom: -9%
+                    @media only screen and ( min-width: 1441px )
+                        width: 39px
+                        height: 39px
+                    @keyframes gradientOpacityGet5
+                        0%
+                            opacity: 0
+                        100%
+                            opacity: 0.5
+                .floatIcon6
+                    position: absolute
+                    top: 38%
+                    right: 29%
+                    width: 27px
+                    height: 27px
+                    background: #01D7ED
+                    filter: blur(5px)
+                    animation: gradientOpacityGet6 alternate-reverse infinite 2s
+                    animation-delay: 5s
+                    transition: 0.4s all
+                    border-radius: 50%
+                    opacity: 0.5
+                    z-index: 1
+                    @media only screen and ( min-width: 576px )
+                        width: 37px
+                        height: 37px
+                    @media only screen and ( min-width: 1441px )
+                        width: 47px
+                        height: 47px
+                    @keyframes gradientOpacityGet6
+                        0%
+                            opacity: 0
+                        100%
+                            opacity: 0.5
+                .floatIconRound1
+                    position: absolute
+                    top: -10%
+                    right: -12%
+                    width: 444px
+                    height: 444px
+                    background: #27EBFF
+                    filter: blur(49px)
+                    border-radius: 50%
+                    z-index: 1
+                    opacity: 0.1
+                .floatIconRound2
+                    position: absolute
+                    bottom: -22%
+                    right: 20%
+                    width: 396px
+                    height: 396px
+                    background: #004C90
+                    filter: blur(49px)
+                    border-radius: 50%
+                    z-index: 1
+                    opacity: 0.08
+                .floatIconRound3
+                    position: absolute
+                    bottom: -22%
+                    left: 12%
+                    width: 444px
+                    height: 444px
+                    background: #0BB3F9
+                    filter: blur(49px)
+                    border-radius: 50%
+                    z-index: 1
+                    opacity: 0.08
+                .floatIconRound4
+                    position: absolute
+                    bottom: 6%
+                    left: -10%
+                    width: 288px
+                    height: 288px
+                    background: #004C90
+                    filter: blur(49px)
+                    border-radius: 50%
+                    z-index: 1
+                    opacity: 0.1
+                .floatIconPlus
+                    position: absolute
+                    transition: 0.4s all
+                    z-index: 1
+                    &.floatIconPlusLeft
+                        top: 6%
+                        left: -8%
+                        width: 30px
+                        height: 30px
+                    &.floatIconPlusLeftBtm
+                        bottom: -9%
+                        left: 14%
+                        width: 22px
+                        height: 22px
+                    &.floatIconPlusRight
+                        top: -6%
+                        right: 24%
+                        width: 22px
+                        height: 22px
+
 
 
     #howitworkSec

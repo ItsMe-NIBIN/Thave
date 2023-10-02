@@ -82,7 +82,28 @@
 
     <!-- About Section -->
     <section id="aboutSec">
-        <div class="container">
+        <div class="container FloatIcons">
+            <div class="FloatIconWrpr">
+                <div class="floatIcon floatIcon1"></div>
+                <div class="floatIcon floatIcon3"></div>
+                <div class="floatIcon floatIconRound1"></div>
+                <div class="floatIcon floatIconRound2"></div>
+                <div class="floatIcon floatIconPlus">
+                    <svg viewBox="0 0 36.812 36.812">
+                        <defs>
+                            <clipPath id="clip-path">
+                                <path id="Path_47" data-name="Path 47"
+                                    d="M1.058,13.463h12.4V1.059h9.887v12.4h12.4V23.35h-12.4v12.4H13.462V23.35H1.058ZM12.4,0V12.4H0v12H12.4v12.4h12v-12.4h12.4v-12h-12.4V0Z"
+                                    fill="#01d7ed" />
+                            </clipPath>
+                        </defs>
+                        <g id="Group_20" data-name="Group 20" clip-path="url(#clip-path)">
+                            <rect id="Rectangle_13" data-name="Rectangle 13" width="36.812" height="36.812"
+                                transform="translate(0 0)" fill="#01d7ed" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-lg-4 col-md-12 order-lg-1 order-2">
                     <div class="imgSec">
@@ -131,7 +152,64 @@
 
     <!-- Vision Mission Section  -->
     <section id="visionMissionSec" class="BG-light">
-        <div class="container">
+        <div class="container FloatIcons">
+            <div class="FloatIconWrpr">
+                <div class="floatIcon floatIcon1"></div>
+                <div class="floatIcon floatIcon2"></div>
+                <div class="floatIcon floatIcon3"></div>
+                <div class="floatIcon floatIcon4"></div>
+                <div class="floatIcon floatIcon5"></div>
+                <div class="floatIcon floatIcon6"></div>
+                <div class="floatIcon floatIconRound1"></div>
+                <div class="floatIcon floatIconRound2"></div>
+                <div class="floatIcon floatIconRound3"></div>
+                <div class="floatIcon floatIconRound4"></div>
+                <div class="floatIcon floatIconPlus floatIconPlusLeft">
+                    <svg viewBox="0 0 36.812 36.812">
+                        <defs>
+                            <clipPath id="clip-path">
+                                <path id="Path_47" data-name="Path 47"
+                                    d="M1.058,13.463h12.4V1.059h9.887v12.4h12.4V23.35h-12.4v12.4H13.462V23.35H1.058ZM12.4,0V12.4H0v12H12.4v12.4h12v-12.4h12.4v-12h-12.4V0Z"
+                                    fill="#01d7ed" />
+                            </clipPath>
+                        </defs>
+                        <g id="Group_20" data-name="Group 20" clip-path="url(#clip-path)">
+                            <rect id="Rectangle_13" data-name="Rectangle 13" width="36.812" height="36.812"
+                                transform="translate(0 0)" fill="#01d7ed" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="floatIcon floatIconPlus floatIconPlusLeftBtm">
+                    <svg viewBox="0 0 36.812 36.812">
+                        <defs>
+                            <clipPath id="clip-path">
+                                <path id="Path_47" data-name="Path 47"
+                                    d="M1.058,13.463h12.4V1.059h9.887v12.4h12.4V23.35h-12.4v12.4H13.462V23.35H1.058ZM12.4,0V12.4H0v12H12.4v12.4h12v-12.4h12.4v-12h-12.4V0Z"
+                                    fill="#01d7ed" />
+                            </clipPath>
+                        </defs>
+                        <g id="Group_20" data-name="Group 20" clip-path="url(#clip-path)">
+                            <rect id="Rectangle_13" data-name="Rectangle 13" width="36.812" height="36.812"
+                                transform="translate(0 0)" fill="#01d7ed" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="floatIcon floatIconPlus floatIconPlus floatIconPlusRight">
+                    <svg viewBox="0 0 36.812 36.812">
+                        <defs>
+                            <clipPath id="clip-path">
+                                <path id="Path_47" data-name="Path 47"
+                                    d="M1.058,13.463h12.4V1.059h9.887v12.4h12.4V23.35h-12.4v12.4H13.462V23.35H1.058ZM12.4,0V12.4H0v12H12.4v12.4h12v-12.4h12.4v-12h-12.4V0Z"
+                                    fill="#01d7ed" />
+                            </clipPath>
+                        </defs>
+                        <g id="Group_20" data-name="Group 20" clip-path="url(#clip-path)">
+                            <rect id="Rectangle_13" data-name="Rectangle 13" width="36.812" height="36.812"
+                                transform="translate(0 0)" fill="#01d7ed" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-xl-5 col-lg-6 col-12">
                     <div class="ContentBox" data-aos="fade-up">
@@ -276,6 +354,10 @@
         integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <!-- GSAP --->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+
+
     <script>
         // Counter 
         $(document).ready(function () {
@@ -305,6 +387,45 @@
                 .addTo(controller);
         });
         // Counter 
+
+
+        // TweenLite 
+        TweenLite.defaultEase = Linear.easeNone;
+        // About 
+        var tabout = new TimelineLite()
+        tabout.to("#aboutSec .FloatIconWrpr .floatIconPlus",
+            5, {
+            x: 30,
+            y: 50,
+            repeat: -1,
+            yoyo: true
+        })
+        // About 
+
+        // vision Mission
+        var tchoose = new TimelineLite()
+        tchoose.to("#visionMissionSec .FloatIconWrpr .floatIconPlus.floatIconPlusLeft",
+            5, {
+            x: -30,
+            y: 50,
+            repeat: -1,
+            yoyo: true
+        })
+            .to("#visionMissionSec .FloatIconWrpr .floatIconPlus.floatIconPlusRight",
+                5, {
+                x: 40,
+                y: 30,
+                repeat: -1,
+                yoyo: true
+            }, 0)
+            .to("#visionMissionSec .FloatIconWrpr .floatIconPlus.floatIconPlusLeftBtm",
+                5, {
+                x: 40,
+                y: 30,
+                repeat: -1,
+                yoyo: true
+            }, 0)
+        // vision Mission
     </script>
 
 </div>

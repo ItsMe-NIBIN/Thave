@@ -23,7 +23,30 @@
 
     <!-- Testimonial Section  -->
     <section id="testimonialSec">
-        <div class="container">
+        <div class="container FloatIcons">
+            <div class="FloatIconWrpr">
+                <div class="floatIcon floatIcon1"></div>
+                <div class="floatIcon floatIcon2"></div>
+                <div class="floatIcon floatIcon3"></div>
+                <div class="floatIcon floatIcon4"></div>
+                <div class="floatIcon floatIcon5"></div>
+                <div class="floatIcon floatIconRound1"></div>
+                <div class="floatIcon floatIconRound2"></div>
+                <div class="floatIcon floatIconRound3"></div>
+                <div class="floatIcon floatIconRound4"></div>
+                <div class="floatIcon floatIconQuote floatIconQuoteRight">
+                    <svg viewBox="0 0 69.665 49.176">
+                        <g id="Quotemarks-left" transform="translate(-0.001 -9.412)">
+                            <path id="Path_48" data-name="Path 48"
+                                d="M51.967,27.714c-.14-1.517-.033-5.64,3.917-11.374a1.088,1.088,0,0,0-.126-1.387c-1.61-1.61-2.608-2.627-3.307-3.338-.92-.938-1.339-1.365-1.954-1.922a1.091,1.091,0,0,0-1.446-.014A41.719,41.719,0,0,0,35.625,43.217c.648,8.906,7.145,15.37,15.446,15.37a15.45,15.45,0,0,0,.9-30.873Zm-.9,28.7c-7.129,0-12.711-5.615-13.275-13.35h0C36.551,26,46.691,14.921,49.755,11.987c.3.294.64.641,1.143,1.153.606.617,1.435,1.461,2.689,2.719-4.8,7.388-3.891,12.652-3.494,13.407a1.127,1.127,0,0,0,.978.6,13.272,13.272,0,1,1,0,26.545Z"
+                                transform="translate(3.145 0)" fill="#48bfdb" />
+                            <path id="Path_49" data-name="Path 49"
+                                d="M16.452,27.714c-.141-1.513-.037-5.633,3.917-11.374a1.089,1.089,0,0,0-.126-1.387c-1.607-1.607-2.6-2.622-3.3-3.334-.923-.94-1.344-1.368-1.958-1.926a1.093,1.093,0,0,0-1.446-.015A41.725,41.725,0,0,0,.108,43.217h0c.651,8.9,7.148,15.369,15.449,15.369a15.45,15.45,0,0,0,.9-30.873Zm-.9,28.7c-7.128,0-12.713-5.615-13.278-13.352h0C1.037,26,11.177,14.92,14.241,11.987c.3.294.642.643,1.146,1.157.6.617,1.433,1.46,2.685,2.716-4.8,7.389-3.891,12.652-3.494,13.406a1.13,1.13,0,0,0,.979.6,13.272,13.272,0,1,1,0,26.545Z"
+                                transform="translate(0 0)" fill="#48bfdb" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
             <div class="testimonialListing">
                 <div class="itm">
                     <div class="testimonialBox">
@@ -455,6 +478,38 @@
         </div>
     </section>
     <!-- Testimonial Section  -->
+
+    <!-- GSAP --->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+
+
+    <script>
+
+        // Testimonial
+        var tchoose = new TimelineLite()
+        tchoose.to("#testimonialSec .FloatIconWrpr .floatIconQuote.floatIconQuoteLeft",
+            5, {
+            x: -30,
+            y: 50,
+            repeat: -1,
+            yoyo: true
+        })
+            .to("#testimonialSec .FloatIconWrpr .floatIconQuote.floatIconQuoteRight",
+                5, {
+                x: 40,
+                y: 30,
+                repeat: -1,
+                yoyo: true
+            }, 0)
+            .to("#testimonialSec .FloatIconWrpr .floatIconQuote.floatIconQuoteLeftBtm",
+                5, {
+                x: 40,
+                y: 30,
+                repeat: -1,
+                yoyo: true
+            }, 0)
+        // Testimonial
+    </script>
 
 
 </div>

@@ -368,7 +368,7 @@
                             Ipsum available, but the
                             majority have suffered
                             alteration in some formy</p>
-                        <a href="javascript:void(0);" class="baseBtn">
+                        <a href="contact.php" class="baseBtn">
                             <span>Contact Us</span>
                         </a>
                     </div>
